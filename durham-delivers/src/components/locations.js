@@ -6,7 +6,6 @@ const Locations = () => (
   <div
     style={{
       backgroundImage: `url(${Background})`,
-      backgroundSize: `cover`,
       padding: `100px 0`
     }}
   >

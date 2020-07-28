@@ -5,6 +5,7 @@ import SEO from "../components/seo"
 import Warning from "../components/warning"
 import HowTo from "../components/how"
 import Locations from "../components/locations"
+import Restaurants from "../components/restaurants"
 
 const IndexPage = () => (
   <Layout>
@@ -12,6 +13,7 @@ const IndexPage = () => (
     <Warning />
     <HowTo />
     <Locations />
+    <Restaurants />
   </Layout>
 )
 

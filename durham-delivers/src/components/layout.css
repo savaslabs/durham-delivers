@@ -103,3 +103,38 @@ ol li:before {
   border-radius: 48px;
   margin-right: 38px;
 }
+
+ul li {
+	font-family: 'Heebo', 'Helvetica', sans-serif;
+	font-weight: 400;
+	letter-spacing: 0.01em;
+}
+
+ul li a {
+	transition: color .5s ease;
+	color: #000000;
+	text-decoration: none;
+	display: flex;
+	align-items: center;
+}
+
+ul li a:hover {
+	color: #3C827A;
+}
+
+ul li a::after {
+	transition: all .3s ease;
+	content: '';
+	background-image: url('../images/fork.svg');
+	height: 30px;
+	width: 30px;
+	background-size: cover;
+	display: inline-block;
+	margin-left: 10px;
+	opacity: 0;
+}
+
+ul li a:hover::after {
+	transform: translate(10px);
+	opacity: 1;
+}
