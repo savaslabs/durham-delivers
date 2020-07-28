@@ -58,6 +58,25 @@ h2 {
   margin-bottom: 30px;
 }
 
+h4 {
+  font-family: 'Lato', 'Helvetica', sans-serif;
+  font-weight: 600;
+  font-size: 27px;
+  line-height: 32px;
+  letter-spacing: 0.01em;
+  color: #3C827A;
+  text-transform: uppercase;
+}
+
+p {
+  font-family: 'Lato', 'Helvetica', sans-serif;
+  font-weight: 600;
+  font-size: 21px;
+  line-height: 25px;
+  letter-spacing: 0.01em;
+  color: #000000;
+}
+
 ol {
   counter-reset: item;
 }
