@@ -6,6 +6,7 @@ import Warning from "../components/warning"
 import HowTo from "../components/how"
 import Locations from "../components/locations"
 import Restaurants from "../components/restaurants"
+import Accordion from "../components/accordion"
 
 const IndexPage = () => (
   <Layout>
@@ -14,6 +15,7 @@ const IndexPage = () => (
     <HowTo />
     <Locations />
     <Restaurants />
+    <Accordion />
   </Layout>
 )
 
