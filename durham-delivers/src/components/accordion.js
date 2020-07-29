@@ -41,7 +41,8 @@ const Accordions = () => (
           <AccordionItem>
               <AccordionItemHeading>
                   <AccordionItemButton style={{
-                    borderBottom: `2px solid #828282`
+                    borderBottom: `2px solid #828282`,
+                    cursor: `pointer`
                   }}
 
                   >
@@ -101,25 +102,35 @@ const Accordions = () => (
                   <li>
                     <a href="#" style={{
                       fontSize: `21px`,
-                      marginBottom: `10px`
+                      marginBottom: `10px`,
+                      maxWidth: `max-content`
                     }}>
                       link to restaurant
                     </a>
+                  </li>
+                  <li>
                     <a href="#" style={{
                       fontSize: `21px`,
-                      marginBottom: `10px`
+                      marginBottom: `10px`,
+                      maxWidth: `max-content`
                     }}>
                       link to restaurant
                     </a>
+                  </li>
+                  <li>
                     <a href="#" style={{
                       fontSize: `21px`,
-                      marginBottom: `10px`
+                      marginBottom: `10px`,
+                      maxWidth: `max-content`
                     }}>
                       link to restaurant
                     </a>
+                  </li>
+                  <li>
                     <a href="#" style={{
                       fontSize: `21px`,
-                      marginBottom: `10px`
+                      marginBottom: `10px`,
+                      maxWidth: `max-content`
                     }}>
                       link to restaurant
                     </a>
