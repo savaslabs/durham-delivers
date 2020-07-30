@@ -11,7 +11,7 @@ const Locations = () => (
   >
     <div
       style={{
-        padding: `0 15px`,
+        padding: `0 20px`,
         maxWidth: `1080px`,
         margin: `0 auto`,
       }}

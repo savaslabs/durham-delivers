@@ -18,16 +18,12 @@ const Header = () => (
         flexDirection: `row`,
         height: `100%`,
         margin: `0 auto`,
-        maxWidth: 975,
+        maxWidth: `1080px`,
+        padding: `0 20px`,
         flexWrap: `nowrap`,
       }}
     >
-      <h1 style={{
-        alignSelf: `center`,
-        color: `#FFFFFF`,
-        fontFamily: `'Lato', 'Helvetica', sans-serif`,
-        fontSize: `85px`
-       }}>
+      <h1>
         Order safe, pick up safe and stay safe with<br />
         <Link
           to="/"

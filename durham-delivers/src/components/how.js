@@ -4,7 +4,7 @@ const HowTo = () => (
   <div
     style={{
       maxWidth: `1080px`,
-      padding: `0 15px`,
+      padding: `0 20px`,
       margin: `130px auto`
     }}
   >

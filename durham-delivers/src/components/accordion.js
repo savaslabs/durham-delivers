@@ -35,7 +35,7 @@ const Accordions = () => (
   <Accordion style={{
     maxWidth: `1080px`,
     margin: `0 auto`,
-    paddingTop: `80px`
+    padding: `80px 20px 0 20px`
   }}>
       {items.map((item) => (
           <AccordionItem>

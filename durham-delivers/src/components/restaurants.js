@@ -4,7 +4,7 @@ import DurhamImg from "../images/durham-img.jpg"
 const Restaurants = () => (
   <div>
     <div style={{
-      padding: `130px 0`,
+      padding: `130px 20px`,
       maxWidth: `1080px`,
       margin: `0 auto`
     }}>

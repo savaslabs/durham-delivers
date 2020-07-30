@@ -43,6 +43,7 @@ const Layout = ({ children }) => {
         }}>
           <div style={{
             maxWidth: `1080px`,
+            padding: `0 20px`,
             margin: `0 auto`,
             display: `flex`,
             justifyContent: `space-between`,

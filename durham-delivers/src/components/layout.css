@@ -48,6 +48,13 @@ table {
 	border-spacing: 0;
 }
 
+h1 {
+	align-self: center;
+	color: #FFFFFF;
+	font-family: 'Lato', 'Helvetica', sans-serif;
+	font-size: 85px;
+}
+
 h2 {
   font-family: 'Archivo', 'Helvetica', sans-serif;
   font-weight: 600;
@@ -168,4 +175,11 @@ ul li a:hover::after {
 	background-repeat: no-repeat;
 	display: inline-block;
 	margin-left: 10px;
+}
+
+@media screen and (max-width: 750px) {
+	h1 {
+		font-size: 40px;
+		line-height: 48px;
+	}
 }
