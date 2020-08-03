@@ -165,12 +165,88 @@ ul li a:hover::after {
 	opacity: 1;
 }
 
+.accordion {
+	max-width: 1080px;
+	margin: 0 auto;
+	padding: 80px 20px 0 20px;
+}
+
+.accordion__item-container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.accordion__component {
+	width: 50%;
+	padding-bottom: 150px;
+}
+
+.accordion__panel {
+	padding-top: 130px;
+}
+
+.calendar__svg {
+	width: 30px;
+	height: 28px;
+}
+
+.calendar__svg-part {
+	fill: #4CA897;
+	transition: fill .5s ease;
+}
+
+.calendar__svg:hover .calendar__svg-part {
+	fill: #D55051;
+}
+
+.accordion__date {
+	font-family: 'Heebo', 'Helvetica', sans-serif;
+	font-size: 27px;
+	font-weight: 500;
+	text-transform: uppercase;
+}
+
 .accordion__header {
 	font-family: 'Archivo', 'Helvetica', sans-serif;
 	font-size: 90px;
 	color: #3C827A;
 	padding: 50px 0;
 	text-align: center;
+}
+
+.accordion__address {
+	font-family: 'Heebo', 'Helvetica', sans-serif;
+	font-weight: 600;
+	font-size: 16px;
+	letter-spacing: 0.01em;
+	text-transform: uppercase;
+	color: #000000;
+	padding-bottom: 20px;
+	border-bottom: 2px solid #BDBDBD;
+	max-width: max-content;
+	margin-bottom: 20px;
+}
+
+.accordion__order-time {
+	font-family: 'Heebo', 'Helvetica', sans-serif;
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 26px;
+	color: #4F4F4F;
+	text-transform: uppercase;
+	letter-spacing: 0.01em;
+	margin: 15px 0;
+}
+
+.accordion__link {
+	font-size: 21px;
+	margin-bottom: 10px;
+	max-width: max-content;
+}
+
+.accordion__button:focus {
+	outline-color: #3C827A;
 }
 
 .accordion__header::after {
@@ -279,6 +355,11 @@ ul li a:hover::after {
 		line-height: 26px;
 	}
 
+	h3 {
+		font-size: 24px;
+		line-height: 26px;
+	}
+
 	ol li {
 		font-size: 18px;
 		line-height: 26px;
@@ -323,6 +404,11 @@ ul li a:hover::after {
 		padding: 50px 30px;
 	}
 
+	.accordion__panel,
+	.accordion {
+		padding-top: 50px;
+	}
+
 	.accordion__header {
 		font-size: 36px;
 	}
@@ -332,6 +418,25 @@ ul li a:hover::after {
 		width: 28px;
 	}
 
+	.accordion__component {
+		width: 100%;
+		padding-bottom: 50px;
+	}
+
+	.accordion__date {
+		font-size: 18px;
+		line-height: 26px;
+	}
+
+	.accordion__order-time {
+		font-size: 16px;
+		line-height: 23px;
+		margin: 5px auto 15px auto;
+	}
+
+	.accordion__link {
+		font-size: 18px;
+	}
 }
 
 @media screen and (max-width: 400px) {
