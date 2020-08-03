@@ -330,6 +330,19 @@ ul li a:hover::after {
 	height: calc(100vh - 75px);
 }
 
+.footer__tag {
+		font-family: 'Heebo', 'Helvetica', sans-serif;
+		font-weight: 500;
+		font-size: 21px;
+		line-height: 31px;
+		letter-spacing: 0.01em;
+		margin-bottom: 10px;
+}
+
+.footer__section {
+	width: 50%;
+}
+
 @media screen and (max-width: 1080px) {
 	.warning {
 		text-align: left;
@@ -436,6 +449,20 @@ ul li a:hover::after {
 
 	.accordion__link {
 		font-size: 18px;
+	}
+
+	.footer__tag {
+		display: none;
+	}
+
+	.footer__section {
+		width: 100%;
+		text-align: center;
+		margin: 0 auto;
+	}
+
+	.footer__section--one {
+		margin-bottom: 50px;
 	}
 }
 
