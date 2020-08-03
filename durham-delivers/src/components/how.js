@@ -1,13 +1,7 @@
 import React from "react"
 
 const HowTo = () => (
-  <div
-    style={{
-      maxWidth: `1080px`,
-      padding: `0 20px`,
-      margin: `130px auto`
-    }}
-  >
+  <div className="how__container">
     <h2>
       How it Works
     </h2>
