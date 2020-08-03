@@ -165,6 +165,74 @@ ul li a:hover::after {
 	opacity: 1;
 }
 
+.hamburger__wrapper {
+	position: fixed;
+	padding: 20px;
+	z-index: 9999;
+	display: none;
+}
+
+.hamburger__bars {
+	width: 50px;
+	height: 30px;
+	position: relative;
+	transform: rotate(0deg);
+	transition: .5s ease-in-out;
+	cursor: pointer;
+}
+
+.hamburger__bars span {
+	display: block;
+	position: absolute;
+	height: 7px;
+	width: 100%;
+	background: #FFFFFF;
+	border-radius: 9px;
+	opacity: 1;
+	left: 0;
+	transform: rotate(0deg);
+	transition: .25s ease-in-out;
+}
+
+.hamburger__bars span:nth-child(1) {
+  top: 0px;
+}
+
+.hamburger__bars span:nth-child(2) {
+	width: 60%;
+}
+
+.hamburger__bars span:nth-child(2),
+.hamburger__bars span:nth-child(3) {
+  top: 16px;
+}
+
+.hamburger__bars.open span:nth-child(1) {
+  top: 18px;
+  width: 0%;
+  left: 50%;
+}
+
+.hamburger__bars.open span:nth-child(2) {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+/* .hamburger__bars.open span:nth-child(3) {
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+} */
+
+/* .hamburger__bars.open span:nth-child(4) {
+  top: 18px;
+  width: 0%;
+  left: 50%;
+} */
+
 .accordion {
 	max-width: 1080px;
 	margin: 0 auto;
@@ -343,6 +411,54 @@ ul li a:hover::after {
 	width: 50%;
 }
 
+.main-menu {
+	position: fixed;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background-image: url('../images/fork-bkgr.jpg');
+	background-size: cover;
+	text-align: center;
+	z-index: 999;
+	display: none;
+}
+
+.main-menu.open {
+	display: block;
+}
+
+.main-menu__inner {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 0 auto;
+	text-align: center;
+	width: calc(100% - 60px);
+}
+
+.main-menu__inner a {
+	font-family: 'Archivo', 'Helvetica', sans-serif;
+	font-weight: 600;
+	font-size: 24px;
+	line-height: 27px;
+	letter-spacing: 0.01em;
+	display: block;
+	color: #3C827A;
+	padding: 30px 0;
+	border-bottom: 1px solid #3C827A;
+	text-decoration: none;
+	width: 100%;
+	text-align: center;
+}
+
+.main-menu ul li a:after {
+	content: '';
+}
+
 @media screen and (max-width: 1080px) {
 	.warning {
 		text-align: left;
@@ -455,6 +571,12 @@ ul li a:hover::after {
 		display: none;
 	}
 
+	.footer__tag--menu {
+		display: block;
+		width: 100%;
+		margin-bottom: 20px;
+	}
+
 	.footer__section {
 		width: 100%;
 		text-align: center;
@@ -463,6 +585,10 @@ ul li a:hover::after {
 
 	.footer__section--one {
 		margin-bottom: 50px;
+	}
+
+.hamburger__wrapper {
+		display: block;
 	}
 }
 

@@ -1,8 +1,7 @@
-import { Link } from "gatsby"
-
 import PropTypes from "prop-types"
 import React from "react"
 import HeroImg from "../images/hero.jpg"
+import Hamburger from "../components/hamburger"
 
 const Header = () => (
   <header
@@ -13,6 +12,7 @@ const Header = () => (
       height:  `calc(100vh - 75px)`
     }}
   >
+  <Hamburger />
     <div
       style={{
         position: `relative`,
