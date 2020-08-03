@@ -27,8 +27,7 @@ const Header = () => (
     >
       <h1>
         Order safe, pick up safe and stay safe with<br />
-        <Link
-          to="/"
+        <span
           style={{
             color: `white`,
             textDecoration: `none`,
@@ -36,8 +35,7 @@ const Header = () => (
           }}
         >
         Durham Delivers.
-
-        </Link>
+        </span>
       </h1>
       <div className="logo__container">
         <svg width="244" height="277" viewBox="0 0 244 277" fill="none" xmlns="http://www.w3.org/2000/svg">

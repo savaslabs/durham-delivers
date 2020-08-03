@@ -3,11 +3,7 @@ import DurhamImg from "../images/durham-img.jpg"
 
 const Restaurants = () => (
   <div>
-    <div style={{
-      padding: `130px 20px`,
-      maxWidth: `1080px`,
-      margin: `0 auto`
-    }}>
+    <div className="order__container">
       <h2>
        Order Local
       </h2>
@@ -152,11 +148,9 @@ const Restaurants = () => (
         </ul>
       </div>
     </div>
-    <div style={{
-      backgroundImage: `url(${DurhamImg})`,
-      backgroundSize: `cover`,
-      backgroundPosition: `center`,
-      height:  `calc(100vh - 75px)`
+    <div className="cover__image"
+    style={{
+      backgroundImage: `url(${DurhamImg})`
     }}>
     </div>
   </div>
