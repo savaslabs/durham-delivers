@@ -165,10 +165,27 @@ ul li a:hover::after {
 	opacity: 1;
 }
 
+.hamburger {
+	position: relative;
+}
+
+.hamburger input {
+	display: block;
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	top: 15px;
+	left: 15px;
+	cursor: pointer;
+	opacity: 0;
+	z-index: 999;
+	-webkit-touch-callout: none;
+}
+
 .hamburger__wrapper {
 	position: fixed;
 	padding: 20px;
-	z-index: 9999;
+	z-index: 4;
 	display: none;
 }
 
@@ -202,36 +219,22 @@ ul li a:hover::after {
 	width: 60%;
 }
 
-.hamburger__bars span:nth-child(2),
-.hamburger__bars span:nth-child(3) {
+.hamburger__bars span:nth-child(2) {
   top: 16px;
 }
 
-.hamburger__bars.open span:nth-child(1) {
-  top: 18px;
-  width: 0%;
-  left: 50%;
-}
-
-.hamburger__bars.open span:nth-child(2) {
-  -webkit-transform: rotate(45deg);
-  -moz-transform: rotate(45deg);
-  -o-transform: rotate(45deg);
+.hamburger input:checked ~ .hamburger__wrapper .hamburger__bars span:nth-child(1) {
   transform: rotate(45deg);
+	top: 15px;
+	background: #3C827A;
 }
 
-/* .hamburger__bars.open span:nth-child(3) {
-  -webkit-transform: rotate(-45deg);
-  -moz-transform: rotate(-45deg);
-  -o-transform: rotate(-45deg);
-  transform: rotate(-45deg);
-} */
-
-/* .hamburger__bars.open span:nth-child(4) {
-  top: 18px;
-  width: 0%;
-  left: 50%;
-} */
+.hamburger input:checked ~ .hamburger__wrapper .hamburger__bars span:nth-child(2) {
+	transform: rotate(-45deg);
+	top: 15px;
+	width: 100%;
+	background: #3C827A;
+}
 
 .accordion {
 	max-width: 1080px;
@@ -412,6 +415,8 @@ ul li a:hover::after {
 }
 
 .main-menu {
+	padding-top: 50px;
+	transition: all ease-in-out;
 	position: fixed;
 	display: flex;
 	flex-direction: column;
@@ -423,11 +428,11 @@ ul li a:hover::after {
 	background-image: url('../images/fork-bkgr.jpg');
 	background-size: cover;
 	text-align: center;
-	z-index: 999;
+	z-index: 3;
 	display: none;
 }
 
-.main-menu.open {
+.hamburger input:checked ~ .main-menu {
 	display: block;
 }
 

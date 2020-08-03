@@ -2,13 +2,14 @@ import React from "react"
 
 const Hamburger = () => (
   <div className="hamburger">
+  <input type="checkbox" />
     <div className="hamburger__wrapper">
       <div className="hamburger__bars">
         <span></span>
         <span></span>
       </div>
     </div>
-    <menu className="main-menu">
+    <menu className="main-menu" role="navigation">
       <div className="main-menu__inner">
         <a href="#how-it-works">
           How it works
