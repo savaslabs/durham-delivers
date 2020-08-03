@@ -13,24 +13,12 @@ const Header = () => (
     }}
   >
   <Hamburger />
-    <div
-      style={{
-        position: `relative`,
-        display: `flex`,
-        flexDirection: `row`,
-        height: `100%`,
-        margin: `0 auto`,
-        maxWidth: `1080px`,
-        padding: `0 30px`,
-        flexWrap: `nowrap`,
-      }}
-    >
+    <div className="header__container">
       <h1>
-        Order safe, pick up safe and stay safe with<br />
-        <span
+        Order safe, pick up safe and stay safe with&nbsp;<br />
+         <span
           style={{
             color: `white`,
-            textDecoration: `none`,
             borderBottom: `11px solid #FFFFFF`
           }}
         >

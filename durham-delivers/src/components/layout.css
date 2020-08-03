@@ -165,6 +165,25 @@ ul li a:hover::after {
 	opacity: 1;
 }
 
+.header__container {
+		position: relative;
+		display: flex;
+		flex-direction: row;
+		height: 100%;
+		margin: 0 auto;
+		max-width: 944px;
+		padding: 0 30px;
+		flex-wrap: nowrap;
+}
+
+.logo__container {
+	align-self: center;
+	position: absolute;
+	margin-left: 70%;
+	top: auto;
+	bottom: 100px;
+}
+
 .hamburger {
 	position: relative;
 }
@@ -333,14 +352,6 @@ ul li a:hover::after {
 	margin-left: 10px;
 }
 
-.logo__container {
-	align-self: center;
-	position: absolute;
-	margin-left: 60%;
-	top: auto;
-	bottom: 100px;
-}
-
 .scroll__container {
 	height: 30px;
 	text-align: center;
@@ -478,6 +489,21 @@ ul li a:hover::after {
 	}
 }
 
+@media screen and (max-width: 944px) {
+	.header__container {
+		flex-direction: column;
+		justify-content: center;
+	}
+
+	.header__container br {
+		display: none;
+	}
+
+	.logo__container {
+		bottom: 60px;
+	}
+}
+
 @media screen and (max-width: 750px) {
 	h1 {
 		font-size: 40px;
@@ -594,6 +620,17 @@ ul li a:hover::after {
 
 .hamburger__wrapper {
 		display: block;
+	}
+
+	.logo__container {
+		position: relative;
+		margin-left: 60%;
+	}
+
+	.logo__container svg {
+		height: 170px;
+		margin-top: 100px;
+		margin-left: 50px;
 	}
 }
 
