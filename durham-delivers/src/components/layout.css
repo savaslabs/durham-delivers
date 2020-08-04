@@ -175,7 +175,7 @@ ul li a:hover::after {
 		flex-direction: row;
 		height: 100%;
 		margin: 0 auto;
-		max-width: 944px;
+		max-width: 1080px;
 		padding: 0 30px;
 		flex-wrap: nowrap;
 }
@@ -488,6 +488,9 @@ ul li a:hover::after {
 }
 
 @media screen and (max-width: 1080px) {
+	h1 {
+		font-size: 48px;
+	}
 	.warning {
 		text-align: left;
 	}
