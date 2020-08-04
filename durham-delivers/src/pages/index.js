@@ -10,12 +10,12 @@ import Accordion from "../components/accordion"
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="Home" />
-    <Warning />
-    <HowTo />
-    <Locations />
-    <Restaurants />
-    <Accordion />
+      <SEO title="Home" />
+      <Warning />
+      <HowTo />
+      <Locations />
+      <Restaurants />
+      <Accordion />
   </Layout>
 )
 

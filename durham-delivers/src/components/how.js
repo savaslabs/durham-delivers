@@ -7,16 +7,16 @@ const HowTo = () => (
     </h2>
     <ol>
       <li>
-        Find a time and place most convient to you to order a meal
+        Find out where and when your favorite local restaurant delivers to a location near you.<br />See the <a href="#">calendar below</a>
       </li>
       <li>
-        Order your meal from a participating Durham restaurant
+        Place your order with the restaurant. Let them know it’s for a Durham Delivers event.
       </li>
       <li>
-        Pick up your order at the coresponding Durham Park
+        Pick up your food at the designated time and location and enjoy it proudly, knowing you’re safely supporting local, independent restaurants!
       </li>
       <li>
-        Enjoy!
+        Wash, rinse, repeat.
       </li>
     </ol>
   </div>
