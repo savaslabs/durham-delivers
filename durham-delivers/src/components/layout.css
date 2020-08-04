@@ -347,7 +347,7 @@ ul li a:hover::after {
 }
 
 .accordion__header::after {
-	transition: all .3s ease;
+	transition: transform .2s ease;
 	content: '';
 	background-image: url('../images/arrow.svg');
 	background-position: center;
@@ -357,6 +357,10 @@ ul li a:hover::after {
 	background-repeat: no-repeat;
 	display: inline-block;
 	margin-left: 10px;
+}
+
+.accordion__button[aria-expanded='true'] .accordion__header::after {
+	transform: rotate(-180deg);
 }
 
 .scroll__container {
