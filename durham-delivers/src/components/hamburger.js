@@ -3,7 +3,7 @@ import React from "react"
 const Hamburger = () => (
   <div className="hamburger" id="menu">
   <input className="checkbox" type="checkbox" />
-    <div className="hamburger__wrapper">
+    <div className="hamburger__wrapper" id="hamburger">
       <div className="hamburger__bars">
         <span></span>
         <span></span>

@@ -1,7 +1,7 @@
 function checkAll1() {
 
-  var inputs = document.querySelectorAll('.checkbox');
-  for (var i = 0; i < inputs.length; i++) {
+  const inputs = document.querySelectorAll('.checkbox');
+  for (let i = 0; i < inputs.length; i++) {
     inputs[i].checked = true;
   }
 
@@ -9,13 +9,37 @@ function checkAll1() {
 }
 
 function uncheckAll1() {
-  var inputs = document.querySelectorAll('.checkbox');
-  for (var i = 0; i < inputs.length; i++) {
+  const inputs = document.querySelectorAll('.checkbox');
+  for (let i = 0; i < inputs.length; i++) {
     inputs[i].checked = false;
   }
 
   this.onclick = checkAll1;
 }
 
-var el = document.getElementById('menu');
+const el = document.getElementById('menu');
 el.onclick = checkAll1;
+
+//use window.scrollY
+let scrollpos = window.scrollY;
+const header = document.getElementById('hamburger');
+
+function add_class_on_scroll() {
+    header.classList.add('scrolled');
+}
+
+function remove_class_on_scroll() {
+    header.classList.remove('scrolled');
+}
+
+window.addEventListener('scroll', function() {
+    scrollpos = window.scrollY;
+
+    if ( scrollpos > 10 ) {
+        add_class_on_scroll();
+    }
+    else {
+        remove_class_on_scroll();
+    }
+    console.log(scrollpos);
+});

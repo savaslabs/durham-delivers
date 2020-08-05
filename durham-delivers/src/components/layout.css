@@ -204,10 +204,21 @@ ul li a:hover::after {
 }
 
 .hamburger__wrapper {
+	transition: background-color .3s ease;
+	width: 100%;
 	position: fixed;
 	padding: 20px;
 	z-index: 4;
+	background-color: transparent;
 	display: none;
+}
+
+.hamburger__wrapper.scrolled {
+	background-color: #FFFFFF;
+}
+
+.hamburger input:checked ~ .hamburger__wrapper.scrolled {
+	background-color: transparent;
 }
 
 .hamburger__bars {
@@ -230,6 +241,10 @@ ul li a:hover::after {
 	left: 0;
 	transform: rotate(0deg);
 	transition: .25s ease-in-out;
+}
+
+.hamburger__wrapper.scrolled .hamburger__bars span {
+	background: #3C827A;
 }
 
 .hamburger__bars span:nth-child(1) {
