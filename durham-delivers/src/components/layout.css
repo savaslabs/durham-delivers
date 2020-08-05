@@ -100,6 +100,7 @@ ol {
 }
 
 ol li {
+	display: flex;
 	position: relative;
   font-family: 'Heebo', 'Helvetica', sans-serif;
   font-size: 24px;
@@ -116,31 +117,15 @@ ol li:before {
 	font-family: 'Archivo', 'Helvetica', sans-serif;
 	position: absolute;
   text-align: center;
-  width: 30px;
-	height: 30px;
-	line-height: 30px;
+  width: 20px;
+	height: 20px;
+	padding: 7px;
+	line-height: 20px;
   content: counter(item) " ";
   counter-increment: item;
   border: 4px solid #4CA897;
-  border-radius: 100%;
-	padding-top: 10px;
-}
-
-ol li:before {
-	position: absolute;
-  display: inline-block;
-  text-align: center;
-  width: 48px;
-  padding: 2px 0;
-  content: counter(item) " ";
-  counter-increment: item;
-  border: 6px solid #4CA897;
-  border-radius: 48px;
-  margin-right: 38px;
-	text-indent: 0;
-	padding-left: 0;
-	top: 0;
-	left: -100px;
+  border-radius: 100px;
+	margin-left: -100px;
 }
 
 ol li a {

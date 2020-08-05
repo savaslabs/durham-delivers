@@ -53,7 +53,7 @@ const Accordions = () => (
           <div className="accordion__component">
             <div className="accordion__date">
               Tues, July <span style={{margin: `0 15px`}}>|</span> 11AM - 12PM
-              <a href="#" style={{
+              <a href="https://www.google.com/calendar/render?action=TEMPLATE&text=Test+Event&details=This+is+a+test+event&location=Central+Park%0ADurham%2C+NC&dates=20200815T153000Z%2F20200815T163800Z" target="_blank" rel="noreferrer" style={{
                 marginLeft: `20px`
               }}>
                 <svg width="30" height="28" class="calendar__svg" viewBox="0 0 30 28" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -73,22 +73,22 @@ const Accordions = () => (
             </div>
               <ul>
                 <li>
-                  <a href="#" className="accordion__link">
+                  <a href="#" target="_blank" rel="noreferrer" className="accordion__link">
                     link to restaurant
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="accordion__link">
+                  <a href="#" target="_blank" rel="noreferrer" className="accordion__link">
                     link to restaurant
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="accordion__link">
+                  <a href="#" target="_blank" rel="noreferrer" className="accordion__link">
                     link to restaurant
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="accordion__link">
+                  <a href="#" target="_blank" rel="noreferrer" className="accordion__link">
                     link to restaurant
                   </a>
                 </li>
@@ -97,7 +97,7 @@ const Accordions = () => (
             <div className="accordion__component">
               <div className="accordion__date">
                 Tues, July <span style={{margin: `0 15px`}}>|</span> 11AM - 12PM
-                <a href="#" style={{
+                <a href="https://www.google.com/calendar/render?action=TEMPLATE&text=Test+Event&details=This+is+a+test+event&location=Central+Park%0ADurham%2C+NC&dates=20200815T153000Z%2F20200815T163800Z" target="_blank" rel="noreferrer" style={{
                   marginLeft: `20px`
                 }}>
                   <svg width="30" height="28" class="calendar__svg" viewBox="0 0 30 28" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -117,22 +117,22 @@ const Accordions = () => (
               </div>
                 <ul>
                   <li>
-                    <a href="#" className="accordion__link">
+                    <a href="#" target="_blank" rel="noreferrer" className="accordion__link">
                       link to restaurant
                     </a>
                   </li>
                   <li>
-                    <a href="#" className="accordion__link">
+                    <a href="#" target="_blank" rel="noreferrer" className="accordion__link">
                       link to restaurant
                     </a>
                   </li>
                   <li>
-                    <a href="#" className="accordion__link">
+                    <a href="#" target="_blank" rel="noreferrer" className="accordion__link">
                       link to restaurant
                     </a>
                   </li>
                   <li>
-                    <a href="#" className="accordion__link">
+                    <a href="#" target="_blank" rel="noreferrer" className="accordion__link">
                       link to restaurant
                     </a>
                   </li>
@@ -141,7 +141,7 @@ const Accordions = () => (
               <div className="accordion__component">
                 <div className="accordion__date">
                   Tues, July <span style={{margin: `0 15px`}}>|</span> 11AM - 12PM
-                  <a href="#" style={{
+                  <a href="https://www.google.com/calendar/render?action=TEMPLATE&text=Test+Event&details=This+is+a+test+event&location=Central+Park%0ADurham%2C+NC&dates=20200815T153000Z%2F20200815T163800Z" style={{
                     marginLeft: `20px`
                   }}>
                     <svg class="calendar__svg" viewBox="0 0 30 28" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -161,22 +161,22 @@ const Accordions = () => (
                 </div>
                   <ul>
                     <li>
-                      <a href="#" className="accordion__link">
+                      <a href="#" target="_blank" rel="noreferrer" className="accordion__link">
                         link to restaurant
                       </a>
                     </li>
                     <li>
-                      <a href="#" className="accordion__link">
+                      <a href="#" target="_blank" rel="noreferrer" className="accordion__link">
                         link to restaurant
                       </a>
                     </li>
                     <li>
-                      <a href="#" className="accordion__link">
+                      <a href="#" target="_blank" rel="noreferrer" className="accordion__link">
                         link to restaurant
                       </a>
                     </li>
                     <li>
-                      <a href="#" className="accordion__link">
+                      <a href="#" target="_blank" rel="noreferrer" className="accordion__link">
                         link to restaurant
                       </a>
                     </li>
@@ -201,7 +201,7 @@ const Accordions = () => (
           <div className="accordion__component">
             <div className="accordion__date">
               Tues, July <span style={{margin: `0 15px`}}>|</span> 11AM - 12PM
-              <a href="#" style={{
+              <a href="https://www.google.com/calendar/render?action=TEMPLATE&text=Test+Event&details=This+is+a+test+event&location=Central+Park%0ADurham%2C+NC&dates=20200815T153000Z%2F20200815T163800Z" style={{
                 marginLeft: `20px`
               }}>
                 <svg width="30" height="28" class="calendar__svg" viewBox="0 0 30 28" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -221,22 +221,22 @@ const Accordions = () => (
             </div>
               <ul>
                 <li>
-                  <a href="#" className="accordion__link">
+                  <a href="#" target="_blank" rel="noreferrer" className="accordion__link">
                     link to restaurant
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="accordion__link">
+                  <a href="#" target="_blank" rel="noreferrer" className="accordion__link">
                     link to restaurant
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="accordion__link">
+                  <a href="#" target="_blank" rel="noreferrer" className="accordion__link">
                     link to restaurant
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="accordion__link">
+                  <a href="#" target="_blank" rel="noreferrer" className="accordion__link">
                     link to restaurant
                   </a>
                 </li>
@@ -245,7 +245,7 @@ const Accordions = () => (
             <div className="accordion__component">
               <div className="accordion__date">
                 Tues, July <span style={{margin: `0 15px`}}>|</span> 11AM - 12PM
-                <a href="#" style={{
+                <a href="https://www.google.com/calendar/render?action=TEMPLATE&text=Test+Event&details=This+is+a+test+event&location=Central+Park%0ADurham%2C+NC&dates=20200815T153000Z%2F20200815T163800Z" style={{
                   marginLeft: `20px`
                 }}>
                   <svg width="30" height="28" class="calendar__svg" viewBox="0 0 30 28" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -265,22 +265,22 @@ const Accordions = () => (
               </div>
                 <ul>
                   <li>
-                    <a href="#" className="accordion__link">
+                    <a href="#" target="_blank" rel="noreferrer" className="accordion__link">
                       link to restaurant
                     </a>
                   </li>
                   <li>
-                    <a href="#" className="accordion__link">
+                    <a href="#" target="_blank" rel="noreferrer" className="accordion__link">
                       link to restaurant
                     </a>
                   </li>
                   <li>
-                    <a href="#" className="accordion__link">
+                    <a href="#" target="_blank" rel="noreferrer" className="accordion__link">
                       link to restaurant
                     </a>
                   </li>
                   <li>
-                    <a href="#" className="accordion__link">
+                    <a href="#" target="_blank" rel="noreferrer" className="accordion__link">
                       link to restaurant
                     </a>
                   </li>
@@ -289,7 +289,7 @@ const Accordions = () => (
               <div className="accordion__component">
                 <div className="accordion__date">
                   Tues, July <span style={{margin: `0 15px`}}>|</span> 11AM - 12PM
-                  <a href="#" style={{
+                  <a href="https://www.google.com/calendar/render?action=TEMPLATE&text=Test+Event&details=This+is+a+test+event&location=Central+Park%0ADurham%2C+NC&dates=20200815T153000Z%2F20200815T163800Z" style={{
                     marginLeft: `20px`
                   }}>
                     <svg width="30" height="28" class="calendar__svg" viewBox="0 0 30 28" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -309,22 +309,22 @@ const Accordions = () => (
                 </div>
                   <ul>
                     <li>
-                      <a href="#" className="accordion__link">
+                      <a href="#" target="_blank" rel="noreferrer" className="accordion__link">
                         link to restaurant
                       </a>
                     </li>
                     <li>
-                      <a href="#" className="accordion__link">
+                      <a href="#" target="_blank" rel="noreferrer" className="accordion__link">
                         link to restaurant
                       </a>
                     </li>
                     <li>
-                      <a href="#" className="accordion__link">
+                      <a href="#" target="_blank" rel="noreferrer" className="accordion__link">
                         link to restaurant
                       </a>
                     </li>
                     <li>
-                      <a href="#" className="accordion__link">
+                      <a href="#" target="_blank" rel="noreferrer" className="accordion__link">
                         link to restaurant
                       </a>
                     </li>
