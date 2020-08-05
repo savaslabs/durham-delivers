@@ -441,17 +441,20 @@ ul li a:hover::after {
 	height: calc(100vh - 75px);
 }
 
+.footer__tag-wrapper {
+		max-width: 260px;
+		display: flex;
+		align-items: center;
+		flex-wrap: nowrap;
+}
+
 .footer__tag {
 		font-family: 'Heebo', 'Helvetica', sans-serif;
-		font-weight: 500;
+		font-weight: 600;
 		font-size: 21px;
 		line-height: 31px;
 		letter-spacing: 0.01em;
 		margin-bottom: 10px;
-}
-
-.footer__section {
-	width: 50%;
 }
 
 .savas__logo {
@@ -478,7 +481,7 @@ ul li a:hover::after {
 }
 
 .hamburger input:checked ~ .main-menu {
-	display: block;
+	display: flex;
 }
 
 .main-menu__inner {
@@ -547,6 +550,10 @@ ul li a:hover::after {
 
 	.hamburger__wrapper {
 		display: block;
+	}
+
+	.footer__tag-wrapper {
+		margin: 0 auto;
 	}
 }
 
@@ -649,10 +656,6 @@ ul li a:hover::after {
 		font-size: 18px;
 	}
 
-	.footer__tag {
-		display: none;
-	}
-
 	.footer__tag--menu {
 		display: block;
 		width: 100%;
@@ -665,10 +668,6 @@ ul li a:hover::after {
 		margin: 0 auto;
 	}
 
-	.footer__section--one {
-		margin-bottom: 50px;
-	}
-
 	.logo__container {
 		position: relative;
 		margin-left: 0;
@@ -678,6 +677,16 @@ ul li a:hover::after {
 	.logo__container svg {
 		height: 170px;
 		margin-left: 50px;
+	}
+
+	.footer__tag {
+		margin: 0 auto 10px auto;
+	}
+
+	.footer__tag-wrapper {
+		flex-wrap: wrap;
+		max-width: 300px;
+		padding: 0 20px;
 	}
 }
 

@@ -36,7 +36,7 @@ const Hamburger = () => (
       }}>
         <div className="footer__section footer__section--one">
           <div className="footer__tag footer__tag--menu">
-          Designed and Crafted by:
+          Website delivered by
           </div>
           <a href="https://savaslabs.com">
             <svg width="178" height="100" viewBox="0 0 178 100" fill="none" xmlns="http://www.w3.org/2000/svg">

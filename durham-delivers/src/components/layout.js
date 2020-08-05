@@ -45,13 +45,7 @@ const Layout = ({ children }) => {
           margin: `0 auto`
         }}
         >
-          <div style={{
-            maxWidth: `300px`,
-            display: `flex`,
-            justifyContent: `space-between`,
-            alignItems: `center`,
-            flexWrap: `nowrap`
-          }}>
+          <div className="footer__tag-wrapper">
           <div className="footer__tag">
           Website delivered by
           </div>
