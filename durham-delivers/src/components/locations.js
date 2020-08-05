@@ -3,7 +3,7 @@ import Background from "../images/fork-bkgr.jpg"
 import Park1 from "../images/park-1.png"
 
 const Locations = () => (
-  <div className="locations__wrapper"
+  <div className="locations__wrapper" id="local-pick-up"
     style={{
       backgroundImage: `url(${Background})`,
     }}

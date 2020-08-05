@@ -35,6 +35,7 @@ export const items = [
 ];
 
 const Accordions = () => (
+  <div id="calendar">
   <Accordion className="accordion" allowZeroExpanded>
     <AccordionItem>
       <AccordionItemHeading>
@@ -333,6 +334,7 @@ const Accordions = () => (
         </AccordionItemPanel>
     </AccordionItem>
   </Accordion>
+  </div>
 )
 
 export default Accordions

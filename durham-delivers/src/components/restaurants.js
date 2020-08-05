@@ -2,7 +2,7 @@ import React from "react"
 import DurhamImg from "../images/durham-img.jpg"
 
 const Restaurants = () => (
-  <div>
+  <div id="participating-restaurants">
     <div className="order__container">
       <h2>
        Participating Restaurants
