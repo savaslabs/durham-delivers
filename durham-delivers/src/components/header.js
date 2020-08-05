@@ -15,15 +15,7 @@ const Header = () => (
   <Hamburger />
     <div className="header__container">
       <h1>
-        Order safe, pick up safe and stay safe with&nbsp;<br />
-         <span
-          style={{
-            color: `white`,
-            borderBottom: `11px solid #FFFFFF`
-          }}
-        >
-        Durham Delivers.
-        </span>
+        Delivery from your favorite, independent Durham restaurants.
       </h1>
       <div className="logo__container">
         <svg width="244" height="277" viewBox="0 0 244 277" fill="none" xmlns="http://www.w3.org/2000/svg">

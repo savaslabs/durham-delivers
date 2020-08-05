@@ -35,7 +35,7 @@ export const items = [
 ];
 
 const Accordions = () => (
-  <Accordion className="accordion">
+  <Accordion className="accordion" allowZeroExpanded>
     <AccordionItem>
       <AccordionItemHeading>
         <AccordionItemButton style={{

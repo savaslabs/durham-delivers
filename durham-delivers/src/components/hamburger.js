@@ -18,7 +18,7 @@ const Hamburger = () => (
           Local Pick Up
         </a>
         <a href="#order-local">
-          Order Local
+          Participating Restaurants
         </a>
         <a href="#Calendar">
           Calendar
