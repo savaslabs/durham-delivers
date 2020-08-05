@@ -7,7 +7,7 @@ const HowTo = () => (
     </h2>
     <ol>
       <li>
-        Find out where and when your favorite local restaurant delivers to a location near you.<br />See the <a href="#calendar">calendar below</a>
+        Find out where and when your favorite local restaurant delivers to a location near you.<br />See the <a href="#calendar">calendar below</a>.
       </li>
       <li>
         Place your order with the restaurant. Let them know it’s for a Durham Delivers event.

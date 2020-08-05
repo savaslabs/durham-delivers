@@ -183,7 +183,12 @@ ul li a:hover::after {
 	position: absolute;
 	margin-left: 70%;
 	top: auto;
-	bottom: 100px;
+	bottom: 10%;
+}
+
+.logo {
+	width: 245px;
+	height: 100%;
 }
 
 .hamburger {
@@ -510,9 +515,17 @@ ul li a:hover::after {
 }
 
 @media screen and (max-width: 1080px) {
-
 	h1 {
 		font-size: 48px;
+	}
+
+	.header__container {
+		max-width: 700px;
+	}
+
+	.logo {
+		width: 150px;
+		height: 100%;
 	}
 
 	.warning {
@@ -523,27 +536,17 @@ ul li a:hover::after {
 		width: 50%;
 	}
 
+	.logo__container {
+		margin-left: 60%;
+		bottom: 25%;
+	}
+
 	.cover__image {
 		height: 50vh;
 	}
 
 	.hamburger__wrapper {
 		display: block;
-	}
-}
-
-@media screen and (max-width: 944px) {
-	.header__container {
-		flex-direction: column;
-		justify-content: center;
-	}
-
-	.header__container br {
-		display: none;
-	}
-
-	.logo__container {
-		bottom: 60px;
 	}
 }
 
@@ -576,6 +579,11 @@ ul li a:hover::after {
 	  margin-right: 15px;
 		font-weight: 600;
 		left: -50px;
+	}
+
+	.header__container {
+		max-width: 100%;
+		margin: 0;
 	}
 
 	.scroll__container {
@@ -663,22 +671,43 @@ ul li a:hover::after {
 
 	.logo__container {
 		position: relative;
-		margin-left: 60%;
+		margin-left: 0;
+		margin-top: 50%;
 	}
 
 	.logo__container svg {
 		height: 170px;
-		margin-top: 100px;
 		margin-left: 50px;
 	}
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 414px) {
+	h1 {
+		margin-top: 25%;
+		margin-left: 20px;
+		margin-right: 20px;
+	}
 	.location__image {
 		height: 153px;
 	}
 
 	.cover__image {
 		height: 25vh;
+	}
+
+	.header__container {
+		flex-wrap: wrap;
+		padding: 0;
+	}
+
+	.logo__container {
+		position: relative;
+	}
+}
+
+@media screen and (max-width: 320px) {
+	h1 {
+		font-size: 30px;
+		line-height: 36px;
 	}
 }
