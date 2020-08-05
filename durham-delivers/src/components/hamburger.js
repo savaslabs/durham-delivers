@@ -1,8 +1,8 @@
 import React from "react"
 
 const Hamburger = () => (
-  <div className="hamburger">
-  <input type="checkbox" />
+  <div className="hamburger" id="menu">
+  <input className="checkbox" type="checkbox" />
     <div className="hamburger__wrapper">
       <div className="hamburger__bars">
         <span></span>

@@ -471,6 +471,7 @@ ul li a:hover::after {
 }
 
 .main-menu__inner a {
+	transition: color .4s ease;
 	font-family: 'Archivo', 'Helvetica', sans-serif;
 	font-weight: 600;
 	font-size: 24px;
@@ -483,6 +484,10 @@ ul li a:hover::after {
 	text-decoration: none;
 	width: 100%;
 	text-align: center;
+}
+
+.main-menu__inner a:hover {
+	color: #84a673;
 }
 
 .main-menu ul li a:after {
@@ -505,6 +510,10 @@ ul li a:hover::after {
 
 	.cover__image {
 		height: 50vh;
+	}
+
+	.hamburger__wrapper {
+		display: block;
 	}
 }
 
@@ -635,10 +644,6 @@ ul li a:hover::after {
 
 	.footer__section--one {
 		margin-bottom: 50px;
-	}
-
-.hamburger__wrapper {
-		display: block;
 	}
 
 	.logo__container {
