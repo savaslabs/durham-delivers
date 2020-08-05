@@ -5,11 +5,7 @@ const Restaurants = () => (
   <div>
     <div className="order__container">
       <h2>
-<<<<<<< HEAD
        Participating Restaurants
-=======
-       Order Local
->>>>>>> master
       </h2>
       <div>
         <ul style={{

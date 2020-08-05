@@ -38,14 +38,10 @@ const Locations = () => (
             <h4>
               Park One
             </h4>
-<<<<<<< HEAD
             <p style={{
               fontFamily: `'Heebo', 'Helvetica', sans-serif`,
               fontSize: `18px`
             }}>
-=======
-            <p>
->>>>>>> master
               501 Foster St, Durham, NC 27701
             </p>
           </div>
@@ -63,14 +59,10 @@ const Locations = () => (
             <h4>
               Park Two
             </h4>
-<<<<<<< HEAD
             <p style={{
               fontFamily: `'Heebo', 'Helvetica', sans-serif`,
               fontSize: `18px`
             }}>
-=======
-            <p>
->>>>>>> master
               501 Foster St, Durham, NC 27701
             </p>
           </div>
@@ -88,14 +80,10 @@ const Locations = () => (
             <h4>
               Park Three
             </h4>
-<<<<<<< HEAD
             <p style={{
               fontFamily: `'Heebo', 'Helvetica', sans-serif`,
               fontSize: `18px`
             }}>
-=======
-            <p>
->>>>>>> master
               501 Foster St, Durham, NC 27701
             </p>
           </div>
@@ -113,14 +101,10 @@ const Locations = () => (
             <h4>
               Park Four
             </h4>
-<<<<<<< HEAD
             <p style={{
               fontFamily: `'Heebo', 'Helvetica', sans-serif`,
               fontSize: `18px`
             }}>
-=======
-            <p>
->>>>>>> master
               501 Foster St, Durham, NC 27701
             </p>
           </div>
