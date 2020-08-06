@@ -100,7 +100,6 @@ ol {
 }
 
 ol li {
-	display: flex;
 	position: relative;
   font-family: 'Heebo', 'Helvetica', sans-serif;
   font-size: 24px;
@@ -109,13 +108,15 @@ ol li {
   letter-spacing: 0.01em;
   margin-bottom: 30px;
   color: #3C827A;
-  display: block;
 	margin-left: 100px;
 }
 
 ol li:before {
 	font-family: 'Archivo', 'Helvetica', sans-serif;
 	position: absolute;
+	display: block;
+	top: 50%;
+	transform: translate(0, -50%);
   text-align: center;
   width: 20px;
 	height: 20px;
@@ -687,6 +688,15 @@ ul li a:hover::after {
 		flex-wrap: wrap;
 		max-width: 300px;
 		padding: 0 20px;
+	}
+
+	ol li br {
+		display: none;
+	}
+
+	ol li:before {
+		margin-left: -10px;
+		padding: 8px 0px;
 	}
 }
 
