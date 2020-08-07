@@ -1,7 +1,7 @@
 import React from "react"
 
 const Hamburger = () => (
-  <div className="hamburger" id="menu">
+  <div className="hamburger">
   <input className="checkbox" type="checkbox" />
     <div className="hamburger__wrapper" id="hamburger">
       <div className="hamburger__bars">
@@ -9,7 +9,7 @@ const Hamburger = () => (
         <span></span>
       </div>
     </div>
-    <menu className="main-menu" role="navigation">
+    <menu className="main-menu" role="navigation" id="menu">
       <div className="main-menu__inner">
         <a href="#how-it-works">
           How it works
