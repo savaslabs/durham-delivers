@@ -1,5 +1,4 @@
 module.exports = {
-  pathPrefix: '/durham-delivers',
   siteMetadata: {
     title: `Durham Delivers`,
     description: `Duke Delivers partners with local restaurants to create community food deliveries to parks and other spaces in Durham`,
