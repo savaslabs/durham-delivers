@@ -309,6 +309,7 @@ ul li a:hover::after {
 	transition: fill .5s ease;
 }
 
+.calendar__btn:visited .calendar__svg .calendar__svg-part,
 .calendar__svg:hover .calendar__svg-part {
 	fill: #D55051;
 }
