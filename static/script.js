@@ -1,4 +1,4 @@
-if ( typeof window !== `undefined` ) {
+window.onload = function() {
 
   function checkAll1() {
 
@@ -19,10 +19,9 @@ if ( typeof window !== `undefined` ) {
     this.onclick = checkAll1;
   }
 
-  const el = document.getElementById('menu');
+  let el = document.getElementById('menu');
   el.onclick = uncheckAll1;
 
-  //use window.scrollY
   let scrollpos = window.scrollY;
   const header = document.getElementById('hamburger');
 
