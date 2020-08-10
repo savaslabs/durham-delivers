@@ -49,14 +49,14 @@ class Hamburger extends React.Component {
   render () {
     return (
       <div className="hamburger" id="menu">
-      <input className="checkbox" type="checkbox" />
+      <input className="checkbox" type="checkbox" aria-hidden="true" aria-label="Open the menu" />
         <div className="hamburger__wrapper" id="hamburger">
           <div className="hamburger__bars">
             <span></span>
             <span></span>
           </div>
         </div>
-        <menu className="main-menu" role="navigation">
+        <menu className="main-menu" role="navigation" aria-label="Main menu">
           <div className="main-menu__inner">
             <a href="#how-it-works">
               How it works
