@@ -315,7 +315,8 @@ ul li a:hover::after {
 }
 
 .calendar__btn:active .calendar__svg .calendar__svg-part,
-.calendar__btn:visited .calendar__svg .calendar__svg-part,
+.calendar__btn:visited ~ .calendar__svg .calendar__svg-part,
+.calendar__btn:focus .calendar__svg .calendar__svg-part,
 .calendar__svg:hover .calendar__svg-part {
 	fill: #D55051;
 }
