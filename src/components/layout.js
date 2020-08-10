@@ -38,7 +38,8 @@ const Layout = ({ children }) => {
           padding: `30px 0`,
           marginTop: `130px`,
           backgroundRepeat: `repeat`,
-          backgroundPosition:  `center`
+          backgroundSize: `length`,
+          backgroundPosition:  `top`
         }}>
         <div style={{
           maxWidth: `1080px`,
