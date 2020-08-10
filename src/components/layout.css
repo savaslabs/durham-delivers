@@ -130,7 +130,12 @@ ol li:before {
 }
 
 ol li a {
-	color: #84A673;
+	transition: color .5s ease;
+	color: #3C827A;
+}
+
+ol li a:hover {
+	color: #4F842A;
 }
 
 ul li {
@@ -309,6 +314,7 @@ ul li a:hover::after {
 	transition: fill .5s ease;
 }
 
+.calendar__btn:active .calendar__svg .calendar__svg-part,
 .calendar__btn:visited .calendar__svg .calendar__svg-part,
 .calendar__svg:hover .calendar__svg-part {
 	fill: #D55051;
