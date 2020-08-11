@@ -35,9 +35,9 @@ const Locations = () => (
           <div style={{
             padding: `10px 0 10px 8px`
           }}>
-            <h4>
+            <p className="park__title">
               Park One
-            </h4>
+            </p>
             <p style={{
               fontFamily: `'Heebo', 'Helvetica', sans-serif`,
               fontSize: `18px`
@@ -56,9 +56,9 @@ const Locations = () => (
           <div style={{
             padding: `10px 0 10px 8px`
           }}>
-            <h4>
+            <p className="park__title">
               Park Two
-            </h4>
+            </p>
             <p style={{
               fontFamily: `'Heebo', 'Helvetica', sans-serif`,
               fontSize: `18px`
@@ -77,9 +77,9 @@ const Locations = () => (
           <div style={{
             padding: `10px 0 10px 8px`
           }}>
-            <h4>
+            <p className="park__title">
               Park Three
-            </h4>
+            </p>
             <p style={{
               fontFamily: `'Heebo', 'Helvetica', sans-serif`,
               fontSize: `18px`
@@ -98,9 +98,9 @@ const Locations = () => (
           <div style={{
             padding: `10px 0 10px 8px`
           }}>
-            <h4>
+            <p className="park__title">
               Park Four
-            </h4>
+            </p>
             <p style={{
               fontFamily: `'Heebo', 'Helvetica', sans-serif`,
               fontSize: `18px`
