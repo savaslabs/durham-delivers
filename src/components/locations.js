@@ -16,7 +16,7 @@ const Locations = () => (
       }}
     >
       <h2>
-        Local Pick Up
+        Delivery Locations
       </h2>
       <div
         style={{

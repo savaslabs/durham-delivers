@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Durham Delivers`,
-    description: `Duke Delivers partners with local restaurants to create community food deliveries to parks and other spaces in Durham`,
+    description: `Durham Delivers partners with local restaurants to create community food deliveries to parks and other spaces in Durham`,
     author: `@gatsbyjs`,
   },
   plugins: [
@@ -26,6 +26,14 @@ module.exports = {
         display: `minimal-ui`,
         icon: `src/images/favicon.png`, // This path is relative to the root of the site.
       },
+    },
+    {
+      resolve: 'gatsby-source-google-sheets',
+      options: {
+          spreadsheetId: '1foz_EJl06kb1dP5aREFa0g-olgddCE3g9EdTwCOT6uo',
+          worksheetTitle: 'Durham Delivers Events',
+          credentials: require('./credentials/client_secret.json')
+        }
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
