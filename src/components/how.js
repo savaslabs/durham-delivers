@@ -2,6 +2,15 @@ import React from "react"
 
 const HowTo = () => (
   <div className="how__container" id="how-it-works">
+  <div className="intro">
+    <p className="intro__quote">
+      "Restaurants are barely surviving. Delivery apps will kill them."<br />
+      <a href="#" target="_blank" rel="noreferrer">- Washington Post (May 2020)</a>
+    </p>
+    <p>
+      Durham Delivers was created out of the need to help local restaurants whose dining rooms were shuttered due to COVID-19, get their food to customers. By grouping orders at one location and time, while eliminating hefty service fees levied by popular delivery apps, Durham Delivers provides a financially viable option for independent restaurants, while adding new delivery options for customers.
+    </p>
+  </div>
     <h2>
       How it Works
     </h2>

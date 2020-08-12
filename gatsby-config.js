@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Durham Delivers`,
-    description: `Duke Delivers partners with local restaurants to create community food deliveries to parks and other spaces in Durham`,
+    description: `Durham Delivers partners with local restaurants to create community food deliveries to parks and other spaces in Durham`,
     author: `@gatsbyjs`,
   },
   plugins: [

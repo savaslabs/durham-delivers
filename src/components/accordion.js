@@ -1,6 +1,5 @@
 import React from 'react';
 import Calendar from '../components/calendar';
-import Events from '../components/events';
 import {
     Accordion,
     AccordionItem,
@@ -38,8 +37,8 @@ export const items = [
 
 const Accordions = () => (
   <div id="calendar">
-  <Accordion className="accordion" allowZeroExpanded>
-    <AccordionItem>
+  <Accordion className="accordion" allowZeroExpanded preExpanded={['a']}>
+    <AccordionItem uuid="a">
       <AccordionItemHeading>
         <AccordionItemButton style={{
           borderBottom: `2px solid #828282`,
@@ -178,7 +177,7 @@ const Accordions = () => (
             </div>
         </AccordionItemPanel>
     </AccordionItem>
-    <AccordionItem>
+    <AccordionItem uuid="b">
       <AccordionItemHeading>
         <AccordionItemButton style={{
           borderBottom: `2px solid #828282`,

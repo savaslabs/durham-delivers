@@ -304,6 +304,39 @@ ul li a:hover::after {
 	padding-top: 130px;
 }
 
+.intro {
+	max-width: 1012px;
+	margin: 0 auto 90px auto;
+}
+
+.intro p {
+	font-family: 'Heebo', 'Helvetica', sans-serif;
+	font-weight: 400;
+	line-height: 150%;
+}
+
+.intro p.intro__quote {
+	font-family: 'Archivo', 'Helvetica', sans-serif;
+	font-size: 27px;
+	line-height: 120%;
+	color: #3C827A;
+	text-align: center;
+	font-weight: 700;
+}
+
+.intro__quote a {
+	display: block;
+	transition: color .4s ease;
+	font-size: 21px;
+	font-weight: 600;
+	color: #3C827A;
+	margin: 20px auto 50px auto;
+}
+
+.intro__quote a:hover {
+	color: #4F842A;
+}
+
 .calendar__svg {
 	width: 30px;
 	height: 28px;
@@ -418,7 +451,7 @@ ul li a:hover::after {
 .how__container {
 	max-width: 1080px;
 	padding: 0 20px;
-	margin: 130px auto;
+	margin: 90px auto 130px auto;
 }
 
 .locations__wrapper {
@@ -446,8 +479,8 @@ ul li a:hover::after {
 
 .cover__image {
 	background-size: cover;
-	background-position: center;
-	height: calc(100vh - 75px);
+	background-position: bottom;
+	height: 303px;
 }
 
 .footer__tag-wrapper {
