@@ -27,6 +27,14 @@ module.exports = {
         icon: `src/images/favicon.png`, // This path is relative to the root of the site.
       },
     },
+    {
+      resolve: 'gatsby-source-google-sheets',
+      options: {
+          spreadsheetId: '1foz_EJl06kb1dP5aREFa0g-olgddCE3g9EdTwCOT6uo',
+          worksheetTitle: 'Durham Delivers Events',
+          credentials: require('./credentials/client_secret.json')
+        }
+    },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     `gatsby-plugin-offline`,
