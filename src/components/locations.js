@@ -1,11 +1,13 @@
 import React from "react"
-import Background from "../images/fork-bkgr.jpg"
+import Background from "../images/utensil-bkgr.png"
 import Park1 from "../images/park-1.png"
 
 const Locations = () => (
   <div className="locations__wrapper" id="local-pick-up"
     style={{
       backgroundImage: `url(${Background})`,
+      backgroundColor: `#D9F0EC`,
+      backgroundSize: `contain`,
     }}
   >
     <div

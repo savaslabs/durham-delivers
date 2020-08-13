@@ -11,7 +11,7 @@ import { useStaticQuery, graphql } from "gatsby"
 
 import Header from "./header"
 import "./layout.css"
-import BackgroundImg from "../images/fork-bkgr.jpg"
+import BackgroundImg from "../images/utensil-bkgr.png"
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -35,11 +35,12 @@ const Layout = ({ children }) => {
         <main>{children}</main>
         <footer style={{
           backgroundImage: `url(${BackgroundImg})`,
+          backgroundColor: `#D9F0EC`,
           padding: `30px 0`,
           marginTop: `130px`,
           backgroundRepeat: `repeat`,
-          backgroundSize: `length`,
-          backgroundPosition:  `top`
+          backgroundSize: `cover`,
+          backgroundPosition:  `100% 5%`
         }}>
         <div style={{
           maxWidth: `1080px`,
@@ -54,7 +55,7 @@ const Layout = ({ children }) => {
               <a href="https://savaslabs.com" target="_blank" rel="noreferrer">
                 <svg className="savas__logo" viewBox="0 0 178 100" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <title>The Savas Labs logo</title>
-                  <g clip-path="url(#clip0)">
+                  <g clipPath="url(#clip0)">
                   <path d="M164.839 99.8921H39.9037C17.8665 99.8921 0 82.0257 0 59.9884V40.1996C0 18.1624 17.8665 0.295898 39.9037 0.295898H164.839C171.568 0.295898 177.025 5.75242 177.025 12.4822V87.7058C177.025 94.4356 171.568 99.8921 164.839 99.8921Z" fill="#221C35"/>
                   <path d="M34.6741 37.9576C36.4955 37.9576 37.9723 36.4812 37.9723 34.6595C37.9723 32.838 36.4955 31.3613 34.6741 31.3613C32.8527 31.3613 31.376 32.838 31.376 34.6595C31.376 36.4812 32.8527 37.9576 34.6741 37.9576Z" fill="#221C35"/>
                   <path d="M45.1336 37.9576C46.955 37.9576 48.4317 36.4812 48.4317 34.6595C48.4317 32.838 46.955 31.3613 45.1336 31.3613C43.3122 31.3613 41.8354 32.838 41.8354 34.6595C41.8354 36.4812 43.3122 37.9576 45.1336 37.9576Z" fill="#221C35"/>
