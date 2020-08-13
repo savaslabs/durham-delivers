@@ -53,7 +53,7 @@ const Accordions = () => (
           </div>
         </AccordionItemButton>
       </AccordionItemHeading>
-        <AccordionItemPanel class="accordion__panel">
+        <AccordionItemPanel className="accordion__panel">
         <div className="accordion__item-container">
           <div
             data-sal="slide-up"
@@ -63,7 +63,7 @@ const Accordions = () => (
           >
             <div className="accordion__date">
               Tues, July <span style={{margin: `0 15px`}}>|</span> 11AM - 12PM
-              <a href="https://www.google.com/calendar/render?action=TEMPLATE&text=Test+Event&details=This+is+a+test+event&location=Central+Park%0ADurham%2C+NC&dates=20200815T153000Z%2F20200815T163800Z" target="_blank" rel="noreferrer" class="calendar__btn" style={{
+              <a href="https://www.google.com/calendar/render?action=TEMPLATE&text=Test+Event&details=This+is+a+test+event&location=Central+Park%0ADurham%2C+NC&dates=20200815T153000Z%2F20200815T163800Z" target="_blank" rel="noreferrer" className="calendar__btn" style={{
                 marginLeft: `20px`
               }}>
                 <Calendar />
@@ -109,7 +109,7 @@ const Accordions = () => (
             >
               <div className="accordion__date">
                 Tues, July <span style={{margin: `0 15px`}}>|</span> 11AM - 12PM
-                <a href="https://www.google.com/calendar/render?action=TEMPLATE&text=Test+Event&details=This+is+a+test+event&location=Central+Park%0ADurham%2C+NC&dates=20200815T153000Z%2F20200815T163800Z" target="_blank" rel="noreferrer" class="calendar__btn" style={{
+                <a href="https://www.google.com/calendar/render?action=TEMPLATE&text=Test+Event&details=This+is+a+test+event&location=Central+Park%0ADurham%2C+NC&dates=20200815T153000Z%2F20200815T163800Z" target="_blank" rel="noreferrer" className="calendar__btn" style={{
                   marginLeft: `20px`
                 }}>
                   <Calendar />
@@ -155,7 +155,7 @@ const Accordions = () => (
               >
                 <div className="accordion__date">
                   Tues, July <span style={{margin: `0 15px`}}>|</span> 11AM - 12PM
-                  <a href="https://www.google.com/calendar/render?action=TEMPLATE&text=Test+Event&details=This+is+a+test+event&location=Central+Park%0ADurham%2C+NC&dates=20200815T153000Z%2F20200815T163800Z" target="_blank" rel="noreferrer" class="calendar__btn" style={{
+                  <a href="https://www.google.com/calendar/render?action=TEMPLATE&text=Test+Event&details=This+is+a+test+event&location=Central+Park%0ADurham%2C+NC&dates=20200815T153000Z%2F20200815T163800Z" target="_blank" rel="noreferrer" className="calendar__btn" style={{
                     marginLeft: `20px`
                   }}>
                     <Calendar />
@@ -211,17 +211,16 @@ const Accordions = () => (
           </div>
         </AccordionItemButton>
       </AccordionItemHeading>
-        <AccordionItemPanel class="accordion__panel">
+        <AccordionItemPanel className="accordion__panel">
         <div className="accordion__item-container">
           <div
             data-sal="slide-up"
-            data-sal-delay="200"
             data-sal-easing="ease-in"
             className="accordion__component"
           >
             <div className="accordion__date">
               Tues, July <span style={{margin: `0 15px`}}>|</span> 11AM - 12PM
-              <a href="https://www.google.com/calendar/render?action=TEMPLATE&text=Test+Event&details=This+is+a+test+event&location=Central+Park%0ADurham%2C+NC&dates=20200815T153000Z%2F20200815T163800Z" target="_blank" rel="noreferrer" class="calendar__btn" style={{
+              <a href="https://www.google.com/calendar/render?action=TEMPLATE&text=Test+Event&details=This+is+a+test+event&location=Central+Park%0ADurham%2C+NC&dates=20200815T153000Z%2F20200815T163800Z" target="_blank" rel="noreferrer" className="calendar__btn" style={{
                 marginLeft: `20px`
               }}>
                 <Calendar />
@@ -267,7 +266,7 @@ const Accordions = () => (
             >
               <div className="accordion__date">
                 Tues, July <span style={{margin: `0 15px`}}>|</span> 11AM - 12PM
-                <a href="https://www.google.com/calendar/render?action=TEMPLATE&text=Test+Event&details=This+is+a+test+event&location=Central+Park%0ADurham%2C+NC&dates=20200815T153000Z%2F20200815T163800Z" target="_blank" rel="noreferrer" class="calendar__btn" style={{
+                <a href="https://www.google.com/calendar/render?action=TEMPLATE&text=Test+Event&details=This+is+a+test+event&location=Central+Park%0ADurham%2C+NC&dates=20200815T153000Z%2F20200815T163800Z" target="_blank" rel="noreferrer" className="calendar__btn" style={{
                   marginLeft: `20px`
                 }}>
                   <Calendar />
@@ -313,7 +312,7 @@ const Accordions = () => (
               >
                 <div className="accordion__date">
                   Tues, July <span style={{margin: `0 15px`}}>|</span> 11AM - 12PM
-                  <a href="https://www.google.com/calendar/render?action=TEMPLATE&text=Test+Event&details=This+is+a+test+event&location=Central+Park%0ADurham%2C+NC&dates=20200815T153000Z%2F20200815T163800Z" target="_blank" rel="noreferrer" class="calendar__btn" style={{
+                  <a href="https://www.google.com/calendar/render?action=TEMPLATE&text=Test+Event&details=This+is+a+test+event&location=Central+Park%0ADurham%2C+NC&dates=20200815T153000Z%2F20200815T163800Z" target="_blank" rel="noreferrer" className="calendar__btn" style={{
                     marginLeft: `20px`
                   }}>
                     <Calendar />

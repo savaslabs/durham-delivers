@@ -303,11 +303,11 @@ ul li a:hover::after {
 
 .accordion__component {
 	width: 50%;
-	padding-bottom: 150px;
+	padding-bottom: 60px;
 }
 
 .accordion__panel {
-	padding-top: 130px;
+	padding-top: 60px;
 }
 
 .intro {
@@ -380,6 +380,7 @@ ul li a:hover::after {
 	font-size: 50px;
 	color: #3C827A;
 	padding: 50px 0;
+	font-weight: 700;
 	text-align: center;
 }
 
@@ -526,7 +527,7 @@ ul li a:hover::after {
 	right: 0;
 	bottom: 0;
 	left: 0;
-	background-image: url('../images/fork-bkgr.jpg');
+	background-image: url('../images/utensil-bkgr.png');
 	background-size: cover;
 	text-align: center;
 	z-index: 3;
