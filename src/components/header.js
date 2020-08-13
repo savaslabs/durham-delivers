@@ -13,7 +13,11 @@ const Header = () => (
     }}
   >
   <Hamburger />
-    <div className="header__container">
+    <div className="header__container" id="header__container"
+      data-sal="fade"
+      data-sal-delay="300"
+      data-sal-easing="ease"
+    >
       <h1>
         Delivery from your favorite, independent Durham restaurants.
       </h1>
@@ -25,7 +29,11 @@ const Header = () => (
         </svg>
       </div>
     </div>
-    <div className="scroll__container">
+    <div className="scroll__container"
+      data-sal="fade"
+      data-sal-delay="800"
+      data-sal-easing="ease"
+    >
     <p
       style={{
         fontFamily: `'Lato', 'Helvetica', sans-serif`,

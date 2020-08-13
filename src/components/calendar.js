@@ -4,7 +4,7 @@ import ReactDOM from 'react-dom';
 const green = '#4CA897';
 const red = '#D55051';
 
-export default class Calendar extends React.Component{
+export default class Calendar extends React.Component {
   constructor(props) {
     super(props);
     this.state = { color: green };

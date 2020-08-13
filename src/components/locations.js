@@ -15,7 +15,11 @@ const Locations = () => (
         margin: `0 auto`,
       }}
     >
-      <h2>
+      <h2
+        data-sal="slide-up"
+        data-sal-delay="500"
+        data-sal-easing="ease-in"
+      >
         Delivery Locations
       </h2>
       <div
@@ -25,7 +29,12 @@ const Locations = () => (
           justifyContent: `space-between`
         }}
       >
-        <div className="location__item">
+        <div
+          data-sal="slide-up"
+          data-sal-delay="400"
+          data-sal-easing="ease-in"
+          className="location__item"
+        >
           <div className="location__image"
             style={{
               backgroundImage: `url(${Park1})`,
@@ -46,7 +55,12 @@ const Locations = () => (
             </p>
           </div>
         </div>
-        <div className="location__item">
+        <div
+          data-sal="slide-up"
+          data-sal-delay="500"
+          data-sal-easing="ease-in"
+          className="location__item"
+        >
           <div className="location__image"
             style={{
               backgroundImage: `url(${Park1})`,
@@ -67,7 +81,12 @@ const Locations = () => (
             </p>
           </div>
         </div>
-        <div className="location__item">
+        <div
+          data-sal="slide-up"
+          data-sal-delay="600"
+          data-sal-easing="ease-in"
+          className="location__item"
+        >
           <div className="location__image"
             style={{
               backgroundImage: `url(${Park1})`,
@@ -88,7 +107,12 @@ const Locations = () => (
             </p>
           </div>
         </div>
-        <div className="location__item">
+        <div
+          data-sal="slide-up"
+          data-sal-delay="400"
+          data-sal-easing="ease-in"
+          className="location__item"
+        >
           <div className="location__image"
             style={{
               backgroundImage: `url(${Park1})`,

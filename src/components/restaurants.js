@@ -4,7 +4,11 @@ import DurhamImg from "../images/durham-img.jpg"
 const Restaurants = () => (
   <div id="participating-restaurants">
     <div className="order__container">
-      <h2>
+      <h2
+        data-sal="slide-up"
+        data-sal-delay="400"
+        data-sal-easing="ease-in"
+      >
        Participating Restaurants
       </h2>
       <div>
@@ -12,7 +16,11 @@ const Restaurants = () => (
           marginRight: `100px`,
           display: `inline-block`
         }}>
-          <li>
+          <li
+            data-sal="slide-up"
+            data-sal-delay="400"
+            data-sal-easing="ease-in"
+          >
             <a href="#" style={{
               fontSize: `21px`,
               lineHeight: `46px`
@@ -20,7 +28,11 @@ const Restaurants = () => (
               Parts & Labor
             </a>
           </li>
-          <li>
+          <li
+            data-sal="slide-up"
+            data-sal-delay="400"
+            data-sal-easing="ease-in"
+          >
           <a href="#" style={{
             fontSize: `21px`,
             lineHeight: `46px`
@@ -28,7 +40,11 @@ const Restaurants = () => (
               Saladelia Cafe
             </a>
           </li>
-          <li>
+          <li
+            data-sal="slide-up"
+            data-sal-delay="400"
+            data-sal-easing="ease-in"
+          >
           <a href="#" style={{
             fontSize: `21px`,
             lineHeight: `46px`
@@ -36,7 +52,11 @@ const Restaurants = () => (
               The Mad Hatter’s Cafe + Bakeshop
             </a>
           </li>
-          <li>
+          <li
+            data-sal="slide-up"
+            data-sal-delay="400"
+            data-sal-easing="ease-in"
+          >
           <a href="#" style={{
             fontSize: `21px`,
             lineHeight: `46px`
@@ -44,7 +64,11 @@ const Restaurants = () => (
               Goorsha Durham
             </a>
           </li>
-          <li>
+          <li
+            data-sal="slide-up"
+            data-sal-delay="400"
+            data-sal-easing="ease-in"
+          >
           <a href="#" style={{
             fontSize: `21px`,
             lineHeight: `46px`
@@ -52,7 +76,11 @@ const Restaurants = () => (
               COPA
             </a>
           </li>
-          <li>
+          <li
+            data-sal="slide-up"
+            data-sal-delay="400"
+            data-sal-easing="ease-in"
+          >
           <a href="#" style={{
             fontSize: `21px`,
             lineHeight: `46px`
@@ -60,7 +88,11 @@ const Restaurants = () => (
               Zweli’s Kitchen
             </a>
           </li>
-          <li>
+          <li
+            data-sal="slide-up"
+            data-sal-delay="400"
+            data-sal-easing="ease-in"
+          >
           <a href="#" style={{
             fontSize: `21px`,
             lineHeight: `46px`
@@ -68,7 +100,11 @@ const Restaurants = () => (
               Resturant 12
             </a>
           </li>
-          <li>
+          <li
+            data-sal="slide-up"
+            data-sal-delay="400"
+            data-sal-easing="ease-in"
+          >
           <a href="#" style={{
             fontSize: `21px`,
             lineHeight: `46px`
@@ -81,7 +117,11 @@ const Restaurants = () => (
           marginRight: `50px`,
           display: `inline-block`
         }}>
-          <li>
+        <li
+          data-sal="slide-up"
+          data-sal-delay="400"
+          data-sal-easing="ease-in"
+        >
             <a href="#" style={{
               fontSize: `21px`,
               lineHeight: `46px`
@@ -89,7 +129,11 @@ const Restaurants = () => (
               Blue Corn Cafe
             </a>
           </li>
-          <li>
+          <li
+            data-sal="slide-up"
+            data-sal-delay="400"
+            data-sal-easing="ease-in"
+          >
           <a href="#" style={{
             fontSize: `21px`,
             lineHeight: `46px`
@@ -97,7 +141,11 @@ const Restaurants = () => (
               Toast
             </a>
           </li>
-          <li>
+          <li
+            data-sal="slide-up"
+            data-sal-delay="400"
+            data-sal-easing="ease-in"
+          >
           <a href="#" style={{
             fontSize: `21px`,
             lineHeight: `46px`
@@ -105,7 +153,11 @@ const Restaurants = () => (
               Bull City Burger and Brewery
             </a>
           </li>
-          <li>
+          <li
+            data-sal="slide-up"
+            data-sal-delay="400"
+            data-sal-easing="ease-in"
+          >
           <a href="#" style={{
             fontSize: `21px`,
             lineHeight: `46px`
@@ -113,7 +165,11 @@ const Restaurants = () => (
               Pompieri Pizza
             </a>
           </li>
-          <li>
+          <li
+            data-sal="slide-up"
+            data-sal-delay="400"
+            data-sal-easing="ease-in"
+          >
           <a href="#" style={{
             fontSize: `21px`,
             lineHeight: `46px`
@@ -121,7 +177,11 @@ const Restaurants = () => (
               Bull City Solera and Taproom
             </a>
           </li>
-          <li>
+          <li
+            data-sal="slide-up"
+            data-sal-delay="400"
+            data-sal-easing="ease-in"
+          >
           <a href="#" style={{
             fontSize: `21px`,
             lineHeight: `46px`
@@ -129,7 +189,11 @@ const Restaurants = () => (
               Resturant 14
             </a>
           </li>
-          <li>
+          <li
+            data-sal="slide-up"
+            data-sal-delay="400"
+            data-sal-easing="ease-in"
+          >
           <a href="#" style={{
             fontSize: `21px`,
             lineHeight: `46px`
@@ -137,7 +201,11 @@ const Restaurants = () => (
               Resturant 15
             </a>
           </li>
-          <li>
+          <li
+            data-sal="slide-up"
+            data-sal-delay="400"
+            data-sal-easing="ease-in"
+          >
           <a href="#" style={{
             fontSize: `21px`,
             lineHeight: `46px`

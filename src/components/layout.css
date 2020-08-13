@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@700&family=Heebo&family=Lato:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;700&family=Heebo&family=Lato:wght@400;500;600;700&display=swap');
 /* http://meyerweb.com/eric/tools/css/reset/
-   v2.0 | 20110126
-   License: none (public domain)
+v2.0 | 20110126
+License: none (public domain)
 */
 
 html, body, div, span, applet, object, iframe,
@@ -56,58 +56,58 @@ h1 {
 }
 
 h2 {
-  font-family: 'Archivo', 'Helvetica', sans-serif;
-  font-weight: 600;
-  font-size: 36px;
-  line-height: 60px;
-  letter-spacing: 0.01em;
-  color: #3C827A;
-  margin-bottom: 30px;
+	font-family: 'Archivo', 'Helvetica', sans-serif;
+	font-weight: 600;
+	font-size: 36px;
+	line-height: 60px;
+	letter-spacing: 0.01em;
+	color: #3C827A;
+	margin-bottom: 30px;
 }
 
 h3 {
-  font-family: 'Archivo', 'Helvetica', sans-serif;
-  font-weight: 600;
-  font-size: 36px;
-  line-height: 54px;
-  letter-spacing: 0.01em;
-  color: #3C827A;
+	font-family: 'Archivo', 'Helvetica', sans-serif;
+	font-weight: 600;
+	font-size: 36px;
+	line-height: 54px;
+	letter-spacing: 0.01em;
+	color: #3C827A;
 	margin-bottom: 5px;
 }
 
 .park__title {
-  font-family: 'Heebo', 'Helvetica', sans-serif;
-  font-weight: 600;
-  font-size: 24px;
-  line-height: 32px;
-  letter-spacing: 0.01em;
-  color: #3C827A;
-  text-transform: uppercase;
+	font-family: 'Heebo', 'Helvetica', sans-serif;
+	font-weight: 600;
+	font-size: 24px;
+	line-height: 32px;
+	letter-spacing: 0.01em;
+	color: #3C827A;
+	text-transform: uppercase;
 	margin-bottom: 10px;
 }
 
 p {
-  font-family: 'Lato', 'Helvetica', sans-serif;
-  font-weight: 600;
-  font-size: 21px;
-  line-height: 25px;
-  letter-spacing: 0.01em;
-  color: #000000;
+	font-family: 'Lato', 'Helvetica', sans-serif;
+	font-weight: 600;
+	font-size: 21px;
+	line-height: 25px;
+	letter-spacing: 0.01em;
+	color: #000000;
 }
 
 ol {
-  counter-reset: item;
+	counter-reset: item;
 }
 
 ol li {
 	position: relative;
-  font-family: 'Heebo', 'Helvetica', sans-serif;
-  font-size: 24px;
-  line-height: 38px;
-  font-weight: 600;
-  letter-spacing: 0.01em;
-  margin-bottom: 30px;
-  color: #3C827A;
+	font-family: 'Heebo', 'Helvetica', sans-serif;
+	font-size: 24px;
+	line-height: 38px;
+	font-weight: 600;
+	letter-spacing: 0.01em;
+	margin-bottom: 30px;
+	color: #3C827A;
 	margin-left: 100px;
 }
 
@@ -117,15 +117,15 @@ ol li:before {
 	display: block;
 	top: 50%;
 	transform: translate(0, -50%);
-  text-align: center;
-  width: 20px;
+	text-align: center;
+	width: 20px;
 	height: 20px;
 	padding: 7px;
 	line-height: 20px;
-  content: counter(item) " ";
-  counter-increment: item;
-  border: 4px solid #4CA897;
-  border-radius: 100px;
+	content: counter(item) " ";
+	counter-increment: item;
+	border: 4px solid #4CA897;
+	border-radius: 100px;
 	margin-left: -100px;
 }
 
@@ -174,15 +174,21 @@ ul li a:hover::after {
 }
 
 .header__container {
-		position: relative;
-		display: flex;
-		flex-direction: row;
-		height: 100%;
-		margin: 0 auto;
-		max-width: 1080px;
-		padding: 0 30px;
-		flex-wrap: nowrap;
+	/* transition: opacity .5s ease-in; */
+	position: relative;
+	display: flex;
+	flex-direction: row;
+	height: 100%;
+	margin: 0 auto;
+	max-width: 1080px;
+	padding: 0 30px;
+	flex-wrap: nowrap;
+	/* opacity: 0; */
 }
+
+/* .header__container.show {
+	opacity: 1;
+} */
 
 .logo__container {
 	align-self: center;
@@ -259,7 +265,7 @@ ul li a:hover::after {
 }
 
 .hamburger__bars span:nth-child(1) {
-  top: 0px;
+	top: 0px;
 }
 
 .hamburger__bars span:nth-child(2) {
@@ -267,11 +273,11 @@ ul li a:hover::after {
 }
 
 .hamburger__bars span:nth-child(2) {
-  top: 16px;
+	top: 16px;
 }
 
 .hamburger input:checked ~ .hamburger__wrapper .hamburger__bars span:nth-child(1) {
-  transform: rotate(45deg);
+	transform: rotate(45deg);
 	top: 15px;
 	background: #3C827A;
 }
@@ -324,11 +330,16 @@ ul li a:hover::after {
 	font-weight: 700;
 }
 
+.intro p.intro__quote span {
+	font-weight: 500;
+}
+
 .intro__quote a {
-	display: block;
+	font-family: 'Archivo', 'Helvetica', sans-serif;
+	display: inline-block;
 	transition: color .4s ease;
 	font-size: 21px;
-	font-weight: 600;
+	font-weight: 500;
 	color: #3C827A;
 	margin: 20px auto 50px auto;
 }
@@ -438,14 +449,14 @@ ul li a:hover::after {
 }
 
 .warning {
-		padding: 16px 30px;
-		font-family: 'Lato', 'Helvetica', sans-serif;
-		font-weight: 600;
-		font-size: 24px;
-		line-height: 32px;
-		letter-spacing: 0.01em;
-		color: #BE3434;
-		text-align: center;
+	padding: 16px 30px;
+	font-family: 'Lato', 'Helvetica', sans-serif;
+	font-weight: 500;
+	font-size: 24px;
+	line-height: 32px;
+	letter-spacing: 0.01em;
+	color: #BE3434;
+	text-align: center;
 }
 
 .how__container {
@@ -484,19 +495,19 @@ ul li a:hover::after {
 }
 
 .footer__tag-wrapper {
-		max-width: 260px;
-		display: flex;
-		align-items: center;
-		flex-wrap: nowrap;
+	max-width: 260px;
+	display: flex;
+	align-items: center;
+	flex-wrap: nowrap;
 }
 
 .footer__tag {
-		font-family: 'Heebo', 'Helvetica', sans-serif;
-		font-weight: 600;
-		font-size: 21px;
-		line-height: 31px;
-		letter-spacing: 0.01em;
-		margin-bottom: 10px;
+	font-family: 'Heebo', 'Helvetica', sans-serif;
+	font-weight: 600;
+	font-size: 21px;
+	line-height: 31px;
+	letter-spacing: 0.01em;
+	margin-bottom: 10px;
 }
 
 .savas__logo {
@@ -622,10 +633,10 @@ ul li a:hover::after {
 	}
 
 	ol li:before {
-	  width: 36px;
-	  padding: 5px 0;
-	  border: 2px solid #4CA897;
-	  margin-right: 15px;
+		width: 36px;
+		padding: 5px 0;
+		border: 2px solid #4CA897;
+		margin-right: 15px;
 		font-weight: 600;
 		left: -50px;
 	}
