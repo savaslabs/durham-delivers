@@ -358,13 +358,6 @@ ul li a:hover::after {
 	transition: fill .5s ease;
 }
 
-.calendar__btn:active .calendar__svg .calendar__svg-part,
-.calendar__btn:visited ~ .calendar__svg .calendar__svg-part,
-.calendar__btn:focus .calendar__svg .calendar__svg-part,
-.calendar__svg:hover .calendar__svg-part {
-	fill: #D55051;
-}
-
 .accordion__date {
 	font-family: 'Heebo', 'Helvetica', sans-serif;
 	font-size: 24px;
