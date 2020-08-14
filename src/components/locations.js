@@ -47,13 +47,13 @@ const Locations = () => (
             padding: `10px 0 10px 8px`
           }}>
             <p className="park__title">
-              Park One
+              Old Bull
             </p>
             <p style={{
               fontFamily: `'Heebo', 'Helvetica', sans-serif`,
               fontSize: `18px`
             }}>
-              501 Foster St, Durham, NC 27701
+              300 Blackwell St., Durham, NC 27701
             </p>
           </div>
         </div>
