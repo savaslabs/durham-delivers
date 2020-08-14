@@ -8,6 +8,7 @@ const Locations = () => (
       backgroundImage: `url(${Background})`,
       backgroundColor: `#D9F0EC`,
       backgroundSize: `contain`,
+      backgroundRepeat: `no-repeat`
     }}
   >
     <div
