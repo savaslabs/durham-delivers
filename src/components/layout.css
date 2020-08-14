@@ -533,11 +533,8 @@ ul li a:hover::after {
 	background-size: cover;
 	text-align: center;
 	z-index: 3;
+	background-color: #D9F0EC;
 	display: none;
-}
-
-.hamburger input:checked ~ .main-menu {
-	display: flex;
 }
 
 .main-menu__inner {
@@ -610,6 +607,10 @@ ul li a:hover::after {
 
 	.footer__tag-wrapper {
 		margin: 0 auto;
+	}
+
+	.hamburger input:checked ~ .main-menu {
+		display: flex;
 	}
 }
 
