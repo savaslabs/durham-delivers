@@ -39,7 +39,10 @@ const Accordions = () => (
   <div id="calendar">
   <Accordion className="accordion" allowZeroExpanded preExpanded={['a']}>
     <AccordionItem uuid="a">
-      <AccordionItemHeading>
+      <AccordionItemHeading
+        data-sal="slide-up"
+        data-sal-easing="ease"
+      >
         <AccordionItemButton style={{
           borderBottom: `2px solid #828282`,
           cursor: `pointer`
@@ -51,7 +54,12 @@ const Accordions = () => (
       </AccordionItemHeading>
         <AccordionItemPanel className="accordion__panel">
         <div className="accordion__item-container">
-          <div className="accordion__component">
+          <div
+            data-sal="slide-up"
+            data-sal-delay="100"
+            data-sal-easing="ease"
+            className="accordion__component"
+          >
             <div className="accordion__date">
               Tues, July <span style={{margin: `0 15px`}}>|</span> 11AM - 12PM
               <a href="https://www.google.com/calendar/render?action=TEMPLATE&text=Test+Event&details=This+is+a+test+event&location=Central+Park%0ADurham%2C+NC&dates=20200815T153000Z%2F20200815T163800Z" target="_blank" rel="noreferrer" className="calendar__btn" style={{
@@ -62,6 +70,9 @@ const Accordions = () => (
             </div>
             <div className="accordion__order-time">
               Order Before 10AM
+            </div>
+            <div className="accordion__dropoff">
+              Drop off information here medium italic
             </div>
             <h3>
             Central Park
@@ -92,7 +103,12 @@ const Accordions = () => (
                 </li>
               </ul>
             </div>
-            <div className="accordion__component">
+            <div
+              data-sal="slide-up"
+              data-sal-delay="200"
+              data-sal-easing="ease"
+              className="accordion__component"
+            >
               <div className="accordion__date">
                 Tues, July <span style={{margin: `0 15px`}}>|</span> 11AM - 12PM
                 <a href="https://www.google.com/calendar/render?action=TEMPLATE&text=Test+Event&details=This+is+a+test+event&location=Central+Park%0ADurham%2C+NC&dates=20200815T153000Z%2F20200815T163800Z" target="_blank" rel="noreferrer" className="calendar__btn" style={{
@@ -103,6 +119,9 @@ const Accordions = () => (
               </div>
               <div className="accordion__order-time">
                 Order Before 10AM
+              </div>
+              <div className="accordion__dropoff">
+                Drop off information here medium italic
               </div>
               <h3>
               Central Park
@@ -133,7 +152,11 @@ const Accordions = () => (
                   </li>
                 </ul>
               </div>
-              <div className="accordion__component">
+              <div
+                data-sal="slide-up"
+                data-sal-easing="ease"
+                className="accordion__component"
+              >
                 <div className="accordion__date">
                   Tues, July <span style={{margin: `0 15px`}}>|</span> 11AM - 12PM
                   <a href="https://www.google.com/calendar/render?action=TEMPLATE&text=Test+Event&details=This+is+a+test+event&location=Central+Park%0ADurham%2C+NC&dates=20200815T153000Z%2F20200815T163800Z" target="_blank" rel="noreferrer" className="calendar__btn" style={{
@@ -144,6 +167,9 @@ const Accordions = () => (
                 </div>
                 <div className="accordion__order-time">
                   Order Before 10AM
+                </div>
+                <div className="accordion__dropoff">
+                  Drop off information here medium italic
                 </div>
                 <h3>
                 Central Park
@@ -202,6 +228,9 @@ const Accordions = () => (
             <div  className="accordion__order-time">
               Order Before 10AM
             </div>
+            <div className="accordion__dropoff">
+              Drop off information here medium italic
+            </div>
             <h3>
             Central Park
             </h3>
@@ -243,6 +272,9 @@ const Accordions = () => (
               <div className="accordion__order-time">
                 Order Before 10AM
               </div>
+              <div className="accordion__dropoff">
+                Drop off information here medium italic
+              </div>
               <h3>
               Central Park
               </h3>
@@ -283,6 +315,9 @@ const Accordions = () => (
                 </div>
                 <div className="accordion__order-time">
                   Order Before 10AM
+                </div>
+                <div className="accordion__dropoff">
+                  Drop off information here medium italic
                 </div>
                 <h3>
                 Central Park

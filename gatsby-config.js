@@ -19,6 +19,7 @@ module.exports = {
       resolve: `gatsby-plugin-scroll-reveal`,
       options: {
         rootMargin: '0% 0%',
+        threshold: 0.2,
       },
     },
     {
