@@ -82,22 +82,22 @@ const Accordions = () => (
             </div>
               <ul>
                 <li>
-                  <a href="#" target="_blank" rel="noreferrer" className="accordion__link">
+                  <a href="https://savaslabs.com" target="_blank" rel="noreferrer" className="accordion__link">
                     link to restaurant
                   </a>
                 </li>
                 <li>
-                  <a href="#" target="_blank" rel="noreferrer" className="accordion__link">
+                  <a href="https://savaslabs.com" target="_blank" rel="noreferrer" className="accordion__link">
                     link to restaurant
                   </a>
                 </li>
                 <li>
-                  <a href="#" target="_blank" rel="noreferrer" className="accordion__link">
+                  <a href="https://savaslabs.com" target="_blank" rel="noreferrer" className="accordion__link">
                     link to restaurant
                   </a>
                 </li>
                 <li>
-                  <a href="#" target="_blank" rel="noreferrer" className="accordion__link">
+                  <a href="https://savaslabs.com" target="_blank" rel="noreferrer" className="accordion__link">
                     link to restaurant
                   </a>
                 </li>
@@ -131,22 +131,22 @@ const Accordions = () => (
               </div>
                 <ul>
                   <li>
-                    <a href="#" target="_blank" rel="noreferrer" className="accordion__link">
+                    <a href="https://savaslabs.com" target="_blank" rel="noreferrer" className="accordion__link">
                       link to restaurant
                     </a>
                   </li>
                   <li>
-                    <a href="#" target="_blank" rel="noreferrer" className="accordion__link">
+                    <a href="https://savaslabs.com" target="_blank" rel="noreferrer" className="accordion__link">
                       link to restaurant
                     </a>
                   </li>
                   <li>
-                    <a href="#" target="_blank" rel="noreferrer" className="accordion__link">
+                    <a href="https://savaslabs.com" target="_blank" rel="noreferrer" className="accordion__link">
                       link to restaurant
                     </a>
                   </li>
                   <li>
-                    <a href="#" target="_blank" rel="noreferrer" className="accordion__link">
+                    <a href="https://savaslabs.com" target="_blank" rel="noreferrer" className="accordion__link">
                       link to restaurant
                     </a>
                   </li>
@@ -179,22 +179,22 @@ const Accordions = () => (
                 </div>
                   <ul>
                     <li>
-                      <a href="#" target="_blank" rel="noreferrer" className="accordion__link">
+                      <a href="https://savaslabs.com" target="_blank" rel="noreferrer" className="accordion__link">
                         link to restaurant
                       </a>
                     </li>
                     <li>
-                      <a href="#" target="_blank" rel="noreferrer" className="accordion__link">
+                      <a href="https://savaslabs.com" target="_blank" rel="noreferrer" className="accordion__link">
                         link to restaurant
                       </a>
                     </li>
                     <li>
-                      <a href="#" target="_blank" rel="noreferrer" className="accordion__link">
+                      <a href="https://savaslabs.com" target="_blank" rel="noreferrer" className="accordion__link">
                         link to restaurant
                       </a>
                     </li>
                     <li>
-                      <a href="#" target="_blank" rel="noreferrer" className="accordion__link">
+                      <a href="https://savaslabs.com" target="_blank" rel="noreferrer" className="accordion__link">
                         link to restaurant
                       </a>
                     </li>
@@ -239,22 +239,22 @@ const Accordions = () => (
             </div>
               <ul>
                 <li>
-                  <a href="#" target="_blank" rel="noreferrer" className="accordion__link">
+                  <a href="https://savaslabs.com" target="_blank" rel="noreferrer" className="accordion__link">
                     link to restaurant
                   </a>
                 </li>
                 <li>
-                  <a href="#" target="_blank" rel="noreferrer" className="accordion__link">
+                  <a href="https://savaslabs.com" target="_blank" rel="noreferrer" className="accordion__link">
                     link to restaurant
                   </a>
                 </li>
                 <li>
-                  <a href="#" target="_blank" rel="noreferrer" className="accordion__link">
+                  <a href="https://savaslabs.com" target="_blank" rel="noreferrer" className="accordion__link">
                     link to restaurant
                   </a>
                 </li>
                 <li>
-                  <a href="#" target="_blank" rel="noreferrer" className="accordion__link">
+                  <a href="https://savaslabs.com" target="_blank" rel="noreferrer" className="accordion__link">
                     link to restaurant
                   </a>
                 </li>
@@ -283,22 +283,22 @@ const Accordions = () => (
               </div>
                 <ul>
                   <li>
-                    <a href="#" target="_blank" rel="noreferrer" className="accordion__link">
+                    <a href="https://savaslabs.com" target="_blank" rel="noreferrer" className="accordion__link">
                       link to restaurant
                     </a>
                   </li>
                   <li>
-                    <a href="#" target="_blank" rel="noreferrer" className="accordion__link">
+                    <a href="https://savaslabs.com" target="_blank" rel="noreferrer" className="accordion__link">
                       link to restaurant
                     </a>
                   </li>
                   <li>
-                    <a href="#" target="_blank" rel="noreferrer" className="accordion__link">
+                    <a href="https://savaslabs.com" target="_blank" rel="noreferrer" className="accordion__link">
                       link to restaurant
                     </a>
                   </li>
                   <li>
-                    <a href="#" target="_blank" rel="noreferrer" className="accordion__link">
+                    <a href="https://savaslabs.com" target="_blank" rel="noreferrer" className="accordion__link">
                       link to restaurant
                     </a>
                   </li>
@@ -327,22 +327,22 @@ const Accordions = () => (
                 </div>
                   <ul>
                     <li>
-                      <a href="#" target="_blank" rel="noreferrer" className="accordion__link">
+                      <a href="https://savaslabs.com" target="_blank" rel="noreferrer" className="accordion__link">
                         link to restaurant
                       </a>
                     </li>
                     <li>
-                      <a href="#" target="_blank" rel="noreferrer" className="accordion__link">
+                      <a href="https://savaslabs.com" target="_blank" rel="noreferrer" className="accordion__link">
                         link to restaurant
                       </a>
                     </li>
                     <li>
-                      <a href="#" target="_blank" rel="noreferrer" className="accordion__link">
+                      <a href="https://savaslabs.com" target="_blank" rel="noreferrer" className="accordion__link">
                         link to restaurant
                       </a>
                     </li>
                     <li>
-                      <a href="#" target="_blank" rel="noreferrer" className="accordion__link">
+                      <a href="https://savaslabs.com" target="_blank" rel="noreferrer" className="accordion__link">
                         link to restaurant
                       </a>
                     </li>

@@ -195,7 +195,8 @@ ul li a:hover::after {
 	position: absolute;
 	margin-left: 70%;
 	top: auto;
-	bottom: 10%;
+	height: 100vh;
+	margin-top: 20%;
 }
 
 .logo {
@@ -594,7 +595,6 @@ ul li a:hover::after {
 
 	.logo__container {
 		margin-left: 60%;
-		bottom: 25%;
 	}
 
 	.cover__image {
@@ -727,6 +727,7 @@ ul li a:hover::after {
 
 	.logo__container {
 		position: relative;
+		height: auto;
 		margin-left: 0;
 		margin-top: 50%;
 	}
@@ -782,6 +783,7 @@ ul li a:hover::after {
 
 	.logo__container {
 		position: relative;
+		margin-top: 0;
 	}
 }
 
