@@ -22,6 +22,12 @@ module.exports = {
         threshold: 0.2,
       },
     },
+    // {
+    //   resolve: `gatsby-plugin-google-analytics`,
+    //   options: {
+    //     trackingId: "UA-175584289-1",
+    //   },
+    // },
     {
       resolve: `gatsby-plugin-manifest`,
       options: {

@@ -9,7 +9,7 @@ const HowTo = () => (
         data-sal-easing="ease-in"
       >
         "Restaurants are barely surviving. Delivery apps will kill them."<br />
-        <span>&mdash;</span> <a href="#" target="_blank" rel="noreferrer">Washington Post (May 2020)</a>
+        <span>&mdash;</span> <a href="https://savaslabs.com" target="_blank" rel="noreferrer">Washington Post (May 2020)</a>
       </p>
       <p
         data-sal="slide-up"

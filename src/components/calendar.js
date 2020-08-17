@@ -1,5 +1,4 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 
 const green = '#4CA897';
 const red = '#D55051';
@@ -11,7 +10,7 @@ export default class Calendar extends React.Component {
     this.changeColor = this.changeColor.bind(this);
   }
   changeColor() {
-    const newColor = this.state.color == green ? red : green;
+    const newColor = this.state.color === green ? red : green;
     this.setState({ color: newColor });
   }
   render() {

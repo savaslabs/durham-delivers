@@ -21,7 +21,7 @@ const Restaurants = () => (
             data-sal-delay="400"
             data-sal-easing="ease-in"
           >
-            <a href="#" style={{
+            <a href="https://savaslabs.com" style={{
               fontSize: `21px`,
               lineHeight: `46px`
             }}>
@@ -33,7 +33,7 @@ const Restaurants = () => (
             data-sal-delay="400"
             data-sal-easing="ease-in"
           >
-          <a href="#" style={{
+          <a href="https://savaslabs.com" style={{
             fontSize: `21px`,
             lineHeight: `46px`
           }}>
@@ -45,7 +45,7 @@ const Restaurants = () => (
             data-sal-delay="400"
             data-sal-easing="ease-in"
           >
-          <a href="#" style={{
+          <a href="https://savaslabs.com" style={{
             fontSize: `21px`,
             lineHeight: `46px`
           }}>
@@ -57,7 +57,7 @@ const Restaurants = () => (
             data-sal-delay="400"
             data-sal-easing="ease-in"
           >
-          <a href="#" style={{
+          <a href="https://savaslabs.com" style={{
             fontSize: `21px`,
             lineHeight: `46px`
           }}>
@@ -69,7 +69,7 @@ const Restaurants = () => (
             data-sal-delay="400"
             data-sal-easing="ease-in"
           >
-          <a href="#" style={{
+          <a href="https://savaslabs.com" style={{
             fontSize: `21px`,
             lineHeight: `46px`
           }}>
@@ -81,7 +81,7 @@ const Restaurants = () => (
             data-sal-delay="400"
             data-sal-easing="ease-in"
           >
-          <a href="#" style={{
+          <a href="https://savaslabs.com" style={{
             fontSize: `21px`,
             lineHeight: `46px`
           }}>
@@ -93,7 +93,7 @@ const Restaurants = () => (
             data-sal-delay="400"
             data-sal-easing="ease-in"
           >
-          <a href="#" style={{
+          <a href="https://savaslabs.com" style={{
             fontSize: `21px`,
             lineHeight: `46px`
           }}>
@@ -105,7 +105,7 @@ const Restaurants = () => (
             data-sal-delay="400"
             data-sal-easing="ease-in"
           >
-          <a href="#" style={{
+          <a href="https://savaslabs.com" style={{
             fontSize: `21px`,
             lineHeight: `46px`
           }}>
@@ -122,7 +122,7 @@ const Restaurants = () => (
           data-sal-delay="400"
           data-sal-easing="ease-in"
         >
-            <a href="#" style={{
+            <a href="https://savaslabs.com" style={{
               fontSize: `21px`,
               lineHeight: `46px`
             }}>
@@ -134,7 +134,7 @@ const Restaurants = () => (
             data-sal-delay="400"
             data-sal-easing="ease-in"
           >
-          <a href="#" style={{
+          <a href="https://savaslabs.com" style={{
             fontSize: `21px`,
             lineHeight: `46px`
           }}>
@@ -146,7 +146,7 @@ const Restaurants = () => (
             data-sal-delay="400"
             data-sal-easing="ease-in"
           >
-          <a href="#" style={{
+          <a href="https://savaslabs.com" style={{
             fontSize: `21px`,
             lineHeight: `46px`
           }}>
@@ -158,7 +158,7 @@ const Restaurants = () => (
             data-sal-delay="400"
             data-sal-easing="ease-in"
           >
-          <a href="#" style={{
+          <a href="https://savaslabs.com" style={{
             fontSize: `21px`,
             lineHeight: `46px`
           }}>
@@ -170,7 +170,7 @@ const Restaurants = () => (
             data-sal-delay="400"
             data-sal-easing="ease-in"
           >
-          <a href="#" style={{
+          <a href="https://savaslabs.com" style={{
             fontSize: `21px`,
             lineHeight: `46px`
           }}>
@@ -182,7 +182,7 @@ const Restaurants = () => (
             data-sal-delay="400"
             data-sal-easing="ease-in"
           >
-          <a href="#" style={{
+          <a href="https://savaslabs.com" style={{
             fontSize: `21px`,
             lineHeight: `46px`
           }}>
@@ -194,7 +194,7 @@ const Restaurants = () => (
             data-sal-delay="400"
             data-sal-easing="ease-in"
           >
-          <a href="#" style={{
+          <a href="https://savaslabs.com" style={{
             fontSize: `21px`,
             lineHeight: `46px`
           }}>
@@ -206,7 +206,7 @@ const Restaurants = () => (
             data-sal-delay="400"
             data-sal-easing="ease-in"
           >
-          <a href="#" style={{
+          <a href="https://savaslabs.com" style={{
             fontSize: `21px`,
             lineHeight: `46px`
           }}>
