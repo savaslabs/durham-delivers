@@ -213,7 +213,7 @@ const Accordions = () => (
                   TBD
                 </div>
                 <h3>
-                Burch Avenue Park
+                 Avenue Park
                 </h3>
                 <div className="accordion__address">
                   816 Burch Ave., Durham, NC 27701
