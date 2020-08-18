@@ -21,11 +21,12 @@ const Restaurants = () => (
             data-sal-delay="400"
             data-sal-easing="ease-in"
           >
-            <a href="https://savaslabs.com" style={{
+            <a href="https://dameschickenwaffles.com/" target="_blank" rel="noreferrer"
+            style={{
               fontSize: `21px`,
               lineHeight: `46px`
             }}>
-              Parts & Labor
+              Dame's Chicken and Waffles
             </a>
           </li>
           <li
@@ -33,11 +34,12 @@ const Restaurants = () => (
             data-sal-delay="400"
             data-sal-easing="ease-in"
           >
-          <a href="https://savaslabs.com" style={{
+          <a href="https://www.bullcityburgerandbrewery.com/" target="_blank" rel="noreferrer"
+          style={{
             fontSize: `21px`,
             lineHeight: `46px`
           }}>
-              Saladelia Cafe
+              Bull City Burger
             </a>
           </li>
           <li
@@ -45,120 +47,8 @@ const Restaurants = () => (
             data-sal-delay="400"
             data-sal-easing="ease-in"
           >
-          <a href="https://savaslabs.com" style={{
-            fontSize: `21px`,
-            lineHeight: `46px`
-          }}>
-              The Mad Hatter’s Cafe + Bakeshop
-            </a>
-          </li>
-          <li
-            data-sal="slide-up"
-            data-sal-delay="400"
-            data-sal-easing="ease-in"
-          >
-          <a href="https://savaslabs.com" style={{
-            fontSize: `21px`,
-            lineHeight: `46px`
-          }}>
-              Goorsha Durham
-            </a>
-          </li>
-          <li
-            data-sal="slide-up"
-            data-sal-delay="400"
-            data-sal-easing="ease-in"
-          >
-          <a href="https://savaslabs.com" style={{
-            fontSize: `21px`,
-            lineHeight: `46px`
-          }}>
-              COPA
-            </a>
-          </li>
-          <li
-            data-sal="slide-up"
-            data-sal-delay="400"
-            data-sal-easing="ease-in"
-          >
-          <a href="https://savaslabs.com" style={{
-            fontSize: `21px`,
-            lineHeight: `46px`
-          }}>
-              Zweli’s Kitchen
-            </a>
-          </li>
-          <li
-            data-sal="slide-up"
-            data-sal-delay="400"
-            data-sal-easing="ease-in"
-          >
-          <a href="https://savaslabs.com" style={{
-            fontSize: `21px`,
-            lineHeight: `46px`
-          }}>
-              Resturant 12
-            </a>
-          </li>
-          <li
-            data-sal="slide-up"
-            data-sal-delay="400"
-            data-sal-easing="ease-in"
-          >
-          <a href="https://savaslabs.com" style={{
-            fontSize: `21px`,
-            lineHeight: `46px`
-          }}>
-              Parts & Labor
-            </a>
-          </li>
-        </ul>
-        <ul style={{
-          marginRight: `50px`,
-          display: `inline-block`
-        }}>
-        <li
-          data-sal="slide-up"
-          data-sal-delay="400"
-          data-sal-easing="ease-in"
-        >
-            <a href="https://savaslabs.com" style={{
-              fontSize: `21px`,
-              lineHeight: `46px`
-            }}>
-              Blue Corn Cafe
-            </a>
-          </li>
-          <li
-            data-sal="slide-up"
-            data-sal-delay="400"
-            data-sal-easing="ease-in"
-          >
-          <a href="https://savaslabs.com" style={{
-            fontSize: `21px`,
-            lineHeight: `46px`
-          }}>
-              Toast
-            </a>
-          </li>
-          <li
-            data-sal="slide-up"
-            data-sal-delay="400"
-            data-sal-easing="ease-in"
-          >
-          <a href="https://savaslabs.com" style={{
-            fontSize: `21px`,
-            lineHeight: `46px`
-          }}>
-              Bull City Burger and Brewery
-            </a>
-          </li>
-          <li
-            data-sal="slide-up"
-            data-sal-delay="400"
-            data-sal-easing="ease-in"
-          >
-          <a href="https://savaslabs.com" style={{
+          <a href="https://www.pompieripizza.com/" target="_blank" rel="noreferrer"
+          style={{
             fontSize: `21px`,
             lineHeight: `46px`
           }}>
@@ -170,11 +60,42 @@ const Restaurants = () => (
             data-sal-delay="400"
             data-sal-easing="ease-in"
           >
-          <a href="https://savaslabs.com" style={{
+          <a href="https://www.zwelis.com/" target="_blank" rel="noreferrer"
+          style={{
             fontSize: `21px`,
             lineHeight: `46px`
           }}>
-              Bull City Solera and Taproom
+              Zweli’s Kitchen
+            </a>
+          </li>
+        </ul>
+        <ul style={{
+          marginRight: `100px`,
+          display: `inline-block`
+        }}>
+        <li
+          data-sal="slide-up"
+          data-sal-delay="400"
+          data-sal-easing="ease-in"
+        >
+        <a href="https://bluecorncafedurham.com/" target="_blank" rel="noreferrer" style={{
+          fontSize: `21px`,
+          lineHeight: `46px`
+        }}>
+             Blue Corn Café
+          </a>
+        </li>
+          <li
+            data-sal="slide-up"
+            data-sal-delay="400"
+            data-sal-easing="ease-in"
+          >
+          <a href="https://www.goorshadurham.com/" target="_blank" rel="noreferrer"
+          style={{
+            fontSize: `21px`,
+            lineHeight: `46px`
+          }}>
+              Goorsha
             </a>
           </li>
           <li
@@ -182,11 +103,12 @@ const Restaurants = () => (
             data-sal-delay="400"
             data-sal-easing="ease-in"
           >
-          <a href="https://savaslabs.com" style={{
+          <a href="https://www.parkerandotis.com/" target="_blank" rel="noreferrer"
+          style={{
             fontSize: `21px`,
             lineHeight: `46px`
           }}>
-              Resturant 14
+              Parker & Otis
             </a>
           </li>
           <li
@@ -194,23 +116,12 @@ const Restaurants = () => (
             data-sal-delay="400"
             data-sal-easing="ease-in"
           >
-          <a href="https://savaslabs.com" style={{
+          <a href="https://copadurham.com/" target="_blank" rel="noreferrer"
+          style={{
             fontSize: `21px`,
             lineHeight: `46px`
           }}>
-              Resturant 15
-            </a>
-          </li>
-          <li
-            data-sal="slide-up"
-            data-sal-delay="400"
-            data-sal-easing="ease-in"
-          >
-          <a href="https://savaslabs.com" style={{
-            fontSize: `21px`,
-            lineHeight: `46px`
-          }}>
-              Parts & Labor
+              COPA
             </a>
           </li>
         </ul>

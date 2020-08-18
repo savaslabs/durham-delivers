@@ -54,51 +54,102 @@ const Accordions = () => (
       </AccordionItemHeading>
         <AccordionItemPanel className="accordion__panel">
         <div className="accordion__item-container">
+        <div
+          data-sal="slide-up"
+          data-sal-easing="ease"
+          className="accordion__component"
+        >
+          <div className="accordion__date">
+            Friday, August 21st <span style={{margin: `0 15px`}}>|</span> 5:30 pm
+            <a href="https://calendar.google.com/event?action=TEMPLATE&tmeid=NnZiYmJiNWNvdmE4ZjRxbm1pcGRocXFjMm8gY190MnVsYnQwNzdlOTIzZzZtM2QxdW5uaThtOEBn&tmsrc=c_t2ulbt077e923g6m3d1unni8m8%40group.calendar.google.com" target="_blank" rel="noreferrer" className="calendar__btn" style={{
+              marginLeft: `20px`
+            }}>
+              <Calendar />
+            </a>
+          </div>
+          <div className="accordion__order-time">
+            TBD
+          </div>
+          <div className="accordion__dropoff">
+            Pick up in the lobby
+          </div>
+          <h3>
+          Liberty Warehouse Apartments
+          </h3>
+          <div className="accordion__address">
+            530 Foster St., Durham, NC 27701
+          </div>
+            <ul>
+              <li>
+                <a href="https://www.zwelis.com/" target="_blank" rel="noreferrer" className="accordion__link">
+                  Zweli’s
+                </a>
+              </li>
+            </ul>
+          </div>
           <div
             data-sal="slide-up"
-            data-sal-delay="100"
+            data-sal-delay="200"
+            data-sal-easing="ease"
+            className="accordion__component"
+          >
+          <div className="accordion__date">
+            Friday, August 21st <span style={{margin: `0 15px`}}>|</span> 5:30 pm
+            <a href="https://calendar.google.com/event?action=TEMPLATE&tmeid=N2d1YzNxbTU0ZXVvN2dxOTEwbjVuanZiaTAgY190MnVsYnQwNzdlOTIzZzZtM2QxdW5uaThtOEBn&tmsrc=c_t2ulbt077e923g6m3d1unni8m8%40group.calendar.google.com" target="_blank" rel="noreferrer" className="calendar__btn" style={{
+              marginLeft: `20px`
+            }}>
+              <Calendar />
+            </a>
+          </div>
+          <div className="accordion__order-time">
+            TBD
+          </div>
+          <div className="accordion__dropoff">
+            Pick up in the courtyard
+          </div>
+          <h3>
+          Old Bull at ATC
+          </h3>
+          <div className="accordion__address">
+            300 Blackwell St., Durham, NC 27701
+          </div>
+            <ul>
+              <li>
+                <a href="https://bluecorncafedurham.com/" target="_blank" rel="noreferrer" className="accordion__link">
+                  Blue Corn Café
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div
+            data-sal="slide-up"
             data-sal-easing="ease"
             className="accordion__component"
           >
             <div className="accordion__date">
-              Tues, July <span style={{margin: `0 15px`}}>|</span> 11AM - 12PM
-              <a href="https://www.google.com/calendar/render?action=TEMPLATE&text=Test+Event&details=This+is+a+test+event&location=Central+Park%0ADurham%2C+NC&dates=20200815T153000Z%2F20200815T163800Z" target="_blank" rel="noreferrer" className="calendar__btn" style={{
+              Friday, August 21st <span style={{margin: `0 15px`}}>|</span> 6:00 pm
+              <a href="https://calendar.google.com/event?action=TEMPLATE&tmeid=M3Q0YnRoampsZnNyMG41NGhubWo3cW9xdmggY190MnVsYnQwNzdlOTIzZzZtM2QxdW5uaThtOEBn&tmsrc=c_t2ulbt077e923g6m3d1unni8m8%40group.calendar.google.com" target="_blank" rel="noreferrer" className="calendar__btn" style={{
                 marginLeft: `20px`
               }}>
                 <Calendar />
               </a>
             </div>
             <div className="accordion__order-time">
-              Order Before 10AM
+              TBD
             </div>
             <div className="accordion__dropoff">
-              Drop off information here medium italic
+              TBD
             </div>
             <h3>
-            Central Park
+            Audubon Park
             </h3>
             <div className="accordion__address">
-              501 Foster St., Durham NC 27701
+              corner of Solitude Way & Whisperwind Dr.,<br /> Durham, NC 27713
             </div>
               <ul>
                 <li>
-                  <a href="https://savaslabs.com" target="_blank" rel="noreferrer" className="accordion__link">
-                    link to restaurant
-                  </a>
-                </li>
-                <li>
-                  <a href="https://savaslabs.com" target="_blank" rel="noreferrer" className="accordion__link">
-                    link to restaurant
-                  </a>
-                </li>
-                <li>
-                  <a href="https://savaslabs.com" target="_blank" rel="noreferrer" className="accordion__link">
-                    link to restaurant
-                  </a>
-                </li>
-                <li>
-                  <a href="https://savaslabs.com" target="_blank" rel="noreferrer" className="accordion__link">
-                    link to restaurant
+                  <a href="https://dameschickenwaffles.com/" target="_blank" rel="noreferrer" className="accordion__link">
+                    Dame’s Chicken and Waffles
                   </a>
                 </li>
               </ul>
@@ -110,203 +161,79 @@ const Accordions = () => (
               className="accordion__component"
             >
               <div className="accordion__date">
-                Tues, July <span style={{margin: `0 15px`}}>|</span> 11AM - 12PM
-                <a href="https://www.google.com/calendar/render?action=TEMPLATE&text=Test+Event&details=This+is+a+test+event&location=Central+Park%0ADurham%2C+NC&dates=20200815T153000Z%2F20200815T163800Z" target="_blank" rel="noreferrer" className="calendar__btn" style={{
+                Friday, August 21st <span style={{margin: `0 15px`}}>|</span> 6:00 pm
+                <a href="https://calendar.google.com/event?action=TEMPLATE&tmeid=MGdzNzFucWxzcGIyZjNrYWpuZWthOGhlbnQgY190MnVsYnQwNzdlOTIzZzZtM2QxdW5uaThtOEBn&tmsrc=c_t2ulbt077e923g6m3d1unni8m8%40group.calendar.google.com" target="_blank" rel="noreferrer" className="calendar__btn" style={{
                   marginLeft: `20px`
                 }}>
                   <Calendar />
                 </a>
               </div>
               <div className="accordion__order-time">
-                Order Before 10AM
+                TBD
               </div>
               <div className="accordion__dropoff">
-                Drop off information here medium italic
+                TBD
               </div>
               <h3>
-              Central Park
+              Northgate Park
               </h3>
               <div className="accordion__address">
-                501 Foster St., Durham NC 27701
+                location to be determined
               </div>
                 <ul>
                   <li>
-                    <a href="https://savaslabs.com" target="_blank" rel="noreferrer" className="accordion__link">
-                      link to restaurant
+                    <a href="https://www.bullcityburgerandbrewery.com/" target="_blank" rel="noreferrer" className="accordion__link">
+                      Bull City Burger
                     </a>
                   </li>
                   <li>
-                    <a href="https://savaslabs.com" target="_blank" rel="noreferrer" className="accordion__link">
-                      link to restaurant
-                    </a>
-                  </li>
-                  <li>
-                    <a href="https://savaslabs.com" target="_blank" rel="noreferrer" className="accordion__link">
-                      link to restaurant
-                    </a>
-                  </li>
-                  <li>
-                    <a href="https://savaslabs.com" target="_blank" rel="noreferrer" className="accordion__link">
-                      link to restaurant
+                    <a href="https://www.pompieripizza.com/" target="_blank" rel="noreferrer" className="accordion__link">
+                      Pompieri Pizza
                     </a>
                   </li>
                 </ul>
               </div>
-              <div
-                data-sal="slide-up"
-                data-sal-easing="ease"
-                className="accordion__component"
-              >
+                <div
+                  data-sal="slide-up"
+                  data-sal-easing="ease"
+                  className="accordion__component"
+                >
                 <div className="accordion__date">
-                  Tues, July <span style={{margin: `0 15px`}}>|</span> 11AM - 12PM
-                  <a href="https://www.google.com/calendar/render?action=TEMPLATE&text=Test+Event&details=This+is+a+test+event&location=Central+Park%0ADurham%2C+NC&dates=20200815T153000Z%2F20200815T163800Z" target="_blank" rel="noreferrer" className="calendar__btn" style={{
+                  Saturday, August 22nd <span style={{margin: `0 15px`}}>|</span> 6:00pm
+                  <a href="https://calendar.google.com/event?action=TEMPLATE&tmeid=N2Ztb3I1cmYxcWtsazBzNjkzNmZhZGhvcmMgY190MnVsYnQwNzdlOTIzZzZtM2QxdW5uaThtOEBn&tmsrc=c_t2ulbt077e923g6m3d1unni8m8%40group.calendar.google.com" target="_blank" rel="noreferrer" className="calendar__btn" style={{
                     marginLeft: `20px`
                   }}>
                     <Calendar />
                   </a>
                 </div>
                 <div className="accordion__order-time">
-                  Order Before 10AM
+                  TBD
                 </div>
                 <div className="accordion__dropoff">
-                  Drop off information here medium italic
+                  TBD
                 </div>
                 <h3>
-                Central Park
+                Burch Avenue Park
                 </h3>
                 <div className="accordion__address">
-                  501 Foster St., Durham NC 27701
+                  816 Burch Ave., Durham, NC 27701
                 </div>
                   <ul>
                     <li>
-                      <a href="https://savaslabs.com" target="_blank" rel="noreferrer" className="accordion__link">
-                        link to restaurant
-                      </a>
-                    </li>
-                    <li>
-                      <a href="https://savaslabs.com" target="_blank" rel="noreferrer" className="accordion__link">
-                        link to restaurant
-                      </a>
-                    </li>
-                    <li>
-                      <a href="https://savaslabs.com" target="_blank" rel="noreferrer" className="accordion__link">
-                        link to restaurant
-                      </a>
-                    </li>
-                    <li>
-                      <a href="https://savaslabs.com" target="_blank" rel="noreferrer" className="accordion__link">
-                        link to restaurant
+                      <a href="https://www.goorshadurham.com/" target="_blank" rel="noreferrer" className="accordion__link">
+                        Goorsha
                       </a>
                     </li>
                   </ul>
                 </div>
-            </div>
-        </AccordionItemPanel>
-    </AccordionItem>
-    <AccordionItem uuid="b">
-      <AccordionItemHeading>
-        <AccordionItemButton style={{
-          borderBottom: `2px solid #828282`,
-          cursor: `pointer`
-        }}>
-          <div className="accordion__header">
-            September
-          </div>
-        </AccordionItemButton>
-      </AccordionItemHeading>
-        <AccordionItemPanel className="accordion__panel">
-        <div className="accordion__item-container">
-          <div className="accordion__component">
-            <div className="accordion__date">
-              Tues, July <span style={{margin: `0 15px`}}>|</span> 11AM - 12PM
-              <a href="https://www.google.com/calendar/render?action=TEMPLATE&text=Test+Event&details=This+is+a+test+event&location=Central+Park%0ADurham%2C+NC&dates=20200815T153000Z%2F20200815T163800Z" target="_blank" rel="noreferrer" className="calendar__btn" style={{
-                marginLeft: `20px`
-              }}>
-                <Calendar />
-              </a>
-            </div>
-            <div  className="accordion__order-time">
-              Order Before 10AM
-            </div>
-            <div className="accordion__dropoff">
-              Drop off information here medium italic
-            </div>
-            <h3>
-            Central Park
-            </h3>
-            <div className="accordion__address">
-              501 Foster St., Durham NC 27701
-            </div>
-              <ul>
-                <li>
-                  <a href="https://savaslabs.com" target="_blank" rel="noreferrer" className="accordion__link">
-                    link to restaurant
-                  </a>
-                </li>
-                <li>
-                  <a href="https://savaslabs.com" target="_blank" rel="noreferrer" className="accordion__link">
-                    link to restaurant
-                  </a>
-                </li>
-                <li>
-                  <a href="https://savaslabs.com" target="_blank" rel="noreferrer" className="accordion__link">
-                    link to restaurant
-                  </a>
-                </li>
-                <li>
-                  <a href="https://savaslabs.com" target="_blank" rel="noreferrer" className="accordion__link">
-                    link to restaurant
-                  </a>
-                </li>
-              </ul>
-            </div>
-            <div className="accordion__component">
-              <div className="accordion__date">
-                Tues, July <span style={{margin: `0 15px`}}>|</span> 11AM - 12PM
-                <a href="https://www.google.com/calendar/render?action=TEMPLATE&text=Test+Event&details=This+is+a+test+event&location=Central+Park%0ADurham%2C+NC&dates=20200815T153000Z%2F20200815T163800Z" target="_blank" rel="noreferrer" className="calendar__btn" style={{
-                  marginLeft: `20px`
-                }}>
-                  <Calendar />
-                </a>
-              </div>
-              <div className="accordion__order-time">
-                Order Before 10AM
-              </div>
-              <div className="accordion__dropoff">
-                Drop off information here medium italic
-              </div>
-              <h3>
-              Central Park
-              </h3>
-              <div className="accordion__address">
-                501 Foster St., Durham NC 27701
-              </div>
-                <ul>
-                  <li>
-                    <a href="https://savaslabs.com" target="_blank" rel="noreferrer" className="accordion__link">
-                      link to restaurant
-                    </a>
-                  </li>
-                  <li>
-                    <a href="https://savaslabs.com" target="_blank" rel="noreferrer" className="accordion__link">
-                      link to restaurant
-                    </a>
-                  </li>
-                  <li>
-                    <a href="https://savaslabs.com" target="_blank" rel="noreferrer" className="accordion__link">
-                      link to restaurant
-                    </a>
-                  </li>
-                  <li>
-                    <a href="https://savaslabs.com" target="_blank" rel="noreferrer" className="accordion__link">
-                      link to restaurant
-                    </a>
-                  </li>
-                </ul>
-              </div>
-              <div className="accordion__component">
+                <div
+                  data-sal="slide-up"
+                  data-sal-delay="200"
+                  data-sal-easing="ease"
+                  className="accordion__component"
+                >
                 <div className="accordion__date">
-                  Tues, July <span style={{margin: `0 15px`}}>|</span> 11AM - 12PM
+                  Saturday, August 22nd <span style={{margin: `0 15px`}}>|</span> TBD
                   <a href="https://www.google.com/calendar/render?action=TEMPLATE&text=Test+Event&details=This+is+a+test+event&location=Central+Park%0ADurham%2C+NC&dates=20200815T153000Z%2F20200815T163800Z" target="_blank" rel="noreferrer" className="calendar__btn" style={{
                     marginLeft: `20px`
                   }}>
@@ -314,36 +241,21 @@ const Accordions = () => (
                   </a>
                 </div>
                 <div className="accordion__order-time">
-                  Order Before 10AM
+                  TBD
                 </div>
                 <div className="accordion__dropoff">
-                  Drop off information here medium italic
+                  TBD
                 </div>
                 <h3>
-                Central Park
+                Woodcroft
                 </h3>
                 <div className="accordion__address">
-                  501 Foster St., Durham NC 27701
+                  TBD
                 </div>
                   <ul>
                     <li>
-                      <a href="https://savaslabs.com" target="_blank" rel="noreferrer" className="accordion__link">
-                        link to restaurant
-                      </a>
-                    </li>
-                    <li>
-                      <a href="https://savaslabs.com" target="_blank" rel="noreferrer" className="accordion__link">
-                        link to restaurant
-                      </a>
-                    </li>
-                    <li>
-                      <a href="https://savaslabs.com" target="_blank" rel="noreferrer" className="accordion__link">
-                        link to restaurant
-                      </a>
-                    </li>
-                    <li>
-                      <a href="https://savaslabs.com" target="_blank" rel="noreferrer" className="accordion__link">
-                        link to restaurant
+                      <a href="https://www.parkerandotis.com/" target="_blank" rel="noreferrer" className="accordion__link">
+                        Parker & Otis
                       </a>
                     </li>
                   </ul>
