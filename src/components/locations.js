@@ -9,8 +9,7 @@ const Locations = () => (
     style={{
       backgroundImage: `url(${Background})`,
       backgroundColor: `#D9F0EC`,
-      backgroundSize: `contain`,
-      backgroundRepeat: `no-repeat`
+      backgroundRepeat: `repeat`
     }}
   >
     <div

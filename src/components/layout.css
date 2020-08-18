@@ -532,7 +532,7 @@ ul li a:hover::after {
 	bottom: 0;
 	left: 0;
 	background-image: url('../images/utensil-bkgr.png');
-	background-size: cover;
+	background-repeat: repeat;
 	text-align: center;
 	z-index: 3;
 	background-color: #D9F0EC;

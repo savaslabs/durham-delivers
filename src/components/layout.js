@@ -39,8 +39,6 @@ const Layout = ({ children }) => {
           padding: `30px 0`,
           marginTop: `130px`,
           backgroundRepeat: `repeat`,
-          backgroundSize: `cover`,
-          backgroundPosition:  `100% 5%`
         }}>
         <div style={{
           maxWidth: `1080px`,

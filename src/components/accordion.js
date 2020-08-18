@@ -68,7 +68,7 @@ const Accordions = () => (
             </a>
           </div>
           <div className="accordion__order-time">
-            TBD
+            Order by 11:00 AM
           </div>
           <div className="accordion__dropoff">
             Pick up in the lobby
@@ -102,7 +102,7 @@ const Accordions = () => (
             </a>
           </div>
           <div className="accordion__order-time">
-            TBD
+            Order by 11:00 AM
           </div>
           <div className="accordion__dropoff">
             Pick up in the courtyard
@@ -135,7 +135,7 @@ const Accordions = () => (
               </a>
             </div>
             <div className="accordion__order-time">
-              TBD
+              Order by 11:00 AM
             </div>
             <div className="accordion__dropoff">
               TBD
@@ -169,7 +169,7 @@ const Accordions = () => (
                 </a>
               </div>
               <div className="accordion__order-time">
-                TBD
+                Order by 11:00 AM
               </div>
               <div className="accordion__dropoff">
                 TBD
@@ -207,13 +207,13 @@ const Accordions = () => (
                   </a>
                 </div>
                 <div className="accordion__order-time">
-                  TBD
+                  Order by 11:00 AM
                 </div>
                 <div className="accordion__dropoff">
                   TBD
                 </div>
                 <h3>
-                Burch Avenue Park
+                 Avenue Park
                 </h3>
                 <div className="accordion__address">
                   816 Burch Ave., Durham, NC 27701
@@ -234,14 +234,14 @@ const Accordions = () => (
                 >
                 <div className="accordion__date">
                   Saturday, August 22nd <span style={{margin: `0 15px`}}>|</span> TBD
-                  <a href="https://www.google.com/calendar/render?action=TEMPLATE&text=Test+Event&details=This+is+a+test+event&location=Central+Park%0ADurham%2C+NC&dates=20200815T153000Z%2F20200815T163800Z" target="_blank" rel="noreferrer" className="calendar__btn" style={{
+                  <a href="https://calendar.google.com/event?action=TEMPLATE&tmeid=MTZ2aGZraXBidHFva3VoY2I0bmIxMjU5NWggY190MnVsYnQwNzdlOTIzZzZtM2QxdW5uaThtOEBn&tmsrc=c_t2ulbt077e923g6m3d1unni8m8%40group.calendar.google.com" target="_blank" rel="noreferrer" className="calendar__btn" style={{
                     marginLeft: `20px`
                   }}>
                     <Calendar />
                   </a>
                 </div>
                 <div className="accordion__order-time">
-                  TBD
+                  Order by 11:00 AM
                 </div>
                 <div className="accordion__dropoff">
                   TBD
