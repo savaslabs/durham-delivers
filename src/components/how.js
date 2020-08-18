@@ -39,7 +39,7 @@ const HowTo = () => (
         data-sal-delay="500"
         data-sal-easing="ease-in"
       >
-        Place your order with the restaurant. Let them know it’s for a Durham Delivers event.
+        Place your order with the restaurant. Let them know it’s for a Durham Delivers event by using the promo code "DD" or by leaving a comment in your order.
       </li>
       <li
         data-sal="slide-up"
