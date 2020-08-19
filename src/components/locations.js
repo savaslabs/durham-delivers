@@ -189,6 +189,32 @@ const Locations = () => (
             </p>
           </div>
         </div>
+        <div
+          data-sal="slide-up"
+          data-sal-delay="400"
+          data-sal-easing="ease-in"
+          className="location__item"
+        >
+          <div className="location__image"
+            style={{
+              backgroundImage: `url(${Park1})`,
+            }}
+          >
+          </div>
+          <div style={{
+            padding: `10px 0 10px 8px`
+          }}>
+            <p className="park__title">
+              Solis Brightleaf Apartments
+            </p>
+            <p style={{
+              fontFamily: `'Heebo', 'Helvetica', sans-serif`,
+              fontSize: `18px`
+            }}>
+              1005 W Main St, Durham, NC 27701
+            </p>
+          </div>
+        </div>
       </div>
     </div>
   </div>
