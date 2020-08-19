@@ -17,7 +17,7 @@ export const items = [
     location: 'Central Park',
     address: '501 Foster St., Durham, NC 27701',
   },
-  { heading: 'August',
+  { heading: 'Aug',
     date: 'Tues, Aug 4',
     time: '11AM - 12PM',
     calenderLink: '#',
@@ -48,7 +48,7 @@ const Accordions = () => (
           cursor: `pointer`
         }}>
           <div className="accordion__header">
-            August
+            Aug
           </div>
         </AccordionItemButton>
       </AccordionItemHeading>
@@ -60,7 +60,7 @@ const Accordions = () => (
           className="accordion__component"
         >
           <div className="accordion__date">
-            Friday, August 21st <span style={{margin: `0 15px`}}>|</span> 5:30 pm
+            Fri, Aug 21 <span style={{margin: `0 15px`}}>|</span> 5:30 pm
             <a href="https://calendar.google.com/event?action=TEMPLATE&tmeid=NnZiYmJiNWNvdmE4ZjRxbm1pcGRocXFjMm8gY190MnVsYnQwNzdlOTIzZzZtM2QxdW5uaThtOEBn&tmsrc=c_t2ulbt077e923g6m3d1unni8m8%40group.calendar.google.com" target="_blank" rel="noreferrer" className="calendar__btn" style={{
               marginLeft: `20px`
             }}>
@@ -94,7 +94,7 @@ const Accordions = () => (
             className="accordion__component"
           >
           <div className="accordion__date">
-            Friday, August 21st <span style={{margin: `0 15px`}}>|</span> 5:30 pm
+            Fri, Aug 21 <span style={{margin: `0 15px`}}>|</span> 5:30 pm
             <a href="https://calendar.google.com/event?action=TEMPLATE&tmeid=N2d1YzNxbTU0ZXVvN2dxOTEwbjVuanZiaTAgY190MnVsYnQwNzdlOTIzZzZtM2QxdW5uaThtOEBn&tmsrc=c_t2ulbt077e923g6m3d1unni8m8%40group.calendar.google.com" target="_blank" rel="noreferrer" className="calendar__btn" style={{
               marginLeft: `20px`
             }}>
@@ -126,8 +126,42 @@ const Accordions = () => (
             data-sal-easing="ease"
             className="accordion__component"
           >
+          <div className="accordion__date">
+            Fri, Aug 21 <span style={{margin: `0 15px`}}>|</span> 5:30pm
+            <a href="https://calendar.google.com/event?action=TEMPLATE&tmeid=MTZ2aGZraXBidHFva3VoY2I0bmIxMjU5NWggY190MnVsYnQwNzdlOTIzZzZtM2QxdW5uaThtOEBn&tmsrc=c_t2ulbt077e923g6m3d1unni8m8%40group.calendar.google.com" target="_blank" rel="noreferrer" className="calendar__btn" style={{
+              marginLeft: `20px`
+            }}>
+              <Calendar />
+            </a>
+          </div>
+          <div className="accordion__order-time">
+            Order by 11:00 AM
+          </div>
+          <div className="accordion__dropoff">
+            Pick up in the lobby
+          </div>
+          <h3>
+          Solis Brightleaf Apartments
+          </h3>
+          <div className="accordion__address">
+            1005 W Main St., Durham, NC 27701
+          </div>
+            <ul>
+              <li>
+                <a href="https://copadurham.com/" target="_blank" rel="noreferrer" className="accordion__link">
+                  COPA
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div
+            data-sal="slide-up"
+            data-sal-delay="200"
+            data-sal-easing="ease"
+            className="accordion__component"
+          >
             <div className="accordion__date">
-              Friday, August 21st <span style={{margin: `0 15px`}}>|</span> 6:00 pm
+              Fri, Aug 21 <span style={{margin: `0 15px`}}>|</span> 6:00 pm
               <a href="https://calendar.google.com/event?action=TEMPLATE&tmeid=M3Q0YnRoampsZnNyMG41NGhubWo3cW9xdmggY190MnVsYnQwNzdlOTIzZzZtM2QxdW5uaThtOEBn&tmsrc=c_t2ulbt077e923g6m3d1unni8m8%40group.calendar.google.com" target="_blank" rel="noreferrer" className="calendar__btn" style={{
                 marginLeft: `20px`
               }}>
@@ -136,9 +170,6 @@ const Accordions = () => (
             </div>
             <div className="accordion__order-time">
               Order by 11:00 AM
-            </div>
-            <div className="accordion__dropoff">
-              TBD
             </div>
             <h3>
             Audubon Park
@@ -156,12 +187,11 @@ const Accordions = () => (
             </div>
             <div
               data-sal="slide-up"
-              data-sal-delay="200"
               data-sal-easing="ease"
               className="accordion__component"
             >
               <div className="accordion__date">
-                Friday, August 21st <span style={{margin: `0 15px`}}>|</span> 6:00 pm
+                Fri, Aug 21 <span style={{margin: `0 15px`}}>|</span> 6:00 pm
                 <a href="https://calendar.google.com/event?action=TEMPLATE&tmeid=MGdzNzFucWxzcGIyZjNrYWpuZWthOGhlbnQgY190MnVsYnQwNzdlOTIzZzZtM2QxdW5uaThtOEBn&tmsrc=c_t2ulbt077e923g6m3d1unni8m8%40group.calendar.google.com" target="_blank" rel="noreferrer" className="calendar__btn" style={{
                   marginLeft: `20px`
                 }}>
@@ -195,11 +225,12 @@ const Accordions = () => (
               </div>
                 <div
                   data-sal="slide-up"
+                  data-sal-delay="200"
                   data-sal-easing="ease"
                   className="accordion__component"
                 >
                 <div className="accordion__date">
-                  Saturday, August 22nd <span style={{margin: `0 15px`}}>|</span> 6:00pm
+                  Sat, Aug 22 <span style={{margin: `0 15px`}}>|</span> 6:00pm
                   <a href="https://calendar.google.com/event?action=TEMPLATE&tmeid=N2Ztb3I1cmYxcWtsazBzNjkzNmZhZGhvcmMgY190MnVsYnQwNzdlOTIzZzZtM2QxdW5uaThtOEBn&tmsrc=c_t2ulbt077e923g6m3d1unni8m8%40group.calendar.google.com" target="_blank" rel="noreferrer" className="calendar__btn" style={{
                     marginLeft: `20px`
                   }}>
@@ -228,12 +259,11 @@ const Accordions = () => (
                 </div>
                 <div
                   data-sal="slide-up"
-                  data-sal-delay="200"
                   data-sal-easing="ease"
                   className="accordion__component"
                 >
                 <div className="accordion__date">
-                  Saturday, August 22nd <span style={{margin: `0 15px`}}>|</span> TBD
+                  Sat, Aug 22 <span style={{margin: `0 15px`}}>|</span> TBD
                   <a href="https://calendar.google.com/event?action=TEMPLATE&tmeid=MTZ2aGZraXBidHFva3VoY2I0bmIxMjU5NWggY190MnVsYnQwNzdlOTIzZzZtM2QxdW5uaThtOEBn&tmsrc=c_t2ulbt077e923g6m3d1unni8m8%40group.calendar.google.com" target="_blank" rel="noreferrer" className="calendar__btn" style={{
                     marginLeft: `20px`
                   }}>

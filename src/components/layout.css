@@ -389,6 +389,7 @@ ul li a:hover::after {
 	padding-bottom: 20px;
 	border-bottom: 2px solid #BDBDBD;
 	max-width: max-content;
+	min-width: 325px;
 	margin-bottom: 20px;
 	padding-right: 50px;
 }
@@ -613,6 +614,15 @@ ul li a:hover::after {
 	.hamburger input:checked ~ .main-menu {
 		display: flex;
 	}
+
+	.accordion__address {
+		min-width: auto;
+	}
+
+	.accordion__component {
+		width: 100%;
+		padding-bottom: 50px;
+	}
 }
 
 @media screen and (max-width: 750px) {
@@ -692,11 +702,6 @@ ul li a:hover::after {
 	.accordion__header::after {
 		height: 14px;
 		width: 28px;
-	}
-
-	.accordion__component {
-		width: 100%;
-		padding-bottom: 50px;
 	}
 
 	.accordion__date {
