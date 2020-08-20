@@ -293,6 +293,11 @@ const Accordions = () => (
             </div>
         </AccordionItemPanel>
     </AccordionItem>
+    <div className="signup__container">
+      <p className="basic-text">
+        Want to organize a delivery for your neighborhood? Sign up to be a community captain <a href="https://forms.gle/x6PHyDfH9GZFvd5N8" className="basic-link">here</a>
+      </p>
+    </div>
   </Accordion>
   </div>
 )

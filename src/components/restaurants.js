@@ -26,7 +26,7 @@ const Restaurants = () => (
             data-sal-easing="ease-in"
             className="location__item"
           >
-            <a href="#" target="_blank" rel="noreferrer" className="restaurant__link">
+            <a href="https://bluecorncafedurham.com/" target="_blank" rel="noreferrer" className="restaurant__link">
               <div className="restaurant__image"
                 style={{
                   backgroundImage: `url(${BlueCorn})`,
@@ -44,7 +44,7 @@ const Restaurants = () => (
             data-sal-easing="ease-in"
             className="location__item"
           >
-            <a href="#" target="_blank" rel="noreferrer" className="restaurant__link">
+            <a href="https://www.bullcityburgerandbrewery.com/" target="_blank" rel="noreferrer" className="restaurant__link">
               <div className="restaurant__image"
                 style={{
                   backgroundImage: `url(${BullCity})`,
@@ -62,7 +62,7 @@ const Restaurants = () => (
             data-sal-easing="ease-in"
             className="location__item"
           >
-            <a href="#" target="_blank" rel="noreferrer" className="restaurant__link">
+            <a href="https://copadurham.com/" target="_blank" rel="noreferrer" className="restaurant__link">
               <div className="restaurant__image"
                 style={{
                   backgroundImage: `url(${Copa})`,
@@ -80,7 +80,7 @@ const Restaurants = () => (
             data-sal-easing="ease-in"
             className="location__item"
           >
-            <a href="#" target="_blank" rel="noreferrer" className="restaurant__link">
+            <a href="https://dameschickenwaffles.com/" target="_blank" rel="noreferrer" className="restaurant__link">
               <div className="restaurant__image"
                 style={{
                   backgroundImage: `url(${Dames})`,
@@ -98,7 +98,7 @@ const Restaurants = () => (
             data-sal-easing="ease-in"
             className="location__item"
           >
-            <a href="#" target="_blank" rel="noreferrer" className="restaurant__link">
+            <a href="https://www.goorshadurham.com/" target="_blank" rel="noreferrer" className="restaurant__link">
               <div className="restaurant__image"
                 style={{
                   backgroundImage: `url(${Goorsha})`,
@@ -116,7 +116,7 @@ const Restaurants = () => (
             data-sal-easing="ease-in"
             className="location__item"
           >
-            <a href="#" target="_blank" rel="noreferrer" className="restaurant__link">
+            <a href="https://www.parkerandotis.com/" target="_blank" rel="noreferrer" className="restaurant__link">
               <div className="restaurant__image"
                 style={{
                   backgroundImage: `url(${Parker})`,
@@ -134,7 +134,7 @@ const Restaurants = () => (
             data-sal-easing="ease-in"
             className="location__item"
           >
-            <a href="#" target="_blank" rel="noreferrer" className="restaurant__link">
+            <a href="https://www.pompieripizza.com/" target="_blank" rel="noreferrer" className="restaurant__link">
               <div className="restaurant__image"
                 style={{
                   backgroundImage: `url(${Pompierei})`,
@@ -152,7 +152,7 @@ const Restaurants = () => (
             data-sal-easing="ease-in"
             className="location__item"
           >
-            <a href="#" target="_blank" rel="noreferrer" className="restaurant__link">
+            <a href="https://www.zwelis.com/" target="_blank" rel="noreferrer" className="restaurant__link">
               <div className="restaurant__image"
                 style={{
                   backgroundImage: `url(${Zweli})`,
