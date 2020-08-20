@@ -48,7 +48,7 @@ const Accordions = () => (
           cursor: `pointer`
         }}>
           <div className="accordion__header">
-            Aug
+            August
           </div>
         </AccordionItemButton>
       </AccordionItemHeading>

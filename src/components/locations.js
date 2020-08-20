@@ -3,6 +3,10 @@ import Background from "../images/utensil-bkgr.png"
 import Park1 from "../images/park-1.png"
 import Burch from "../images/burch-avenue.jpeg"
 import OldBull from "../images/old-bull.jpg"
+import Audubon from "../images/audubon-park.png"
+import Northgate from "../images/northgate-park.png"
+import Woodcroft from "../images/woodcroft.png"
+import Brightleaf from "../images/brightleaf.png"
 
 const Locations = () => (
   <div className="locations__wrapper" id="local-pick-up"
@@ -26,13 +30,7 @@ const Locations = () => (
       >
         Delivery Locations
       </h2>
-      <div
-        style={{
-          display: `flex`,
-          flexWrap: `wrap`,
-          justifyContent: `space-between`
-        }}
-      >
+      <div className="container">
         <div
           data-sal="slide-up"
           data-sal-delay="400"
@@ -41,13 +39,11 @@ const Locations = () => (
         >
           <div className="location__image"
             style={{
-              backgroundImage: `url(${Park1})`,
+              backgroundImage: `url(${Audubon})`,
             }}
           >
           </div>
-          <div style={{
-            padding: `10px 0 10px 8px`
-          }}>
+          <div className="location__info">
             <p className="park__title">
               Audubon Park
             </p>
@@ -67,13 +63,11 @@ const Locations = () => (
         >
           <div className="location__image"
             style={{
-              backgroundImage: `url(${Park1})`,
+              backgroundImage: `url(${Northgate})`,
             }}
           >
           </div>
-          <div style={{
-            padding: `10px 0 10px 8px`
-          }}>
+          <div className="location__info">
             <p className="park__title">
               Northgate Park
             </p>
@@ -97,9 +91,7 @@ const Locations = () => (
             }}
           >
           </div>
-          <div style={{
-            padding: `10px 0 10px 8px`
-          }}>
+          <div className="location__info">
             <p className="park__title">
               Liberty Warehouse Apartments
             </p>
@@ -123,9 +115,7 @@ const Locations = () => (
             }}
           >
           </div>
-          <div style={{
-            padding: `10px 0 10px 8px`
-          }}>
+          <div className="location__info">
             <p className="park__title">
               Old Bull at ATC
             </p>
@@ -149,9 +139,7 @@ const Locations = () => (
             }}
           >
           </div>
-          <div style={{
-            padding: `10px 0 10px 8px`
-          }}>
+          <div className="location__info">
             <p className="park__title">
               Burch Avenue Park
             </p>
@@ -171,13 +159,11 @@ const Locations = () => (
         >
           <div className="location__image"
             style={{
-              backgroundImage: `url(${Park1})`,
+              backgroundImage: `url(${Woodcroft})`,
             }}
           >
           </div>
-          <div style={{
-            padding: `10px 0 10px 8px`
-          }}>
+          <div className="location__info">
             <p className="park__title">
               Woodcroft
             </p>
@@ -197,13 +183,11 @@ const Locations = () => (
         >
           <div className="location__image"
             style={{
-              backgroundImage: `url(${Park1})`,
+              backgroundImage: `url(${Brightleaf})`,
             }}
           >
           </div>
-          <div style={{
-            padding: `10px 0 10px 8px`
-          }}>
+          <div className="location__info">
             <p className="park__title">
               Solis Brightleaf Apartments
             </p>
