@@ -1,4 +1,5 @@
 import React from "react"
+import DurhamImg from "../images/durham-img.jpg"
 import BlueCorn from "../images/blue-corn.jpg"
 import BullCity from "../images/bull-city-burger.png"
 import Copa from "../images/copa.png"
@@ -166,6 +167,11 @@ const Restaurants = () => (
           </div>
         </div>
       </div>
+    </div>
+    <div className="cover__image"
+      style={{
+        backgroundImage: `url(${DurhamImg})`
+      }}>
     </div>
   </div>
 )
