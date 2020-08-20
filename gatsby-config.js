@@ -3,6 +3,7 @@ module.exports = {
     title: `Durham Delivers`,
     description: `Durham Delivers partners with local restaurants to create community food deliveries to parks and other spaces in Durham`,
     author: `@gatsbyjs`,
+    image: "../images/social-img.png"
   },
   plugins: [
     {
