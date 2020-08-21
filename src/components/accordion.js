@@ -202,13 +202,13 @@ const Accordions = () => (
                 Order by 11:00 AM
               </div>
               <div className="accordion__dropoff">
-                TBD
+                pick up on Acadia street by the pavillion parking lot swings
               </div>
               <h3>
               Northgate Park
               </h3>
               <div className="accordion__address">
-                location to be determined
+                300 W Club Boulevard, Durham, NC 27704
               </div>
                 <ul>
                   <li>

@@ -75,7 +75,7 @@ const Locations = () => (
               fontFamily: `'Heebo', 'Helvetica', sans-serif`,
               fontSize: `18px`
             }}>
-              location to be determined
+            300 W Club Boulevard, Durham, NC 27704
             </p>
           </div>
         </div>

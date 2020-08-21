@@ -3,7 +3,7 @@ module.exports = {
     title: `Durham Delivers`,
     description: `Durham Delivers partners with local restaurants to create community food deliveries to parks and other spaces in Durham`,
     author: `@gatsbyjs`,
-    image: "../images/social-img.png"
+    image: "../src/images/social-img.png"
   },
   plugins: [
     {
@@ -21,6 +21,14 @@ module.exports = {
         name: `images`,
         path: `${__dirname}/src/images`,
       },
+    },
+    {
+      resolve: 'gatsby-source-google-sheets',
+      options: {
+          spreadsheetId: '1foz_EJl06kb1dP5aREFa0g-olgddCE3g9EdTwCOT6uo',
+          worksheetTitle: 'Durham Delivers Events',
+          credentials: require('./credentials/client_secret.json')
+      }
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
