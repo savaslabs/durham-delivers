@@ -22,14 +22,14 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
-    {
-      resolve: 'gatsby-source-google-sheets',
-      options: {
-          spreadsheetId: '1foz_EJl06kb1dP5aREFa0g-olgddCE3g9EdTwCOT6uo',
-          worksheetTitle: 'Durham Delivers Events',
-          credentials: require('./credentials/client_secret.json')
-      }
-    },
+    // {
+    //   resolve: 'gatsby-source-google-sheets',
+    //   options: {
+    //       spreadsheetId: '1foz_EJl06kb1dP5aREFa0g-olgddCE3g9EdTwCOT6uo',
+    //       worksheetTitle: 'Durham Delivers Events',
+    //       credentials: require('./credentials/client_secret.json')
+    //   }
+    // },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
