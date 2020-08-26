@@ -290,6 +290,39 @@ const Accordions = () => (
                     </li>
                   </ul>
                 </div>
+                <div
+                  data-sal="slide-up"
+                  data-sal-easing="ease"
+                  className="accordion__component"
+                >
+                <div className="accordion__date">
+                  Wed, Aug 26 <span style={{margin: `0 15px`}}>|</span> TBD
+                  <a href="https://calendar.google.com/event?action=TEMPLATE&tmeid=M2ZxbDBwOTNqY2J2YWE4ZDBrODRzdWtxOWggY190MnVsYnQwNzdlOTIzZzZtM2QxdW5uaThtOEBn&tmsrc=c_t2ulbt077e923g6m3d1unni8m8%40group.calendar.google.com" target="_blank" rel="noreferrer" className="calendar__btn" style={{
+                    marginLeft: `20px`
+                  }}>
+                    <Calendar />
+                  </a>
+                </div>
+                <div className="accordion__order-time">
+                  Order by 11:00 AM
+                </div>
+                <div className="accordion__dropoff">
+                  Pick up in lobby
+                </div>
+                <h3>
+                Liberty Warehouse Apartments
+                </h3>
+                <div className="accordion__address">
+                  530 Foster St, Durham, NC 27701
+                </div>
+                  <ul>
+                    <li>
+                      <a href="https://www.zwelis.com/" target="_blank" rel="noreferrer" className="accordion__link">
+                        Zweli's
+                      </a>
+                    </li>
+                  </ul>
+                </div>
             </div>
         </AccordionItemPanel>
     </AccordionItem>
