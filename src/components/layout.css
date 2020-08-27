@@ -314,8 +314,12 @@ ul li a:hover::after {
 }
 
 .accordion__component {
-	width: 50%;
+	width: calc(50% - 50px);
 	padding-bottom: 60px;
+}
+
+.accordion__component:nth-child(odd) {
+	margin-right: 50px;
 }
 
 .accordion__panel {
@@ -531,8 +535,8 @@ ul li a:hover::after {
 	transition: transform .2s ease;
 	position: absolute;
 	bottom: -60px;
-	left: 12px;
-	right: 12px;
+	left: 0;
+	right: 0;
 	background-color: rgba(255, 255, 255, .9);
 	font-family: 'Heebo', 'Helvetica', sans-serif;
 	font-size: 24px;
