@@ -35,7 +35,7 @@ module.exports = {
       resolve: 'gatsby-source-google-sheets',
       options: {
           spreadsheetId: '1foz_EJl06kb1dP5aREFa0g-olgddCE3g9EdTwCOT6uo',
-          worksheetTitle: 'August',
+          worksheetTitle: 'Events',
           credentials: require('./client_secret.json')
       }
     },
