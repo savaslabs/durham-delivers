@@ -1,9 +1,15 @@
 var plugins = [{
-      plugin: require('/Users/colleencarroll/sites/durham-delivers/node_modules/gatsby-plugin-react-helmet/gatsby-ssr'),
+      plugin: require('/Users/colleenleonard/sites/durham-delivers/node_modules/gatsby-plugin-google-analytics/gatsby-ssr'),
+      options: {"plugins":[],"trackingId":"UA-61514316-3","head":true,"anonymize":true},
+    },{
+      plugin: require('/Users/colleenleonard/sites/durham-delivers/node_modules/gatsby-plugin-react-helmet/gatsby-ssr'),
       options: {"plugins":[]},
     },{
-      plugin: require('/Users/colleencarroll/sites/durham-delivers/node_modules/gatsby-plugin-manifest/gatsby-ssr'),
-      options: {"plugins":[],"name":"gatsby-starter-default","short_name":"starter","start_url":"/","background_color":"#663399","theme_color":"#663399","display":"minimal-ui","icon":"src/images/favicon.png","cache_busting_mode":"query","include_favicon":true,"legacy":true,"theme_color_in_head":true,"cacheDigest":"76adb5eeda30f221536f93272395f504"},
+      plugin: require('/Users/colleenleonard/sites/durham-delivers/node_modules/gatsby-plugin-manifest/gatsby-ssr'),
+      options: {"plugins":[],"name":"gatsby-starter-default","short_name":"starter","start_url":"/","background_color":"#663399","theme_color":"#663399","display":"minimal-ui","icon":"src/images/favicon.png","cache_busting_mode":"query","include_favicon":true,"legacy":true,"theme_color_in_head":true,"cacheDigest":"5b168b8b400007dfe2d36f121ef32254"},
+    },{
+      plugin: require('/Users/colleenleonard/sites/durham-delivers/node_modules/gatsby-plugin-offline/gatsby-ssr'),
+      options: {"plugins":[]},
     }]
 // During bootstrap, we write requires at top of this file which looks like:
 // var plugins = [

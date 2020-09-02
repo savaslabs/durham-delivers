@@ -6,6 +6,7 @@ import Hero from "../components/hero"
 import Warning from "../components/warning"
 import HowTo from "../components/how"
 import Locations from "../components/locations"
+import Signup from "../components/signup"
 import Restaurants from "../components/restaurants"
 import Accordion from "../components/accordion"
 import Footer from "../components/footer"
@@ -17,6 +18,7 @@ const IndexPage = () => (
       <Warning />
       <HowTo />
       <Locations />
+      <Signup />
       <Restaurants />
       <Accordion />
       <Footer />
