@@ -185,7 +185,6 @@ ul li a:hover::after {
 }
 
 .header__container {
-	/* transition: opacity .5s ease-in; */
 	position: relative;
 	display: flex;
 	flex-direction: row;
@@ -194,12 +193,7 @@ ul li a:hover::after {
 	max-width: 1080px;
 	padding: 0 30px;
 	flex-wrap: nowrap;
-	/* opacity: 0; */
 }
-
-/* .header__container.show {
-	opacity: 1;
-} */
 
 .logo__container {
 	align-self: center;
@@ -310,16 +304,15 @@ ul li a:hover::after {
 .accordion__item-container {
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-between;
 }
 
 .accordion__component {
-	width: calc(50% - 50px);
+	width: 415px;
 	padding-bottom: 60px;
 }
 
 .accordion__component:nth-child(odd) {
-	margin-right: 50px;
+	margin-right: 135px;
 }
 
 .accordion__panel {
@@ -376,9 +369,12 @@ ul li a:hover::after {
 
 .accordion__date {
 	font-family: 'Heebo', 'Helvetica', sans-serif;
-	font-size: 24px;
+	font-size: 18px;
+	margin-bottom: 7px;
 	font-weight: 500;
 	text-transform: uppercase;
+	display: flex;
+	align-items: center;
 }
 
 .accordion__header {
@@ -403,8 +399,7 @@ ul li a:hover::after {
 	color: #000000;
 	padding-bottom: 20px;
 	border-bottom: 2px solid #BDBDBD;
-	max-width: max-content;
-	min-width: 325px;
+	width: auto;
 	margin-bottom: 20px;
 	padding-right: 50px;
 }
@@ -412,12 +407,22 @@ ul li a:hover::after {
 .accordion__order-time {
 	font-family: 'Heebo', 'Helvetica', sans-serif;
 	font-weight: 500;
-	font-size: 18px;
+	font-size: 16px;
 	line-height: 26px;
 	color: #4F4F4F;
 	text-transform: uppercase;
 	letter-spacing: 0.01em;
 	margin: 6px 0;
+}
+
+.accordion__name {
+	font-family: 'Archivo', 'Helvetica', sans-serif;
+	font-weight: 600;
+	font-size: 27px;
+	line-height: 100%;
+	letter-spacing: 0.01em;
+	color: #3C827A;
+	margin: 15px 0;
 }
 
 .accordion__dropoff {
@@ -431,7 +436,7 @@ ul li a:hover::after {
 .accordion__link {
 	font-size: 21px;
 	line-height: 100%;
-	margin-bottom: 3px;
+	margin-bottom: 7px;
 	max-width: max-content;
 }
 
@@ -641,7 +646,33 @@ ul li a:hover::after {
 }
 
 .signup__container {
-	padding: 100px 0 0 0;
+	background: #3C827A;
+	text-align: center;
+	padding: 30px 0 50px 0;
+}
+
+.signup__text {
+	font-family: 'Heebo', 'Helvetica', sans-serif;
+	font-size: 24px;
+	line-height: 125%;
+	font-weight: 700;
+	color: #FFFFFF;
+	margin-bottom: 40px;
+}
+
+.signup__button {
+	transition: background-color .3s ease;
+	background-color: #FFFFFF;
+	border-radius: 7px;
+	font-family: 'Heebo', 'Helvetica', sans-serif;
+	font-weight: 500;
+	padding: 10px 20px;
+	text-decoration: none;
+	color: #3C827A;
+}
+
+.signup__button:hover {
+	background-color: #D9F0EC;
 }
 
 @media screen and (max-width: 1080px) {
@@ -682,8 +713,12 @@ ul li a:hover::after {
 		display: flex;
 	}
 
+	.accordion__component:nth-child(odd) {
+		margin-right: 0;
+	}
+
 	.accordion__address {
-		min-width: auto;
+		max-width: 100%;
 	}
 
 	.accordion__component {
