@@ -7,6 +7,8 @@ import Audubon from "../images/audubon-park.png"
 import Northgate from "../images/northgate-park.png"
 import Woodcroft from "../images/woodcroft.png"
 import Brightleaf from "../images/brightleaf.png"
+import Alden from "../images/alden.jpg"
+import Au from "../images/au.png"
 
 const Locations = () => (
   <div className="locations__wrapper" id="local-pick-up"
@@ -196,6 +198,54 @@ const Locations = () => (
               fontSize: `18px`
             }}>
               1005 W Main St, Durham, NC 27701
+            </p>
+          </div>
+        </div>
+        <div
+          data-sal="slide-up"
+          data-sal-delay="500"
+          data-sal-easing="ease-in"
+          className="location__item"
+        >
+          <div className="location__image"
+            style={{
+              backgroundImage: `url(${Alden})`,
+            }}
+          >
+          </div>
+          <div className="location__info">
+            <p className="park__title">
+              Alden Place Apartments
+            </p>
+            <p style={{
+              fontFamily: `'Heebo', 'Helvetica', sans-serif`,
+              fontSize: `18px`
+            }}>
+              500 Alexan Dr., Durham, NC 27707
+            </p>
+          </div>
+        </div>
+        <div
+          data-sal="slide-up"
+          data-sal-delay="500"
+          data-sal-easing="ease-in"
+          className="location__item"
+        >
+          <div className="location__image"
+            style={{
+              backgroundImage: `url(${Au})`,
+            }}
+          >
+          </div>
+          <div className="location__info">
+            <p className="park__title">
+              American Underground
+            </p>
+            <p style={{
+              fontFamily: `'Heebo', 'Helvetica', sans-serif`,
+              fontSize: `18px`
+            }}>
+              201 West Main St., Durham, NC 27701
             </p>
           </div>
         </div>

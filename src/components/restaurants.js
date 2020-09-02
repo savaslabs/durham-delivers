@@ -8,6 +8,8 @@ import Goorsha from "../images/goorsha.jpg"
 import Parker from "../images/parker-and-otis.png"
 import Pompierei from "../images/pompierei.jpg"
 import Zweli from "../images/zweli.png"
+import Federal from "../images/federal.png"
+import Locopops from "../images/locopops.png"
 
 const Restaurants = () => (
   <div id="participating-restaurants">
@@ -161,6 +163,42 @@ const Restaurants = () => (
               >
                 <div class="restaurant__title">
                   Zweli's
+                </div>
+              </div>
+            </a>
+          </div>
+          <div
+            data-sal="slide-up"
+            data-sal-delay="400"
+            data-sal-easing="ease-in"
+            className="location__item"
+          >
+            <a href="https://ilovelocopops.com/" target="_blank" rel="noreferrer" className="restaurant__link">
+              <div className="restaurant__image"
+                style={{
+                  backgroundImage: `url(${Locopops})`,
+                }}
+              >
+                <div class="restaurant__title">
+                  Locopops
+                </div>
+              </div>
+            </a>
+          </div>
+          <div
+            data-sal="slide-up"
+            data-sal-delay="600"
+            data-sal-easing="ease-in"
+            className="location__item"
+          >
+            <a href="https://www.thefederal.net/" target="_blank" rel="noreferrer" className="restaurant__link">
+              <div className="restaurant__image"
+                style={{
+                  backgroundImage: `url(${Federal})`,
+                }}
+              >
+                <div class="restaurant__title">
+                  Federal
                 </div>
               </div>
             </a>
