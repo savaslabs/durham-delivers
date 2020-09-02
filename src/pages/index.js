@@ -51,7 +51,7 @@ const [posts, setPosts] = useState([])
                   <AccordionItemPanel className="accordion__panel">
                   <div className="accordion__item-container">
                   {posts.map(post => (
-                    <div
+                    <div className="accordion__component sal-animate"
                     >
                       <div className="accordion__date">
                         {post.date} <span style={{margin: `0 15px`}}>|</span> {post.time}
