@@ -6,6 +6,7 @@ import Hero from "../components/hero"
 import Warning from "../components/warning"
 import HowTo from "../components/how"
 import Locations from "../components/locations"
+import Signup from "../components/signup"
 import Restaurants from "../components/restaurants"
 import Calendar from '../components/calendar'
 import Footer from "../components/footer"
@@ -29,6 +30,7 @@ const [posts, setPosts] = useState([])
         <Warning />
         <HowTo />
         <Locations />
+        <Signup />
         <Restaurants />
           <div id="calendar">
             <Accordion className="accordion" allowZeroExpanded preExpanded={['a']}>
@@ -100,7 +102,6 @@ export const query = graphql`
       orderbefore
       address
       specialinstructions
-      restaurant1
     }
   }
 }
