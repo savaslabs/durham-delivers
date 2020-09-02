@@ -41,10 +41,7 @@ const Accordions = () => (
             </a>
           </div>
           <div className="accordion__order-time">
-            Order by Fri Sept. 4 @ 4 PM
-          </div>
-          <div className="accordion__dropoff">
-            Call in your order between 11:15 a.m.-4 p.m. on Friday, Sept. 4. Specify that it is for the Apartments @ American Tobacco Durham Delivers order. Pick up in lobby.
+            Order by Fri Sept. 4 @ 4 PM. Call in your order between 11:15 a.m.-4 p.m. on Friday, Sept. 4. Specify that it is for the Apartments @ American Tobacco Durham Delivers order. Pick up in lobby.
           </div>
           <div className="accordion__name">
             Old Bull at ATC
@@ -79,10 +76,7 @@ const Accordions = () => (
               </a>
             </div>
             <div className="accordion__order-time">
-            Order by 10 PM on Thursday, Sept. 3
-            </div>
-            <div className="accordion__dropoff">
-              Order online for pickup, schedule for 5:30 PM on 9/4. Include “Solis Brightleaf Durham Delivers Order” as special instructions when you place your order. Pick up food at lobby.
+            Order by 10 PM on Thursday, Sept. 3. Order online for pickup, schedule for 5:30 PM on 9/4. Include “Solis Brightleaf Durham Delivers Order” as special instructions when you place your order. Pick up food at lobby.
             </div>
             <div className="accordion__name">
               Solis Brightleaf Apartments
