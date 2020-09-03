@@ -60,7 +60,17 @@ module.exports = {
           {
             baseId: `appHnugz6zRl71EGT`,
             tableName: `Events`,
-            tableLinks: [`Location`, `Address`, `Image`, `Note`],
+            defaultValues: {
+              location_name: "",
+              start: "",
+              end: "",
+              order_by: "",
+              address: "",
+              pick_up_location: "",
+              image: "",
+              instructions: "",
+              restaurants: "",
+            },
           },
           {
             baseId: `appHnugz6zRl71EGT`,
