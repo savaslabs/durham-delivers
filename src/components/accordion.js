@@ -11,6 +11,10 @@ import {
 
 const Accordions = ({ data }) => {
   const month = moment(data[0].start).format("MMMM");
+
+  // Sort events within the month.
+  data.sort((a, b) => moment(a.start) - moment(b.start));
+
   return (
     <div id="calendar">
       <Accordion className="accordion" allowZeroExpanded preExpanded={["a"]}>
