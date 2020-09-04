@@ -269,7 +269,15 @@ export default function RestaurantQuery(props) {
               node {
                 data {
                   restaurant
-                  logo
+                  logo {
+                    localFiles {
+                      childImageSharp {
+                        fluid(maxWidth: 256) {
+                          ...GatsbyImageSharpFluid_tracedSVG
+                        }
+                      }
+                    }
+                  }
                   url
                 }
               }
