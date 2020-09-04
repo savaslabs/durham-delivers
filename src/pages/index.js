@@ -22,7 +22,7 @@ const IndexPage = ({ data }) => {
       <Locations />
       <Signup />
       <Restaurants />
-      <Accordions data={data.allAirtable.edges[0].node.data} />
+      <Accordions data={data.allAirtable.edges} />
       <Footer />
     </Layout>
   );
