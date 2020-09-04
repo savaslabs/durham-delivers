@@ -75,6 +75,20 @@ module.exports = {
           {
             baseId: `appHnugz6zRl71EGT`,
             tableName: `Restaurants`,
+            defaultValues: {
+              name: "",
+              logo: "",
+              url: "",
+            },
+          },
+          {
+            baseId: `appHnugz6zRl71EGT`,
+            tableName: `Locations`,
+            defaultValues: {
+              name: "",
+              address: "",
+              location: "",
+            },
           },
         ],
       },
