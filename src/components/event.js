@@ -6,8 +6,8 @@ const Event = ({ data }) => {
   const startTime = moment(data.start).format("ddd MMMM Do YYYY, h:mm");
   const endTime = moment(data.end).format("h:mm");
   const calendarLink = data.calendarLink;
-  const name = data.location_ref.location_name;
-  const address = data.location_ref.location_address;
+  const name = data.location_ref[0].data.location_name;
+  const address = data.location_ref[0].data.location_address;
   const note = data.event_note;
   const restaurants = data.restaurants;
 
