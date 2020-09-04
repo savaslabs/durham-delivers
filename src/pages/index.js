@@ -9,11 +9,10 @@ import HowTo from "../components/how";
 import Locations from "../components/locations";
 import Signup from "../components/signup";
 import Restaurants from "../components/restaurants";
-import Accordion from "../components/accordion";
+import Accordions from "../components/accordions";
 import Footer from "../components/footer";
 
 const IndexPage = ({ data }) => {
-  console.log(data);
   return (
     <Layout>
       <SEO title="Home" />
@@ -23,7 +22,7 @@ const IndexPage = ({ data }) => {
       <Locations />
       <Signup />
       <Restaurants />
-      <Accordion />
+      <Accordions data={data.allAirtable.edges[0].node.data} />
       <Footer />
     </Layout>
   );

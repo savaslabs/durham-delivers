@@ -14,7 +14,6 @@ import Federal from "../images/federal.png";
 import Locopops from "../images/locopops.png";
 
 const Restaurants = ({ data }) => {
-  console.log(data);
   return (
     <div id="participating-restaurants">
       <div className="order__container">

@@ -13,7 +13,6 @@ import Alden from "../images/alden.jpg";
 import Au from "../images/au.png";
 
 const Locations = ({ data }) => {
-  console.log(data);
   return (
     <div
       className="locations__wrapper"
