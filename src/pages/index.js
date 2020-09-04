@@ -33,17 +33,21 @@ export default IndexPage;
 
 export const query = graphql`
   query Events {
-    airtable(table: { eq: "Events" }) {
-      data {
-        location_name
-        start
-        end
-        order_by
-        address
-        pick_up_location
-        image
-        instructions
-        restaurants
+    allAirtable(filter: { table: { eq: "Events" } }) {
+      edges {
+        node {
+          data {
+            location_name
+            start
+            end
+            order_by
+            address
+            pick_up_location
+            image
+            instructions
+            restaurants
+          }
+        }
       }
     }
   }
