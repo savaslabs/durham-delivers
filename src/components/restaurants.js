@@ -270,6 +270,8 @@ export default function RestaurantQuery(props) {
               node {
                 data {
                   restaurant
+                  logo
+                  url
                 }
               }
             }

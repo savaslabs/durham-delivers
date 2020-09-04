@@ -266,9 +266,9 @@ export default function LocationQuery(props) {
             edges {
               node {
                 data {
-                  name
-                  address
-                  image
+                  location_name
+                  location_address
+                  location_image
                 }
               }
             }

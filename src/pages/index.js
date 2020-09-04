@@ -37,15 +37,23 @@ export const query = graphql`
       edges {
         node {
           data {
-            location_name
+            location_ref {
+              data {
+                location_name
+                location_address
+                location_image
+              }
+            }
             start
             end
-            order_by
-            address
-            pick_up_location
-            image
-            instructions
-            restaurants
+            event_note
+            calendar_link
+            restaurants {
+              data {
+                restaurant
+                url
+              }
+            }
           }
         }
       }
