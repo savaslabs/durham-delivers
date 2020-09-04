@@ -4,7 +4,7 @@ import Calendar from "../components/calendar";
 
 const Event = ({ data }) => {
   const startTime = moment(data.start).format("ddd MMMM Do YYYY, h:mm");
-  const endTime = moment(data.end).format("h:mm");
+  const endTime = moment(data.end).format("h:mm a");
   const calendarLink = data.calendarLink;
   const name = data.location_ref[0].data.location_name;
   const address = data.location_ref[0].data.location_address;
