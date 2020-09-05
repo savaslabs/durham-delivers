@@ -66,6 +66,95 @@ const Accordions = () => (
                 </li>
               </ul>
             </div>
+
+            <div
+              data-sal="slide-up"
+              data-sal-easing="ease"
+              className="accordion__component"
+            >
+              <div className="accordion__date">
+                Wednesday, Sept. 9 <span style={{ margin: `0 15px` }}>|</span>6
+                - 6:30 PM
+                <a
+                  href="https://calendar.google.com/event?action=TEMPLATE&tmeid=NzZtdTJqdGtsamZtb2lvNG5lb2ttZnM2MWogbWFkZHlAc2F2YXNsYWJzLmNvbQ&tmsrc=maddy%40savaslabs.com"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="calendar__btn"
+                  style={{
+                    marginLeft: `20px`,
+                  }}
+                >
+                  <Calendar />
+                </a>
+              </div>
+              <div className="accordion__order-time">
+                Order by: 10 p.m. on Tuesday, Sept. 8 <br />
+                Order online for pickup, schedule for 6 p.m. on 9/9. Include
+                “Downing Creek Durham Delivers Order” as special instructions
+                when you place your order.
+              </div>
+              <div className="accordion__name">Downing Creek</div>
+              <div className="accordion__address">
+                Park @ 6799 Downing Creek Pkwy
+              </div>
+              <ul>
+                <li>
+                  <a
+                    href="https://bluecorncafedurham.com/blue-corn-cafe-durham-home/pick-up-orders/"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="accordion__link"
+                  >
+                    Blue Corn Cafe
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <div
+              data-sal="slide-up"
+              data-sal-easing="ease"
+              className="accordion__component"
+            >
+              <div className="accordion__date">
+                Wednesday, Sept. 9 <span style={{ margin: `0 15px` }}>|</span>6
+                - 6:30 PM
+                <a
+                  href="https://calendar.google.com/event?action=TEMPLATE&tmeid=NzZtdTJqdGtsamZtb2lvNG5lb2ttZnM2MWogbWFkZHlAc2F2YXNsYWJzLmNvbQ&tmsrc=maddy%40savaslabs.com"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="calendar__btn"
+                  style={{
+                    marginLeft: `20px`,
+                  }}
+                >
+                  <Calendar />
+                </a>
+              </div>
+              <div className="accordion__order-time">
+                Order by: 4 p.m. on Wednesday, Sept. 9 <br />
+                Instructions: Order online for pickup. In your cart, use coupon
+                code DowningCreek. During checkout, schedule your pickup for 6
+                p.m. on Sept. 9
+              </div>
+              <div className="accordion__name">Downing Creek</div>
+              <div className="accordion__address">
+                Park @ 6799 Downing Creek Pkwy
+              </div>
+              <ul>
+                <li>
+                  <a
+                    href="https://locopops.square.site/"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="accordion__link"
+                  >
+                    LocoPops
+                  </a>
+                </li>
+              </ul>
+            </div>
+
             <div
               data-sal="slide-up"
               data-sal-easing="ease"
