@@ -51,7 +51,7 @@ export const query = graphql`
             restaurants {
               data {
                 restaurant
-                url
+                order_url
               }
             }
           }

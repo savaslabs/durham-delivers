@@ -1,5 +1,7 @@
 import React from "react";
 import moment from "moment";
+import ReactMarkdown from "react-markdown";
+
 import Calendar from "../components/calendar";
 
 const Event = ({ data }) => {
@@ -40,7 +42,10 @@ const Event = ({ data }) => {
         {orderBy && (
           <div className="accordion__order-time">Order by: {orderBy}</div>
         )}
-        <div className="accordion__order-time">{instructions}</div>
+        <ReactMarkdown
+          source={instructions}
+          className="accordion__order-time"
+        />
         <div className="accordion__name">{name}</div>
         <div className="accordion__address">{address}</div>
         {restaurants && (
@@ -49,7 +54,7 @@ const Event = ({ data }) => {
               return (
                 <li key={Math.random()}>
                   <a
-                    href={restaurant.data.url}
+                    href={restaurant.data.order_url}
                     target="_blank"
                     rel="noreferrer"
                     className="accordion__link"

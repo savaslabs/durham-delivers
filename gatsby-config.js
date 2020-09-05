@@ -88,6 +88,7 @@ module.exports = {
               name: "",
               logo: [],
               url: "",
+              order_url: "",
             },
           },
           {
