@@ -35,6 +35,7 @@ export const query = graphql`
     allAirtable(filter: { table: { eq: "Events" } }) {
       edges {
         node {
+          id
           data {
             location_ref {
               data {

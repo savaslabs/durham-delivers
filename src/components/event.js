@@ -23,9 +23,7 @@ const Event = ({ data }) => {
         className="accordion__component"
       >
         <div className="accordion__date">
-          <date>
-            {startTime}–{endTime}
-          </date>
+          {startTime}–{endTime}
           <a
             href={calendarLink}
             target="_blank"
@@ -39,9 +37,7 @@ const Event = ({ data }) => {
           </a>
         </div>
         {orderBy && (
-          <div className="accordion__order-time">
-            Order by: <date>{orderBy}</date>
-          </div>
+          <div className="accordion__order-time">Order by: {orderBy}</div>
         )}
         <div className="accordion__order-time">{instructions}</div>
         <div className="accordion__name">{name}</div>

@@ -93,10 +93,11 @@ module.exports = {
           {
             baseId: `appHnugz6zRl71EGT`,
             tableName: `Locations`,
+            mapping: { location_image: `fileNode` },
             defaultValues: {
               location_name: "",
               location_address: "",
-              location_image: "",
+              location_image: [],
             },
           },
         ],
