@@ -1,6 +1,11 @@
 # Durham Delivers
 
-Built upon Gatsby's default starter
+## Content Entry
+
+- Content is entered in [Airtable](https://airtable.com/tblcgDnYltEUNJSd0/viwM06wECbc1hpHWP?blocks=hide), and pulled from Airtable on `yarn develop` and `yarn build`.
+- Note: The `instructions` field in Airtable supports Markdown for links: `[link text](https://www.example.com)`
+- @todo - once this set up is on prod, add a button to Deploy to Netlify so content editors can publish their updates.
+- @todo Invite content editors to the Airtable with limited persmissions.
 
 ## Development
 
