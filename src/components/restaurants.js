@@ -5,6 +5,7 @@ import DurhamImg from "../images/durham-img.jpg";
 
 const Restaurants = ({ data }) => {
   const restaurants = data.allAirtable.edges;
+  // Alphebetize by name
   restaurants.sort((a, b) =>
     a.node.data.restaurant.localeCompare(b.node.data.restaurant)
   );

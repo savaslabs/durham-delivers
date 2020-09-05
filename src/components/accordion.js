@@ -32,7 +32,7 @@ const Accordions = ({ data }) => {
           <AccordionItemPanel className="accordion__panel">
             <div className="accordion__item-container">
               {data.map((event) => {
-                return <Event key={event.start} data={event} />;
+                return <Event key={Math.random()} data={event} />;
               })}
             </div>
           </AccordionItemPanel>

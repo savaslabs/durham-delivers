@@ -3,9 +3,10 @@ import moment from "moment";
 import Calendar from "../components/calendar";
 
 const Event = ({ data }) => {
-  const startTime = moment(data.start).format("ddd MMMM Do YYYY, h:mm");
+  const date = moment(data.start).format("ddd MMM Do");
+  const startTime = moment(data.start).format("h:mm");
   const endTime = moment(data.end).format("h:mm a");
-  const calendarLink = data.calendarLink;
+  const calendarLink = data.calendar_link;
   const name = data.location_ref[0].data.location_name;
   const address = data.location_ref[0].data.location_address;
   const orderBy =
@@ -23,7 +24,7 @@ const Event = ({ data }) => {
         className="accordion__component"
       >
         <div className="accordion__date">
-          {startTime}–{endTime}
+          {date} | {startTime}–{endTime}
           <a
             href={calendarLink}
             target="_blank"

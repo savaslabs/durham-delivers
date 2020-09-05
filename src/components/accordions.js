@@ -4,8 +4,11 @@ import Accordion from "./accordion";
 
 const Accordions = ({ data }) => {
   let events = data.map((el) => el.node.data);
+
   // Filter out events that have already passed.
-  events.filter((event) => moment(event["start"]).isAfter(Date()));
+  events = events.filter((event) => {
+    return moment().isBefore(moment(event.start));
+  });
 
   // Make the event month easier to query. add 1 because month starts indexing at 0.
   events.forEach((event) => (event.month = moment(event["start"]).month() + 1));
