@@ -40,12 +40,12 @@ export const query = graphql`
               data {
                 location_name
                 location_address
-                location_image
               }
             }
             start
             end
-            event_note
+            order_by
+            instructions
             calendar_link
             restaurants {
               data {

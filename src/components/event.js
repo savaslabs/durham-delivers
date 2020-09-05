@@ -8,7 +8,11 @@ const Event = ({ data }) => {
   const calendarLink = data.calendarLink;
   const name = data.location_ref[0].data.location_name;
   const address = data.location_ref[0].data.location_address;
-  const note = data.event_note;
+  const orderBy =
+    data.order_by.length > 0
+      ? moment(data.order_by).format("ddd MMM Do h:mm a")
+      : null;
+  const instructions = data.instructions;
   const restaurants = data.restaurants;
 
   return (
@@ -19,7 +23,9 @@ const Event = ({ data }) => {
         className="accordion__component"
       >
         <div className="accordion__date">
-          {startTime}–{endTime}
+          <date>
+            {startTime}–{endTime}
+          </date>
           <a
             href={calendarLink}
             target="_blank"
@@ -32,7 +38,12 @@ const Event = ({ data }) => {
             <Calendar />
           </a>
         </div>
-        <div className="accordion__order-time">{note}</div>
+        {orderBy && (
+          <div className="accordion__order-time">
+            Order by: <date>{orderBy}</date>
+          </div>
+        )}
+        <div className="accordion__order-time">{instructions}</div>
         <div className="accordion__name">{name}</div>
         <div className="accordion__address">{address}</div>
         {restaurants && (
