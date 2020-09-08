@@ -2,8 +2,11 @@ import React from "react";
 import { StaticQuery, graphql } from "gatsby";
 
 import Background from "../images/utensil-bkgr.png";
+import { useTileNumber } from "../hooks/useWindowSize";
 
 const Locations = ({ data }) => {
+  const maxTiles = useTileNumber();
+
   const locations = data.allAirtable.edges;
   // Alphebetize by name
   locations.sort((a, b) =>
@@ -31,12 +34,12 @@ const Locations = ({ data }) => {
         </h2>
         <div className="container">
           {locations.length > 0 &&
-            locations.map((location) => {
+            locations.map((location, index) => {
               const imageUrl = location.node.data.location_image.localFiles
                 ? location.node.data.location_image.localFiles[0]
                     .childImageSharp.fluid.src
                 : null;
-              return (
+              return index < maxTiles ? (
                 <div
                   data-sal="slide-up"
                   data-sal-delay="400"
@@ -64,6 +67,8 @@ const Locations = ({ data }) => {
                     </p>
                   </div>
                 </div>
+              ) : (
+                <div key={location.node.id}> </div>
               );
             })}
         </div>

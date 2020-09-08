@@ -2,8 +2,11 @@ import React from "react";
 import { StaticQuery, graphql } from "gatsby";
 
 import DurhamImg from "../images/durham-img.jpg";
+import { useTileNumber } from "../hooks/useTileNumber";
 
 const Restaurants = ({ data }) => {
+  const maxTiles = useTileNumber();
+
   const restaurants = data.allAirtable.edges;
   // Alphebetize by name
   restaurants.sort((a, b) =>
@@ -17,12 +20,12 @@ const Restaurants = ({ data }) => {
         </h2>
         <div className="container">
           {restaurants.length > 0 &&
-            restaurants.map((restaurant) => {
+            restaurants.map((restaurant, index) => {
               const logoUrl = restaurant.node.data.logo.localFiles[0]
                 ? restaurant.node.data.logo.localFiles[0].childImageSharp.fluid
                     .src
                 : null;
-              return (
+              return index < maxTiles ? (
                 <div
                   data-sal="slide-up"
                   data-sal-delay="400"
@@ -48,6 +51,8 @@ const Restaurants = ({ data }) => {
                     </div>
                   </a>
                 </div>
+              ) : (
+                <div key={restaurant.node.id}></div>
               );
             })}
         </div>
