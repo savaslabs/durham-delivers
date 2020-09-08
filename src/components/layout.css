@@ -997,3 +997,13 @@ ul li a:hover::after {
     line-height: 36px;
   }
 }
+
+@media (pointer: coarse) {
+  .restaurant__image {
+    filter: none;
+  }
+  .restaurant__title {
+    transform: translateY(-80px);
+    overflow: visible;
+  }
+}
