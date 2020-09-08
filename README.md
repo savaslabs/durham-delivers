@@ -1,12 +1,27 @@
 # Durham Delivers
 
-Built upon Gatsby's default starter
+## Content Entry
+
+- Content is entered in [Airtable](https://airtable.com/tblcgDnYltEUNJSd0/viwM06wECbc1hpHWP?blocks=hide), and pulled from Airtable when the site is deployed.
+- The `instructions` field in Airtable supports Markdown for links: `[link text](https://www.example.com)`
+- [Instructions for generating calendar event links](https://support.google.com/calendar/answer/41207?hl=en)
+- Create maps for locations without images at [snazzymaps.com](https://snazzymaps.com/style/8097/wy)
+- @todo - once this set up is on prod, add a button to Deploy to Netlify so content editors can publish their updates.
+- @todo Invite content editors to the Airtable with limited permissions.
 
 ## Development
 
 1. Clone repository
-2. run `yarn`
-3. run `yarn develop` and navigate to http://localhost:8000/
+1. Create a `.env` file with the contents:
+
+```
+AIRTABLE_API_KEY='XXX'
+```
+
+where XXX is the read-only Airtable API key obtained from 1pass
+
+1. run `yarn` to install dependencies
+1. run `yarn develop` and navigate to http://localhost:8000/
 
 ## Deployment
 
