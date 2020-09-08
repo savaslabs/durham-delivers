@@ -1,17 +1,42 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { StaticQuery, graphql } from "gatsby";
 
 import DurhamImg from "../images/durham-img.jpg";
-import { useTileNumber } from "../hooks/useTileNumber";
+import { useWindowSize } from "../util/useWindowSize";
+import { getTileNumber } from "../util/getTileNumber";
+import Button from "./button";
 
 const Restaurants = ({ data }) => {
-  const maxTiles = useTileNumber();
+  const width = useWindowSize().width;
+  const [minTiles, setMinTiles] = useState();
+  const [text, setText] = useState("Show More");
+
+  useEffect(() => {
+    const initialTiles = getTileNumber(width);
+    if (typeof initialTiles === "number") {
+      setMinTiles(initialTiles);
+    }
+  }, [width]);
+
+  // Manage "Show More" state
+  const handleClick = () => {
+    if (text === "Show More") {
+      setText("Show Less");
+    } else {
+      setText("Show More");
+    }
+  };
 
   const restaurants = data.allAirtable.edges;
   // Alphebetize by name
   restaurants.sort((a, b) =>
     a.node.data.restaurant.localeCompare(b.node.data.restaurant)
   );
+
+  // Shorten locations array if only rendering locations.
+  const restaurantsToRender =
+    text === "Show More" ? restaurants.slice(0, minTiles) : restaurants;
+
   return (
     <div id="participating-restaurants">
       <div className="order__container">
@@ -19,15 +44,15 @@ const Restaurants = ({ data }) => {
           Participating Restaurants
         </h2>
         <div className="container">
-          {restaurants.length > 0 &&
-            restaurants.map((restaurant, index) => {
+          {restaurantsToRender.length > 0 &&
+            restaurantsToRender.map((restaurant) => {
               const logoUrl = restaurant.node.data.logo.localFiles[0]
                 ? restaurant.node.data.logo.localFiles[0].childImageSharp.fluid
                     .src
                 : null;
-              return index < maxTiles ? (
+              return (
                 <div
-                  data-sal="slide-up"
+                  data-sal={text === "Show More" ? "slide-up" : undefined}
                   data-sal-delay="400"
                   data-sal-easing="ease-in"
                   className="location__item"
@@ -51,11 +76,17 @@ const Restaurants = ({ data }) => {
                     </div>
                   </a>
                 </div>
-              ) : (
-                <div key={restaurant.node.id}></div>
               );
             })}
         </div>
+        {restaurants.length > minTiles && (
+          <Button
+            className="button showmore__green"
+            text={text}
+            handleClick={handleClick}
+            ariaExpanded={text === "Show Less"}
+          />
+        )}
       </div>
       <div
         className="cover__image"

@@ -31,13 +31,3 @@ export const useWindowSize = () => {
 
   return windowSize;
 };
-
-export const useTileNumber = () => {
-  const size = useWindowSize();
-  const width = size.width;
-  if (width < 756) {
-    return 3;
-  } else if (width < 1088) {
-    return 6;
-  } else return 9;
-};

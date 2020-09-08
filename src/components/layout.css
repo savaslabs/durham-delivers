@@ -748,19 +748,55 @@ ul li a:hover::after {
   margin-bottom: 40px;
 }
 
-.signup__button {
+.button {
   transition: background-color 0.3s ease;
-  background-color: #ffffff;
   border-radius: 7px;
+  border: none;
   font-family: "Heebo", "Helvetica", sans-serif;
+  font-size: 19px;
   font-weight: 500;
   padding: 10px 20px;
   text-decoration: none;
+}
+
+.signup__button {
+  background-color: #ffffff;
   color: #3c827a;
 }
 
 .signup__button:hover {
   background-color: #d9f0ec;
+}
+
+.showmore__container {
+  width: 100%;
+  text-align: center;
+  margin: 20px 0 0 0;
+}
+
+.showmore__button {
+  transition: background-color 0.3s ease;
+  border-radius: 7px;
+  border: none;
+  font-family: "Heebo", "Helvetica", sans-serif;
+  font-weight: 500;
+  padding: 10px 20px;
+  text-decoration: none;
+}
+
+.showmore__white {
+  background-color: #ffffff;
+  color: #3c827a;
+}
+
+.showmore__green {
+  background-color: #3c827a;
+  color: #ffffff;
+}
+
+.button:hover {
+  box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
 }
 
 @media screen and (max-width: 1080px) {

@@ -34,6 +34,7 @@ module.exports = {
       options: {
         rootMargin: "0% 0%",
         threshold: 0.2,
+        disabledClassName: "sal-disabled",
       },
     },
     {
