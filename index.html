@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Deploy to netlify</title>
+  </head>
+
+  <body>
+    Thanks! A deployment is now in progress. Please do not reload this page.
+    <script>
+      const postUrl = window.location.search.substring(1);
+
+      const xhr = new XMLHttpRequest();
+      xhr.open("POST", postUrl, true);
+      xhr.setRequestHeader(
+        "Content-Type",
+        "application/x-www-form-urlencoded; charset=UTF-8"
+      );
+      xhr.send("");
+    </script>
+  </body>
+</html>
