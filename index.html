@@ -7,9 +7,11 @@
   </head>
 
   <body>
-    Thanks! A deployment is now in progress. Please do not reload this page.
+    Thanks! A deployment is now in progress. You can now close this page.
     <script>
-      const postUrl = window.location.search.substring(1);
+      const postUrl =
+        "https://api.netlify.com/build_hooks/" +
+        window.location.search.substring(1);
 
       const xhr = new XMLHttpRequest();
       xhr.open("POST", postUrl, true);
