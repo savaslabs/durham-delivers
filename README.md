@@ -2,12 +2,16 @@
 
 ## Content Entry
 
-- Content is entered in [Airtable](https://airtable.com/tblcgDnYltEUNJSd0/viwM06wECbc1hpHWP?blocks=hide), and pulled from Airtable when the site is deployed.
+Content is entered in [Airtable](https://airtable.com/tblcgDnYltEUNJSd0/viwM06wECbc1hpHWP?blocks=hide), and pulled from Airtable when the site is deployed.
+
+Notes:
 - The `instructions` field in Airtable supports Markdown for links: `[link text](https://www.example.com)`
 - [Instructions for generating calendar event links](https://support.google.com/calendar/answer/41207?hl=en)
 - Create maps for locations without images at [snazzymaps.com](https://snazzymaps.com/style/8097/wy)
-- @todo - once this set up is on prod, add a button to Deploy to Netlify so content editors can publish their updates.
-- @todo Invite content editors to the Airtable with limited permissions.
+
+<form method="post" action="https://api.netlify.com/build_hooks/5f590c255cc41467f5c08561">
+  <button type="submit"> Deploy `develop` to production </button>
+</form>
 
 ## Development
 
