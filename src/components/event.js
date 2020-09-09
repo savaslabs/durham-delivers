@@ -1,8 +1,8 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import moment from "moment";
 import ReactMarkdown from "react-markdown";
 
-import Calendar from "../components/calendar";
+import { Calendar } from "../components/calendar";
 
 const Event = ({ data }) => {
   const date = moment(data.start).format("ddd MMM Do");
@@ -17,6 +17,45 @@ const Event = ({ data }) => {
       : null;
   const instructions = data.instructions;
   const restaurants = data.restaurants;
+  const [savedEvents, setSavedEvents] = useState({});
+
+  // Store clicked events to users' local storage so we can change
+  // the appearance of clicked events.
+  const _storeData = (data) => {
+    try {
+      localStorage.setItem("@store", JSON.stringify(data));
+    } catch (error) {
+      console.log("Error saving to local storage.");
+    }
+  };
+
+  const [initialAppLoad, setInitialAppLoad] = useState(true);
+
+  const _retrieveData = () => {
+    try {
+      const value = localStorage.getItem("@store");
+      const saved = JSON.parse(value);
+
+      if (saved !== null) {
+        setSavedEvents(saved);
+      }
+    } catch (error) {
+      console.log("No user setting data was retrieved");
+    }
+    setInitialAppLoad(false);
+  };
+
+  useEffect(() => {
+    if (initialAppLoad) {
+      _retrieveData();
+    }
+  });
+
+  const handleClick = () => {
+    const newSavedEvents = { ...savedEvents, ...{ [calendarLink]: true } };
+    setSavedEvents(newSavedEvents);
+    _storeData(newSavedEvents);
+  };
 
   return (
     <>
@@ -35,8 +74,9 @@ const Event = ({ data }) => {
             style={{
               marginLeft: `20px`,
             }}
+            onClick={handleClick}
           >
-            <Calendar />
+            <Calendar clicked={savedEvents[calendarLink]} />
           </a>
         </div>
         {orderBy && (
