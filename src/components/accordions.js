@@ -7,7 +7,7 @@ const Accordions = ({ data }) => {
 
   // Filter out events that have already passed.
   events = events.filter((event) => {
-    return moment().isBefore(moment(event.start));
+    return moment().isBefore(moment(event.end));
   });
 
   // Make the event month easier to query. add 1 because month starts indexing at 0.
@@ -27,7 +27,7 @@ const Accordions = ({ data }) => {
   );
 
   return (
-    <>
+    <div id="calendar">
       {eventsByMonth.map((month) => {
         return month.length > 0 ? (
           <Accordion key={Math.random()} data={month} />
@@ -35,7 +35,7 @@ const Accordions = ({ data }) => {
           <div key={Math.random()} />
         );
       })}
-    </>
+    </div>
   );
 };
 

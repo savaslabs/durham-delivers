@@ -60,12 +60,7 @@ const Event = ({ data, index }) => {
 
   return (
     <>
-      <div
-        data-sal="slide-up"
-        data-sal-easing="ease"
-        data-sal-delay={getSalDelay(index, "md")}
-        className="accordion__component"
-      >
+      <div className="accordion__component">
         <div className="accordion__date">
           {date} | {startTime}–{endTime}
           <a

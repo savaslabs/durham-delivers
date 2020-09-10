@@ -36,7 +36,7 @@ const HowTo = () => (
       <li data-sal="slide-up" data-sal-delay="500" data-sal-easing="ease-in">
         Find out where and when your favorite local restaurant delivers to a
         location near you.
-        <br /> See the calendar below.
+        <br /> See the <a href="#calendar">calendar below</a>.
       </li>
       <li data-sal="slide-up" data-sal-delay="500" data-sal-easing="ease-in">
         Place your order with the restaurant. Take note of any special
