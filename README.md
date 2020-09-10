@@ -11,6 +11,11 @@ Notes:
 
 ## Development
 
+Prerequists:
+- Node
+- Yarn
+- Gatsby CLI
+
 1. Clone repository
 1. Create a `.env` file with the contents:
 
@@ -25,4 +30,10 @@ where XXX is the read-only Airtable API key obtained from 1pass
 
 ## Deployment
 
-Merging to `master` deploys to Netlify at https://www.durhamdelivers.org/
+To trigger a deployment, navigate to https://savaslabs.github.io/durham-delivers/?XXX
+where XXX is the build hook key obtained from Netlify.
+
+- Preview hook deploys `develop` here: https://5f5924c2b90d650008c638c1--elegant-colden-fff27a.netlify.app/
+- Production hook deploys `master` to https://www.durhamdelivers.org/
+
+Deployments may take up to 5 minutes.
