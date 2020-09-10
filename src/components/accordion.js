@@ -31,8 +31,8 @@ const Accordions = ({ data }) => {
           </AccordionItemHeading>
           <AccordionItemPanel className="accordion__panel">
             <div className="accordion__item-container">
-              {data.map((event) => {
-                return <Event key={Math.random()} data={event} />;
+              {data.map((event, index) => {
+                return <Event key={Math.random()} data={event} index={index} />;
               })}
             </div>
           </AccordionItemPanel>

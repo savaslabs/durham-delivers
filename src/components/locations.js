@@ -1,14 +1,45 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { StaticQuery, graphql } from "gatsby";
 
 import Background from "../images/utensil-bkgr.png";
+import { useWindowSize } from "../util/useWindowSize";
+import { getTileNumber, getSalDelay } from "../util/functions";
+import Button from "./button";
 
 const Locations = ({ data }) => {
-  const locations = data.allAirtable.edges;
+  const width = useWindowSize().width;
+  const [minTiles, setMinTiles] = useState();
+  const [screen, setScreen] = useState();
+  const [text, setText] = useState("Show More");
+
+  let locations = data.allAirtable.edges;
+
+  useEffect(() => {
+    const [initialTiles, screenSize] = getTileNumber(width);
+    if (typeof initialTiles === "number") {
+      setMinTiles(initialTiles);
+      setScreen(screenSize);
+    }
+  }, [width]);
+
+  // Manage "Show More" state
+  const handleClick = () => {
+    if (text === "Show More") {
+      setText("Show Less");
+    } else {
+      setText("Show More");
+    }
+  };
+
   // Alphebetize by name
   locations.sort((a, b) =>
     a.node.data.location_name.localeCompare(b.node.data.location_name)
   );
+
+  // Shorten locations array if only rendering locations.
+  const locationsToRender =
+    text === "Show More" ? locations.slice(0, minTiles) : locations;
+
   return (
     <div
       className="locations__wrapper"
@@ -30,16 +61,16 @@ const Locations = ({ data }) => {
           Delivery Locations
         </h2>
         <div className="container">
-          {locations.length > 0 &&
-            locations.map((location) => {
+          {locationsToRender.length > 0 &&
+            locationsToRender.map((location, index) => {
               const imageUrl = location.node.data.location_image.localFiles
                 ? location.node.data.location_image.localFiles[0]
                     .childImageSharp.fluid.src
                 : null;
               return (
                 <div
-                  data-sal="slide-up"
-                  data-sal-delay="400"
+                  data-sal={text === "Show More" ? "slide-up" : undefined}
+                  data-sal-delay={getSalDelay(index, screen)}
                   data-sal-easing="ease-in"
                   className="location__item"
                   key={location.node.id}
@@ -67,6 +98,14 @@ const Locations = ({ data }) => {
               );
             })}
         </div>
+        {locations.length > minTiles && (
+          <Button
+            className={"button showmore__white"}
+            text={text}
+            handleClick={handleClick}
+            ariaExpanded={text === "Show Less"}
+          />
+        )}
       </div>
     </div>
   );
