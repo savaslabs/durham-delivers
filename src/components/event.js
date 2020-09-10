@@ -3,8 +3,9 @@ import moment from "moment";
 import ReactMarkdown from "react-markdown";
 
 import { Calendar } from "../components/calendar";
+import { getSalDelay } from "../util/functions";
 
-const Event = ({ data }) => {
+const Event = ({ data, index }) => {
   const date = moment(data.start).format("ddd MMM Do");
   const startTime = moment(data.start).format("h:mm");
   const endTime = moment(data.end).format("h:mm a");
@@ -62,6 +63,7 @@ const Event = ({ data }) => {
       <div
         data-sal="slide-up"
         data-sal-easing="ease"
+        data-sal-delay={getSalDelay(index, "md")}
         className="accordion__component"
       >
         <div className="accordion__date">

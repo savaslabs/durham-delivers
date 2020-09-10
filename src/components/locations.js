@@ -3,20 +3,22 @@ import { StaticQuery, graphql } from "gatsby";
 
 import Background from "../images/utensil-bkgr.png";
 import { useWindowSize } from "../util/useWindowSize";
-import { getTileNumber } from "../util/getTileNumber";
+import { getTileNumber, getSalDelay } from "../util/functions";
 import Button from "./button";
 
 const Locations = ({ data }) => {
   const width = useWindowSize().width;
   const [minTiles, setMinTiles] = useState();
+  const [screen, setScreen] = useState();
   const [text, setText] = useState("Show More");
 
   let locations = data.allAirtable.edges;
 
   useEffect(() => {
-    const initialTiles = getTileNumber(width);
+    const [initialTiles, screenSize] = getTileNumber(width);
     if (typeof initialTiles === "number") {
       setMinTiles(initialTiles);
+      setScreen(screenSize);
     }
   }, [width]);
 
@@ -60,7 +62,7 @@ const Locations = ({ data }) => {
         </h2>
         <div className="container">
           {locationsToRender.length > 0 &&
-            locationsToRender.map((location) => {
+            locationsToRender.map((location, index) => {
               const imageUrl = location.node.data.location_image.localFiles
                 ? location.node.data.location_image.localFiles[0]
                     .childImageSharp.fluid.src
@@ -68,7 +70,7 @@ const Locations = ({ data }) => {
               return (
                 <div
                   data-sal={text === "Show More" ? "slide-up" : undefined}
-                  data-sal-delay="400"
+                  data-sal-delay={getSalDelay(index, screen)}
                   data-sal-easing="ease-in"
                   className="location__item"
                   key={location.node.id}

@@ -3,18 +3,20 @@ import { StaticQuery, graphql } from "gatsby";
 
 import DurhamImg from "../images/durham-img.jpg";
 import { useWindowSize } from "../util/useWindowSize";
-import { getTileNumber } from "../util/getTileNumber";
+import { getTileNumber, getSalDelay } from "../util/functions";
 import Button from "./button";
 
 const Restaurants = ({ data }) => {
   const width = useWindowSize().width;
   const [minTiles, setMinTiles] = useState();
+  const [screen, setScreen] = useState();
   const [text, setText] = useState("Show More");
 
   useEffect(() => {
-    const initialTiles = getTileNumber(width);
+    const [initialTiles, screenSize] = getTileNumber(width);
     if (typeof initialTiles === "number") {
       setMinTiles(initialTiles);
+      setScreen(screenSize);
     }
   }, [width]);
 
@@ -45,7 +47,7 @@ const Restaurants = ({ data }) => {
         </h2>
         <div className="container">
           {restaurantsToRender.length > 0 &&
-            restaurantsToRender.map((restaurant) => {
+            restaurantsToRender.map((restaurant, index) => {
               const logoUrl = restaurant.node.data.logo.localFiles[0]
                 ? restaurant.node.data.logo.localFiles[0].childImageSharp.fluid
                     .src
@@ -53,7 +55,7 @@ const Restaurants = ({ data }) => {
               return (
                 <div
                   data-sal={text === "Show More" ? "slide-up" : undefined}
-                  data-sal-delay="400"
+                  data-sal-delay={getSalDelay(index, screen)}
                   data-sal-easing="ease-in"
                   className="location__item"
                   key={restaurant.node.id}
