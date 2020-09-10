@@ -16,10 +16,10 @@ const Accordions = ({ data }) => {
   data.sort((a, b) => moment(a.start) - moment(b.start));
 
   return (
-    <div id="calendar">
+    <div>
       <Accordion className="accordion" allowZeroExpanded preExpanded={["a"]}>
         <AccordionItem uuid="a">
-          <AccordionItemHeading data-sal="slide-up" data-sal-easing="ease">
+          <AccordionItemHeading>
             <AccordionItemButton
               style={{
                 borderBottom: `2px solid #828282`,

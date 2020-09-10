@@ -27,7 +27,7 @@ const Accordions = ({ data }) => {
   );
 
   return (
-    <>
+    <div id="calendar">
       {eventsByMonth.map((month) => {
         return month.length > 0 ? (
           <Accordion key={Math.random()} data={month} />
@@ -35,7 +35,7 @@ const Accordions = ({ data }) => {
           <div key={Math.random()} />
         );
       })}
-    </>
+    </div>
   );
 };
 
