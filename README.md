@@ -30,7 +30,9 @@ where XXX is the read-only Airtable API key obtained from 1pass
 
 ## Deployment
 
-To trigger a deployment, navigate to https://savaslabs.github.io/durham-delivers/?XXX
+There are two ways to trigger a deployment to production:
+1. Merge to `master`.
+2. Navigate to https://savaslabs.github.io/durham-delivers/?XXX
 where XXX is the build hook key obtained from Netlify.
 
 - Preview hook deploys `develop` here: https://5f5924c2b90d650008c638c1--elegant-colden-fff27a.netlify.app/
