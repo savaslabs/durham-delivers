@@ -1024,6 +1024,8 @@ ul li a:hover::after {
   .logo__container {
     position: relative;
     margin-top: 0;
+    margin-left: 14%;
+    align-self: start;
   }
 }
 
