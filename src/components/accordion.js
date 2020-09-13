@@ -19,7 +19,7 @@ const Accordions = ({ data }) => {
     <div>
       <Accordion className="accordion" allowZeroExpanded preExpanded={["a"]}>
         <AccordionItem uuid="a">
-          <AccordionItemHeading>
+          <AccordionItemHeading data-sal="slide-up" data-sal-easing="ease">
             <AccordionItemButton
               style={{
                 borderBottom: `2px solid #828282`,
