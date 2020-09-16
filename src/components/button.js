@@ -1,11 +1,7 @@
 import React from "react";
 
 const Button = ({ className, text, handleClick, ariaExpanded }) => (
-  <div
-    className="showmore__container"
-    data-sal="slide-up"
-    data-sal-easing="ease"
-  >
+  <div className="showmore__container">
     <button
       className={className}
       onClick={handleClick}
