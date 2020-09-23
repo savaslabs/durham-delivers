@@ -68,7 +68,7 @@ module.exports = {
         concurrency: 5,
         tables: [
           {
-            baseId: `appHnugz6zRl71EGT`,
+            baseId: process.env.AIRTABLE_BASE_ID,
             tableName: `Events`,
             tableLinks: [`location_ref`, `restaurants`],
             defaultValues: {
@@ -82,7 +82,7 @@ module.exports = {
             },
           },
           {
-            baseId: `appHnugz6zRl71EGT`,
+            baseId: process.env.AIRTABLE_BASE_ID,
             tableName: `Restaurants`,
             mapping: { logo: `fileNode` },
             defaultValues: {
@@ -93,7 +93,7 @@ module.exports = {
             },
           },
           {
-            baseId: `appHnugz6zRl71EGT`,
+            baseId: process.env.AIRTABLE_BASE_ID,
             tableName: `Locations`,
             mapping: { location_image: `fileNode` },
             defaultValues: {
