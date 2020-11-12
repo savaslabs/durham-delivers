@@ -4,7 +4,7 @@ import { StaticQuery, graphql } from "gatsby";
 import DurhamImg from "../images/durham-img.jpg";
 import { useWindowSize } from "../util/useWindowSize";
 import { getTileNumber, getSalDelay } from "../util/functions";
-import Button from "./button";
+import ShowMore from "./showMore";
 
 const Restaurants = ({ data }) => {
   const width = useWindowSize().width;
@@ -82,7 +82,7 @@ const Restaurants = ({ data }) => {
             })}
         </div>
         {restaurants.length > minTiles && (
-          <Button
+          <ShowMore
             className="button showmore__green"
             text={text}
             handleClick={handleClick}

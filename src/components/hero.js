@@ -1,6 +1,7 @@
-import React from "react";
-import HeroImg from "../images/hero.jpg";
-import Hamburger from "../components/hamburger";
+import React from 'react';
+import HeroImg from '../images/hero.jpg';
+import Hamburger from '../components/hamburger';
+import ButtonLink from '../components/buttonLink';
 
 const Hero = () => (
   <div
@@ -18,6 +19,20 @@ const Hero = () => (
       data-sal-easing="ease"
     >
       <h1>Delivery from your favorite, independent Durham restaurants.</h1>
+      <div style={{
+        marginTop: 45
+      }}>
+        <ButtonLink
+          className="button hero__cta"
+          link="https://docs.google.com/forms/d/e/1FAIpQLSd26UWHc2DFrwGkIyJX6MF8USap_zyQgMBwn6fbXqIwFrDPUA/viewform"
+          text="Sign Up Your Community"
+        />
+        <ButtonLink
+          className="button hero__cta"
+          link="https://docs.google.com/forms/d/e/1FAIpQLSf-bYRx-tcwdOgL2JzqBxBrHBnF4LyItqaGoSLuYRYv3XKI_g/viewform"
+          text="Sign Up Your Restaurant"
+        />
+      </div>
     </div>
   </div>
 );

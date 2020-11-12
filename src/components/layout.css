@@ -130,7 +130,6 @@ table {
 }
 
 h1 {
-  align-self: center;
   color: #ffffff;
   font-family: 'Oxygen', sans-serif;
   font-size: 64px;
@@ -159,7 +158,7 @@ h3 {
 }
 
 .park__title {
-  font-family: "Heebo", "Helvetica", sans-serif;
+  font-family: 'Work Sans', sans-serif;
   font-weight: 600;
   font-size: 24px;
   line-height: 32px;
@@ -179,7 +178,7 @@ p {
 }
 
 .basic-text {
-  font-family: "Heebo", "Helvetica", sans-serif;
+  font-family: 'Work Sans', sans-serif;
   font-size: 21px;
   font-weight: 500;
   text-align: center;
@@ -193,7 +192,7 @@ ol {
 
 ol li {
   position: relative;
-  font-family: "Heebo", "Helvetica", sans-serif;
+  font-family: 'Work Sans', sans-serif;
   font-size: 24px;
   line-height: 38px;
   font-weight: 600;
@@ -233,7 +232,7 @@ ol li a:hover,
 }
 
 ul li {
-  font-family: "Heebo", "Helvetica", sans-serif;
+  font-family: 'Work Sans', sans-serif;
   font-weight: 400;
   letter-spacing: 0.01em;
 }
@@ -270,7 +269,8 @@ ul li a:hover::after {
 .header__container {
   position: relative;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  justify-content: center;
   height: 100%;
   margin: 0 auto;
   max-width: 1080px;
@@ -413,7 +413,7 @@ ul li a:hover::after {
 }
 
 .intro p {
-  font-family: "Heebo", "Helvetica", sans-serif;
+  font-family: 'Work Sans', sans-serif;
   font-weight: 400;
   line-height: 150%;
 }
@@ -456,7 +456,7 @@ ul li a:hover::after {
 }
 
 .accordion__date {
-  font-family: "Heebo", "Helvetica", sans-serif;
+  font-family: 'Work Sans', sans-serif;
   font-size: 18px;
   margin-bottom: 7px;
   font-weight: 500;
@@ -478,7 +478,7 @@ ul li a:hover::after {
 }
 
 .accordion__address {
-  font-family: "Heebo", "Helvetica", sans-serif;
+  font-family: 'Work Sans', sans-serif;
   font-weight: 600;
   font-size: 16px;
   line-height: 120%;
@@ -494,7 +494,7 @@ ul li a:hover::after {
 
 .accordion__order-time,
 .accordion__order-time > p {
-  font-family: "Heebo", "Helvetica", sans-serif;
+  font-family: 'Work Sans', sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 125%;
@@ -515,7 +515,7 @@ ul li a:hover::after {
 }
 
 .accordion__dropoff {
-  font-family: "Heebo", "Helvetica", sans-serif;
+  font-family: 'Work Sans', sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 125%;
@@ -633,7 +633,7 @@ ul li a:hover::after {
   left: 0;
   right: 0;
   background-color: rgba(255, 255, 255, 0.9);
-  font-family: "Heebo", "Helvetica", sans-serif;
+  font-family: 'Work Sans', sans-serif;
   font-size: 24px;
   font-weight: 700;
   text-align: center;
@@ -670,7 +670,7 @@ ul li a:hover::after {
 }
 
 .footer__tag {
-  font-family: "Heebo", "Helvetica", sans-serif;
+  font-family: 'Work Sans', sans-serif;
   font-weight: 600;
   font-size: 21px;
   line-height: 31px;
@@ -742,7 +742,7 @@ ul li a:hover::after {
 }
 
 .signup__text {
-  font-family: "Heebo", "Helvetica", sans-serif;
+  font-family: 'Work Sans', sans-serif;
   font-size: 24px;
   line-height: 125%;
   font-weight: 700;
@@ -754,7 +754,7 @@ ul li a:hover::after {
   transition: background-color 0.3s ease;
   border-radius: 7px;
   border: none;
-  font-family: "Heebo", "Helvetica", sans-serif;
+  font-family: 'Work Sans', sans-serif;
   font-size: 19px;
   font-weight: 500;
   padding: 10px 20px;
@@ -764,6 +764,29 @@ ul li a:hover::after {
 .signup__button {
   background-color: #ffffff;
   color: #095256;
+}
+
+.hero__cta {
+  font-size: 16px;
+  border-radius: 5px;
+  padding: 7px 10px;
+  display: inline-block;
+  background-color: #ffffff;
+  color: #095256;
+  line-height: 1.2538;
+  letter-spacing: 0.01em;
+  text-align: center;
+}
+
+.hero__cta:hover,
+.hero__cta:focus {
+  background-color: #095256;
+  color: #ffffff;
+}
+
+.hero__cta:first-child {
+  margin-right: 20px;
+  margin-bottom: 0;
 }
 
 .signup__button:hover {
@@ -780,7 +803,7 @@ ul li a:hover::after {
   transition: background-color 0.3s ease;
   border-radius: 7px;
   border: none;
-  font-family: "Heebo", "Helvetica", sans-serif;
+  font-family: 'Work Sans', sans-serif;
   font-weight: 500;
   padding: 10px 20px;
   text-decoration: none;
@@ -1001,6 +1024,15 @@ ul li a:hover::after {
 
   .location__item {
     margin-bottom: 0;
+  }
+
+  .hero__cta {
+    display: block;
+  }
+
+  .hero__cta:first-child {
+    margin-bottom: 15px;
+    margin-right: 0;
   }
 }
 

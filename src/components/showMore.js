@@ -1,6 +1,6 @@
 import React from "react";
 
-const Button = ({ className, text, handleClick, ariaExpanded }) => (
+const ShowMore = ({ className, text, handleClick, ariaExpanded }) => (
   <div className="showmore__container">
     <button
       className={className}
@@ -12,4 +12,4 @@ const Button = ({ className, text, handleClick, ariaExpanded }) => (
   </div>
 );
 
-export default Button;
+export default ShowMore;
