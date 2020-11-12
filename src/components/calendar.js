@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 
-const green = "#4CA897";
+const green = "#5AAA95";
 const darkGreen = "#2A615B";
 
 export const Calendar = ({ clicked }) => {
