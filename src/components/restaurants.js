@@ -4,7 +4,7 @@ import { StaticQuery, graphql } from "gatsby";
 import DurhamImg from "../images/durham-img.jpg";
 import { useWindowSize } from "../util/useWindowSize";
 import { getTileNumber, getSalDelay } from "../util/functions";
-import Button from "./button";
+import ShowMore from "./showMore";
 
 const Restaurants = ({ data }) => {
   const width = useWindowSize().width;
@@ -43,7 +43,7 @@ const Restaurants = ({ data }) => {
     <div id="participating-restaurants">
       <div className="order__container">
         <h2 data-sal="slide-up" data-sal-delay="400" data-sal-easing="ease-in">
-          Participating Restaurants
+          Restaurants
         </h2>
         <div className="container">
           {restaurantsToRender.length > 0 &&
@@ -82,7 +82,7 @@ const Restaurants = ({ data }) => {
             })}
         </div>
         {restaurants.length > minTiles && (
-          <Button
+          <ShowMore
             className="button showmore__green"
             text={text}
             handleClick={handleClick}

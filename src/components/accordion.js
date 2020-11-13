@@ -17,7 +17,7 @@ const Accordions = ({ data }) => {
 
   return (
     <div>
-      <Accordion className="accordion" allowZeroExpanded preExpanded={["a"]}>
+      <Accordion className="accordion" allowZeroExpanded preExpanded={['a']}>
         <AccordionItem uuid="a">
           <AccordionItemHeading data-sal="slide-up" data-sal-easing="ease">
             <AccordionItemButton

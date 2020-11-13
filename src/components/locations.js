@@ -4,7 +4,7 @@ import { StaticQuery, graphql } from "gatsby";
 import Background from "../images/utensil-bkgr.png";
 import { useWindowSize } from "../util/useWindowSize";
 import { getTileNumber, getSalDelay } from "../util/functions";
-import Button from "./button";
+import ShowMore from "./showMore";
 
 const Locations = ({ data }) => {
   const width = useWindowSize().width;
@@ -58,7 +58,7 @@ const Locations = ({ data }) => {
         }}
       >
         <h2 data-sal="slide-up" data-sal-delay="500" data-sal-easing="ease-in">
-          Delivery Locations
+          Communities
         </h2>
         <div className="container">
           {locationsToRender.length > 0 &&
@@ -99,7 +99,7 @@ const Locations = ({ data }) => {
             })}
         </div>
         {locations.length > minTiles && (
-          <Button
+          <ShowMore
             className={"button showmore__white"}
             text={text}
             handleClick={handleClick}

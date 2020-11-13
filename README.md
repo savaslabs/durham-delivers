@@ -2,9 +2,10 @@
 
 ## Content Entry
 
-Content is entered in [Airtable](https://airtable.com/tblcgDnYltEUNJSd0/viwM06wECbc1hpHWP?blocks=hide), and pulled from Airtable when the site is deployed.
+Production content is entered in [Airtable](https://airtable.com/tblcgDnYltEUNJSd0/viwM06wECbc1hpHWP?blocks=hide), and pulled from Airtable when the site is deployed.
 
 Notes:
+
 - The `instructions` field in Airtable supports Markdown for links: `[link text](https://www.example.com)`
 - [Instructions for generating calendar event links](https://support.google.com/calendar/answer/41207?hl=en)
 - Create maps for locations without images at [snazzymaps.com](https://snazzymaps.com/style/8097/wy)
@@ -12,6 +13,7 @@ Notes:
 ## Development
 
 Prerequists:
+
 - Node
 - Yarn
 - Gatsby CLI
@@ -21,9 +23,14 @@ Prerequists:
 
 ```
 AIRTABLE_API_KEY='XXX'
+AIRTABLE_BASE_ID='YYY'
 ```
 
 where XXX is the read-only Airtable API key obtained from 1pass
+and YYY is one of the following Airtable base ids:
+
+- [Sandbox Airtable](https://airtable.com/tblyqvyTVZBdOmwFF/viw8aYHzcH9ki2lou?blocks=hide): app3xmruG5OE8Ei8y
+- [Production Airtable](https://airtable.com/tblcgDnYltEUNJSd0/viwM06wECbc1hpHWP?blocks=hide): appHnugz6zRl71EGT
 
 1. run `yarn` to install dependencies
 1. run `yarn develop` and navigate to http://localhost:8000/
@@ -31,9 +38,10 @@ where XXX is the read-only Airtable API key obtained from 1pass
 ## Deployment
 
 There are two ways to trigger a deployment to production:
+
 1. Merge to `master`.
 2. Navigate to https://savaslabs.github.io/durham-delivers/?XXX
-where XXX is the build hook key obtained from Netlify.
+   where XXX is the build hook key obtained from Netlify.
 
 - Preview hook deploys `develop` here: https://5f5924c2b90d650008c638c1--elegant-colden-fff27a.netlify.app/
 - Production hook deploys `master` to https://www.durhamdelivers.org/
