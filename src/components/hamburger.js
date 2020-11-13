@@ -3,47 +3,19 @@ import MenuLink from '../components/menuLink';
 
 class Hamburger extends React.Component {
   componentDidMount() {
-    function checkAll1() {
-      const inputs = document.querySelectorAll('.checkbox');
-      for (let i = 0; i < inputs.length; i++) {
-        inputs[i].checked = true;
-      }
-
-      this.onclick = uncheckAll1;
-    }
-
     function uncheckAll1() {
-      const inputs = document.querySelectorAll('.checkbox');
-      for (let i = 0; i < inputs.length; i++) {
-        inputs[i].checked = false;
-      }
+      const input = document.querySelector('.checkbox');
+      input.checked = false;
 
       this.onclick = checkAll1;
     }
 
-    let el = document.getElementById('menu');
-    el.onclick = uncheckAll1;
+    function checkAll1() {
+      const input = document.querySelector('.checkbox');
+      input.checked = true;
 
-    // let scrollpos = window.scrollY;
-    // const header = document.getElementById('hamburger');
-
-    // function add_class_on_scroll() {
-    //   header.classList.add('scrolled');
-    // }
-
-    // function remove_class_on_scroll() {
-    //   header.classList.remove('scrolled');
-    // }
-
-    // window.addEventListener('scroll', function () {
-    //   scrollpos = window.scrollY;
-
-    //   if (scrollpos > 10) {
-    //     add_class_on_scroll();
-    //   } else {
-    //     remove_class_on_scroll();
-    //   }
-    // });
+      this.onclick = uncheckAll1;
+    }
   }
 
   render() {
@@ -64,7 +36,10 @@ class Hamburger extends React.Component {
         <menu className="main-menu" role="navigation" aria-label="Main menu">
           <div className="main-menu__inner">
             <MenuLink selector="#local-pick-up" text="Communities" />
-            <MenuLink selector="#participating-restaurants" text="Restaurants" />
+            <MenuLink
+              selector="#participating-restaurants"
+              text="Restaurants"
+            />
             <MenuLink selector="#calendar" text="Upcoming Deliveries" />
             <a href="mailto:durhamdelivers@gmail.com">Contact Us</a>
           </div>
