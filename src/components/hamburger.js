@@ -3,19 +3,47 @@ import MenuLink from '../components/menuLink';
 
 class Hamburger extends React.Component {
   componentDidMount() {
+    function checkAll1() {
+      const inputs = document.querySelectorAll('.checkbox');
+      for (let i = 0; i < inputs.length; i++) {
+        inputs[i].checked = true;
+      }
+
+      this.onclick = uncheckAll1;
+    }
+
     function uncheckAll1() {
-      const input = document.querySelector('.checkbox');
-      input.checked = false;
+      const inputs = document.querySelectorAll('.checkbox');
+      for (let i = 0; i < inputs.length; i++) {
+        inputs[i].checked = false;
+      }
 
       this.onclick = checkAll1;
     }
 
-    function checkAll1() {
-      const input = document.querySelector('.checkbox');
-      input.checked = true;
+    let el = document.getElementById('menu');
+    el.onclick = uncheckAll1;
 
-      this.onclick = uncheckAll1;
+    let scrollpos = window.scrollY;
+    const header = document.getElementById('hamburger');
+
+    function add_class_on_scroll() {
+      header.classList.add('scrolled');
     }
+
+    function remove_class_on_scroll() {
+      header.classList.remove('scrolled');
+    }
+
+    window.addEventListener('scroll', function () {
+      scrollpos = window.scrollY;
+
+      if (scrollpos > 10) {
+        add_class_on_scroll();
+      } else {
+        remove_class_on_scroll();
+      }
+    });
   }
 
   render() {
@@ -49,7 +77,11 @@ class Hamburger extends React.Component {
               <div className="footer__tag footer__tag--menu">
                 Website delivered by
               </div>
-              <a href="https://savaslabs.com" title="Savas Labs" aria-label="Savas Labs">
+              <a
+                href="https://savaslabs.com"
+                title="Savas Labs"
+                aria-label="Savas Labs"
+              >
                 <svg
                   width="111"
                   height="51"

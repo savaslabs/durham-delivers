@@ -253,6 +253,10 @@ header {
   text-decoration: underline;
 }
 
+.hamburger input:checked ~ .hamburger__wrapper.scrolled {
+  background-color: transparent;
+}
+
 @media screen and (max-width: 1080px) {
   .hamburger input:checked ~ .main-menu {
     display: flex;

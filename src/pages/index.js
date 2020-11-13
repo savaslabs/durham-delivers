@@ -2,7 +2,7 @@ import React from 'react';
 import { graphql } from 'gatsby';
 
 import Layout from '../components/layout';
-import Warning from '../components/warning';
+// import Warning from '../components/warning';
 import HowTo from '../components/how';
 import Locations from '../components/locations';
 import Signup from '../components/signup';
