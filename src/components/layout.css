@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@700&family=Work+Sans:wght@500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@400;700&family=Work+Sans:wght@500;600&display=swap');
 
 /* http://meyerweb.com/eric/tools/css/reset/
 v2.0 | 20110126
@@ -137,11 +137,7 @@ header {
   top: 0;
   left: 0;
   width: 100%;
-  background: linear-gradient(
-    180deg,
-    #095256 37.22%,
-    rgba(9, 82, 86, 0) 88.31%
-  );
+  background: linear-gradient(180deg, rgba(9, 82, 86, 1) 55%, transparent);
 }
 
 .header__wrapper {
@@ -390,7 +386,6 @@ header {
     padding: 20px 0 20px 20px;
   }
 }
-
 
 /* Hero */
 h1.hero__headline {
@@ -822,18 +817,120 @@ ul li a:hover::after {
   height: 303px;
 }
 
+.footer__container {
+  max-width: 1080px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 30px;
+}
+
 .footer__tag-wrapper {
   max-width: 260px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 90px;
 }
 
 .footer__tag {
   font-family: 'Work Sans', sans-serif;
   font-weight: 600;
   font-size: 18px;
-  line-height: 31px;
+  line-height: 1.2538;
   letter-spacing: 0.01em;
-  margin-bottom: 10px;
   color: white;
+}
+
+.footer__contact {
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 90px;
+}
+
+.footer__contact-link {
+  font-family: 'Oxygen', sans-serif;
+  color: white;
+  text-decoration: none;
+  margin-top: -7px;
+}
+
+.footer__contact-link:hover,
+.footer__contact-link:focus {
+  text-decoration: underline;
+}
+
+.footer__social-media {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.social-icon {
+  width: 30px;
+  height: 30px;
+  display: block;
+}
+
+.social-icon:first-child {
+  margin-right: 15px;
+}
+
+.social-icon img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+@media screen and (max-width: 1080px) {
+  .footer__tag-wrapper,
+  .footer__contact {
+    margin: 0 auto;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer__container {
+    flex-direction: column;
+  }
+
+  .footer__tag-wrapper {
+    margin-bottom: 25px;
+  }
+
+  .footer__social-media {
+    justify-content: center;
+  }
+
+  .footer__contact-link {
+    margin-top: 0;
+    margin-bottom: 15px;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .footer__tag--menu {
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .footer__section {
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .footer__tag {
+    margin: 0 auto 10px auto;
+  }
+
+  .footer__tag-wrapper {
+    flex-wrap: wrap;
+    max-width: 300px;
+    padding: 0 20px;
+  }
 }
 
 .savas__logo {
@@ -895,7 +992,8 @@ ul li a:hover::after {
   margin-bottom: 0;
 }
 
-.signup__button:hover {
+.signup__button:hover,
+.signup__button:focus {
   background-color: #d9f0ec;
 }
 
@@ -950,10 +1048,6 @@ ul li a:hover::after {
 
   .cover__image {
     height: 50vh;
-  }
-
-  .footer__tag-wrapper {
-    margin: 0 auto;
   }
   .accordion__address {
     max-width: 100%;
@@ -1054,18 +1148,6 @@ ul li a:hover::after {
     font-size: 18px;
   }
 
-  .footer__tag--menu {
-    display: block;
-    width: 100%;
-    margin-bottom: 20px;
-  }
-
-  .footer__section {
-    width: 100%;
-    text-align: center;
-    margin: 0 auto;
-  }
-
   .logo__container {
     position: relative;
     height: auto;
@@ -1076,16 +1158,6 @@ ul li a:hover::after {
   .logo__container svg {
     height: 170px;
     margin-left: 50px;
-  }
-
-  .footer__tag {
-    margin: 0 auto 10px auto;
-  }
-
-  .footer__tag-wrapper {
-    flex-wrap: wrap;
-    max-width: 300px;
-    padding: 0 20px;
   }
 
   ol li br {
