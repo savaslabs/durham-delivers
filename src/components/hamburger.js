@@ -24,26 +24,26 @@ class Hamburger extends React.Component {
     let el = document.getElementById('menu');
     el.onclick = uncheckAll1;
 
-    let scrollpos = window.scrollY;
-    const header = document.getElementById('hamburger');
+    // let scrollpos = window.scrollY;
+    // const header = document.getElementById('hamburger');
 
-    function add_class_on_scroll() {
-      header.classList.add('scrolled');
-    }
+    // function add_class_on_scroll() {
+    //   header.classList.add('scrolled');
+    // }
 
-    function remove_class_on_scroll() {
-      header.classList.remove('scrolled');
-    }
+    // function remove_class_on_scroll() {
+    //   header.classList.remove('scrolled');
+    // }
 
-    window.addEventListener('scroll', function () {
-      scrollpos = window.scrollY;
+    // window.addEventListener('scroll', function () {
+    //   scrollpos = window.scrollY;
 
-      if (scrollpos > 10) {
-        add_class_on_scroll();
-      } else {
-        remove_class_on_scroll();
-      }
-    });
+    //   if (scrollpos > 10) {
+    //     add_class_on_scroll();
+    //   } else {
+    //     remove_class_on_scroll();
+    //   }
+    // });
   }
 
   render() {

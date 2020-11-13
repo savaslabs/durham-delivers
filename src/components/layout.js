@@ -7,12 +7,22 @@
 
 import React from 'react';
 import PropTypes from 'prop-types';
-import SEO from "../components/seo";
-import Hero from "../components/hero";
+import { useStaticQuery, graphql } from 'gatsby';
+import Header from '../components/header';
 
 import './layout.css';
 
 const Layout = ({ children }) => {
+  const data = useStaticQuery(graphql`
+    query SiteTitleQuery {
+      site {
+        siteMetadata {
+          title
+        }
+      }
+    }
+  `);
+
   return (
     <div
       style={{
@@ -20,8 +30,7 @@ const Layout = ({ children }) => {
         minHeight: `100vh`,
       }}
     >
-      <SEO title="Home" />
-      <Hero />
+      <Header siteTitle={data.site.siteMetadata.title} />
       <main
         style={{
           position: `relative`,
