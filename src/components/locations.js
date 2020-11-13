@@ -58,7 +58,7 @@ const Locations = ({ data }) => {
         }}
       >
         <h2 data-sal="slide-up" data-sal-delay="500" data-sal-easing="ease-in">
-          Delivery Locations
+          Communities
         </h2>
         <div className="container">
           {locationsToRender.length > 0 &&

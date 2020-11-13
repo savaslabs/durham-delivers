@@ -77,6 +77,8 @@ const Event = ({ data, index }) => {
               marginLeft: `20px`,
             }}
             onClick={handleClick}
+            title={`Add pickup from ${name} to calendar.`}
+            aria-label={`Add pickup from ${name} to calendar.`}
           >
             <Calendar clicked={savedEvents[calendarLink]} />
           </a>

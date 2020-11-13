@@ -43,7 +43,7 @@ const Restaurants = ({ data }) => {
     <div id="participating-restaurants">
       <div className="order__container">
         <h2 data-sal="slide-up" data-sal-delay="400" data-sal-easing="ease-in">
-          Participating Restaurants
+          Restaurants
         </h2>
         <div className="container">
           {restaurantsToRender.length > 0 &&

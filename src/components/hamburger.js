@@ -49,7 +49,7 @@ class Hamburger extends React.Component {
               <div className="footer__tag footer__tag--menu">
                 Website delivered by
               </div>
-              <a href="https://savaslabs.com">
+              <a href="https://savaslabs.com" title="Savas Labs" aria-label="Savas Labs">
                 <svg
                   width="111"
                   height="51"
