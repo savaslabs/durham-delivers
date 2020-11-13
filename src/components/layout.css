@@ -824,15 +824,12 @@ ul li a:hover::after {
 
 .footer__tag-wrapper {
   max-width: 260px;
-  display: flex;
-  align-items: center;
-  flex-wrap: nowrap;
 }
 
 .footer__tag {
   font-family: 'Work Sans', sans-serif;
   font-weight: 600;
-  font-size: 21px;
+  font-size: 18px;
   line-height: 31px;
   letter-spacing: 0.01em;
   margin-bottom: 10px;

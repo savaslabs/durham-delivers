@@ -1,10 +1,8 @@
 import React from "react"
-import BackgroundImg from "../images/utensil-bkgr.png"
 
 const Footer = () => (
   <footer style={{
-    backgroundImage: `url(${BackgroundImg})`,
-    backgroundColor: `#D9F0EC`,
+    backgroundColor: `#095256`,
     padding: `30px 0`,
     marginTop: `130px`,
     backgroundRepeat: `repeat`,
