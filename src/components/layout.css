@@ -162,11 +162,15 @@ header {
 }
 
 .header__title {
-  font-family: 'Oxygen', sans-serif;
-  font-weight: 700;
-  font-size: 18px;
-  color: #095256;
-  text-transform: uppercase;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
 }
 
 .header__subheading {
@@ -178,11 +182,6 @@ header {
   font-weight: 400;
   margin-top: 5px;
   white-space: nowrap;
-}
-
-.header__logo {
-  width: 46px;
-  height: 56px;
 }
 
 .header-up {
