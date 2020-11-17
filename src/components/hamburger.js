@@ -33,7 +33,7 @@ const Hamburger = (props) => {
           <MenuLink selector="#local-pick-up" text="Communities" />
           <MenuLink selector="#participating-restaurants" text="Restaurants" />
           <MenuLink selector="#calendar" text="Upcoming Deliveries" />
-          <a href="mailto:durhamdelivers@gmail.com">Contact Us</a>
+          <a target="_blank" rel="noreferrer" href="mailto:durhamdelivers@gmail.com">Contact Us</a>
         </nav>
 
         <div className="mobile-menu-branding">

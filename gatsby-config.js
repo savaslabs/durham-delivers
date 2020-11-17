@@ -7,8 +7,9 @@ module.exports = {
   siteMetadata: {
     title: `Durham Delivers`,
     description: `Durham Delivers partners with local restaurants to create community food deliveries to parks and other spaces in Durham`,
-    author: `@gatsbyjs`,
-    image: "../src/images/social-img.png",
+    author: `@DurhamNC`,
+    image: "/social-img.png",
+    url: "https://www.durhamdelivers.org"
   },
   plugins: [
     {
