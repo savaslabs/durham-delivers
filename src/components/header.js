@@ -46,7 +46,6 @@ const Header = () => {
               <br />
               Delivers
             </h1>
-            <p className="header__subheading">Delivery that works</p>
           </div>
         </div>
         <Hamburger />
