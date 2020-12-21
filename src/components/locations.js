@@ -1,49 +1,49 @@
-import React, { useState, useEffect } from "react";
-import { StaticQuery, graphql } from "gatsby";
+import React, { useState, useEffect } from 'react'
+import { StaticQuery, graphql } from 'gatsby'
 
-import Background from "../images/utensil-bkgr.png";
-import { useWindowSize } from "../util/useWindowSize";
-import { getTileNumber, getSalDelay } from "../util/functions";
-import ShowMore from "./showMore";
+import Background from '../images/utensil-bkgr.png'
+import { useWindowSize } from '../util/useWindowSize'
+import { getTileNumber, getSalDelay } from '../util/functions'
+import ShowMore from './showMore'
 
 const Locations = ({ data }) => {
-  const width = useWindowSize().width;
-  const [minTiles, setMinTiles] = useState();
-  const [screen, setScreen] = useState();
-  const [text, setText] = useState("Show More");
+  const width = useWindowSize().width
+  const [minTiles, setMinTiles] = useState()
+  const [screen, setScreen] = useState()
+  const [text, setText] = useState('Show More')
 
-  let locations = data.allAirtable.edges;
+  let locations = data.allAirtable.edges
 
   useEffect(() => {
-    const [initialTiles, screenSize] = getTileNumber(width);
-    if (typeof initialTiles === "number") {
-      setMinTiles(initialTiles);
-      setScreen(screenSize);
+    const [initialTiles, screenSize] = getTileNumber(width)
+    if (typeof initialTiles === 'number') {
+      setMinTiles(initialTiles)
+      setScreen(screenSize)
     }
-  }, [width]);
+  }, [width])
 
   // Manage "Show More" state
   const handleClick = () => {
-    if (text === "Show More") {
-      setText("Show Less");
+    if (text === 'Show More') {
+      setText('Show Less')
     } else {
-      setText("Show More");
+      setText('Show More')
     }
-  };
+  }
 
   // Alphebetize by name
   locations.sort((a, b) =>
     a.node.data.location_name.localeCompare(b.node.data.location_name)
-  );
+  )
 
   // Shorten locations array if only rendering locations.
   const locationsToRender =
-    text === "Show More" ? locations.slice(0, minTiles) : locations;
+    text === 'Show More' ? locations.slice(0, minTiles) : locations
 
   return (
     <div
-      className="locations__wrapper"
-      id="local-pick-up"
+      className='locations__wrapper'
+      id='local-pick-up'
       style={{
         backgroundImage: `url(${Background})`,
         backgroundColor: `#D9F0EC`,
@@ -57,32 +57,35 @@ const Locations = ({ data }) => {
           margin: `0 auto`,
         }}
       >
-        <h2 data-sal="slide-up" data-sal-delay="500" data-sal-easing="ease-in">
+        <h2 data-sal='slide-up' data-sal-delay='500' data-sal-easing='ease-in'>
           Communities
         </h2>
-        <div className="container">
+        <div className='container'>
           {locationsToRender.length > 0 &&
             locationsToRender.map((location, index) => {
-              const imageUrl = location.node.data.location_image.localFiles
-                ? location.node.data.location_image.localFiles[0]
-                    .childImageSharp.fluid.src
-                : null;
+              const imageUrl =
+                location.node.data.location_image.localFiles &&
+                location.node.data.location_image.localFiles[0].childImageSharp
+                  .fluid
+                  ? location.node.data.location_image.localFiles[0]
+                      .childImageSharp.fluid.src
+                  : null
               return (
                 <div
-                  data-sal={text === "Show More" ? "slide-up" : undefined}
+                  data-sal={text === 'Show More' ? 'slide-up' : undefined}
                   data-sal-delay={getSalDelay(index, screen)}
-                  data-sal-easing="ease-in"
-                  className="location__item"
+                  data-sal-easing='ease-in'
+                  className='location__item'
                   key={location.node.id}
                 >
                   <div
-                    className="location__image"
+                    className='location__image'
                     style={{
                       backgroundImage: `url(${imageUrl})`,
                     }}
                   ></div>
-                  <div className="location__info">
-                    <p className="park__title">
+                  <div className='location__info'>
+                    <p className='park__title'>
                       {location.node.data.location_name}
                     </p>
                     <p
@@ -95,21 +98,21 @@ const Locations = ({ data }) => {
                     </p>
                   </div>
                 </div>
-              );
+              )
             })}
         </div>
         {locations.length > minTiles && (
           <ShowMore
-            className={"button showmore__white"}
+            className={'button showmore__white'}
             text={text}
             handleClick={handleClick}
-            ariaExpanded={text === "Show Less"}
+            ariaExpanded={text === 'Show Less'}
           />
         )}
       </div>
     </div>
-  );
-};
+  )
+}
 
 export default function LocationQuery(props) {
   return (
@@ -138,7 +141,7 @@ export default function LocationQuery(props) {
           }
         }
       `}
-      render={(data) => <Locations data={data} {...props} />}
+      render={data => <Locations data={data} {...props} />}
     />
-  );
+  )
 }
